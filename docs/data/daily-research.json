@@ -42,14 +42,15 @@
       "id": "sensor-aug2026-games",
       "title": "Honor of Kings, Gossip Harbor, Whiteout, Royal Match y Candy Crush lideran agosto",
       "type": "Ranking publicado",
-      "publishedAt": "2026-09-01",
+      "publishedAt": null,
       "observedAt": "2026-11-19",
       "period": "2026-08",
       "geography": "Mundo",
       "finding": "Sensor Tower publica el top 5 mundial por facturación móvil en agosto de 2026, con mezcla de MOBA, merge, 4X y match-3.",
       "opportunity": "Descomponer monetización por vidas/energía, progresión, eventos y paquetes, sin copiar assets o sistemas protegidos.",
       "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
-      "confidence": "Alta sobre el orden; no se reproducen ingresos por título sin cifra pública"
+      "confidence": "Alta sobre el orden; no se reproducen ingresos por título sin cifra pública",
+      "dateNote": "El periodo corresponde al dato analizado; fecha exacta de publicación no confirmada"
     },
     {
       "id": "g2-agents-2026",
@@ -89,14 +90,15 @@
       "id": "yc-rfs-2027",
       "title": "Y Combinator enfoca nuevas startups hacia infraestructura y economía física",
       "type": "Tesis de incubadora, NO financiación",
-      "publishedAt": "2026-11-01",
+      "publishedAt": null,
       "observedAt": "2026-11-19",
       "period": "Winter 2027",
       "geography": "Estados Unidos / global",
       "finding": "La página oficial de Requests for Startups destaca infraestructura, software especializado y sistemas para llevar inteligencia a la economía física.",
       "opportunity": "Examinar software de campo, infraestructura para pequeñas apps y automatización con comprador profesional identificable.",
       "url": "https://www.ycombinator.com/rfs",
-      "confidence": "Alta para tesis publicadas; fecha exacta de publicación individual no confirmada"
+      "confidence": "Alta para tesis publicadas; fecha exacta de publicación individual no confirmada",
+      "dateNote": "El periodo corresponde al dato analizado; fecha exacta de publicación no confirmada"
     }
   ]
 }
