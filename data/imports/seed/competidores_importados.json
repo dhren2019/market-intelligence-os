@@ -1,0 +1,863 @@
+[
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 6,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Orderlion",
+      "Sector": "Comercio / distribución",
+      "Producto vendido": "Pedidos B2B y bandeja IA",
+      "Precio público (si existe)": "Bajo propuesta / web comercial",
+      "Ingresos públicos": "No publicada",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Precios y clientes demostrativos publicados",
+      "Fuente ID": "S06",
+      "Hueco para nosotros": "No recrear ERP: recompra en enlace"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 7,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Stockagile",
+      "Sector": "Comercio",
+      "Producto vendido": "POS/inventario/omnichannel",
+      "Precio público (si existe)": "Página de planes; precio según configuración",
+      "Ingresos públicos": "No publicada",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Software comercial y testimonios en web",
+      "Fuente ID": "S07",
+      "Hueco para nosotros": "Microfunción de devoluciones/ejecución"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 8,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Channable",
+      "Sector": "Comercio",
+      "Producto vendido": "Gestión de feeds/ads",
+      "Precio público (si existe)": "Tarifas en web, modular",
+      "Ingresos públicos": "No publicada",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Planes comerciales públicos",
+      "Fuente ID": "S08",
+      "Hueco para nosotros": "Evitar feed completo; detectar errores específicos"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 9,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Shopify POS",
+      "Sector": "Comercio",
+      "Producto vendido": "Punto de venta / stock",
+      "Precio público (si existe)": "39 USD/mes mostrado en versión localizada",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Planes públicos",
+      "Fuente ID": "S09",
+      "Hueco para nosotros": "No competir en POS"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 10,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Paperless Parts",
+      "Sector": "Industria",
+      "Producto vendido": "Presupuestación industrial",
+      "Precio público (si existe)": "Bajo consulta",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Más de 800 fabricantes según web de empresa",
+      "Fuente ID": "S10",
+      "Hueco para nosotros": "RFQs y cambios antes de cálculo técnico"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 11,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "CompanyCam",
+      "Sector": "Construcción",
+      "Producto vendido": "Fotos de trabajos y clientes",
+      "Precio público (si existe)": "Planes de suscripción en web",
+      "Ingresos públicos": "Más de 20 MUSD ARR (2022)",
+      "Nivel de evidencia": "Fundador citado por prensa",
+      "Periodo": "2022; NO cifra actual",
+      "Prueba de demanda / advertencia": "Facturación histórica declarada; no auditoría",
+      "Fuente ID": "S13",
+      "Hueco para nosotros": "Captura de extras con aceptación directa"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 12,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "PlanRadar",
+      "Sector": "Construcción",
+      "Producto vendido": "Gestión incidencias de obra",
+      "Precio público (si existe)": "Precio bajo contacto",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Suscripción de licencias",
+      "Fuente ID": "S14",
+      "Hueco para nosotros": "Solo entrega y aceptación en 1 clic"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 13,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "ServiceM8",
+      "Sector": "Construcción / servicios",
+      "Producto vendido": "Gestión trabajos y cobros",
+      "Precio público (si existe)": "Planes por negocio / EUR",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Suscripción mensual pública",
+      "Fuente ID": "S15",
+      "Hueco para nosotros": "No sustituir solución completa"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 14,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "magicplan",
+      "Sector": "Construcción",
+      "Producto vendido": "Planos e informes de espacios",
+      "Precio público (si existe)": "Suscripciones/proyectos",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Planes públicos",
+      "Fuente ID": "S16",
+      "Hueco para nosotros": "Visualización comercial sin plano formal"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 15,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Track-POD",
+      "Sector": "Logística",
+      "Producto vendido": "Prueba de entrega y rutas",
+      "Precio público (si existe)": "Por conductor o pedidos; ver web",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Planes de pago públicos",
+      "Fuente ID": "S17",
+      "Hueco para nosotros": "Solo excepciones y foto de bulto"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 16,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "GoRamp",
+      "Sector": "Logística",
+      "Producto vendido": "Slots de muelles y patio",
+      "Precio público (si existe)": "Precio a medida",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Proveedor declara 200+ clientes / 18+ mercados",
+      "Fuente ID": "S19",
+      "Hueco para nosotros": "Slots web sin WMS en almacenes pequeños"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 17,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Rotion",
+      "Sector": "Logística",
+      "Producto vendido": "Retorno embalajes/QR",
+      "Precio público (si existe)": "Desde 150 €/mes según web",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Oferta de producto y tarifa pública",
+      "Fuente ID": "S20",
+      "Hueco para nosotros": "Saldo compartido sin hardware / AI agent"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 18,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Stack&Track",
+      "Sector": "Logística",
+      "Producto vendido": "Flujos de envases/palés",
+      "Precio público (si existe)": "30–60 €/mes EN PDF DE 2023",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Modelo histórico; precio NO verificado hoy",
+      "Fuente ID": "S21",
+      "Hueco para nosotros": "No confiar en precio antiguo"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 19,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "PicThrive",
+      "Sector": "Turismo",
+      "Producto vendido": "Álbumes para tours",
+      "Precio público (si existe)": "3,29 USD álbum foto; 5,49 USD vídeo",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Precios públicos por álbum",
+      "Fuente ID": "S22",
+      "Hueco para nosotros": "Hacer upsell al finalizar tour"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 20,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Goosechase",
+      "Sector": "Turismo / eventos",
+      "Producto vendido": "Juegos y experiencias QR",
+      "Precio público (si existe)": "Desde 99 USD por evento",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "123.721 experiencias 2024; uso ≠ pagos",
+      "Fuente ID": "S23",
+      "Hueco para nosotros": "Juego con mecánica propia y móvil web"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 21,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Actionbound",
+      "Sector": "Turismo / ocio",
+      "Producto vendido": "Rutas gamificadas / tours",
+      "Precio público (si existe)": "Licencia comercial por jugadores",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Licencia de empresa publicada",
+      "Fuente ID": "S25",
+      "Hueco para nosotros": "Puzles de cámara en vez de trivial"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 22,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Snappic",
+      "Sector": "Turismo / eventos",
+      "Producto vendido": "Fotomatón digital/experiencia",
+      "Precio público (si existe)": "Desde 29 USD por evento (base)",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "9.000+ negocios afirmado en web oficial",
+      "Fuente ID": "S26",
+      "Hueco para nosotros": "Evento web sin hardware de booth"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "03_COMPETIDORES",
+    "source_row": 23,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Rentman",
+      "Sector": "Turismo / eventos",
+      "Producto vendido": "Alquiler y personal de eventos",
+      "Precio público (si existe)": "Planes mensuales y a medida",
+      "Ingresos públicos": "No publicada aquí",
+      "Nivel de evidencia": "N/D",
+      "Periodo": "N/D",
+      "Prueba de demanda / advertencia": "Planes comerciales publicados",
+      "Fuente ID": "S28",
+      "Hueco para nosotros": "No desarrollar ERP de alquileres"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 6,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Bannerbear",
+      "Categoría": "SaaS creativo",
+      "Qué vende": "Generación masiva imágenes API",
+      "Modelo de negocio": "Suscripción + créditos",
+      "Precio de referencia": "$49/mes base",
+      "Facturación publicada": "50.000 $ MRR en julio 2023 (histórico)",
+      "Tipo de dato": "Declarado por fundador, NO 2026",
+      "Ideas asociadas": "S01,S02",
+      "Lectura comercial": "Muy competitivo; API madura",
+      "URL competidor": "https://www.bannerbear.com/pricing/",
+      "URL de ingresos": "https://www.bannerbear.com/journey-to-1-million-arr/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 7,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Senja",
+      "Categoría": "SaaS creativo",
+      "Qué vende": "Testimonios y widgets",
+      "Modelo de negocio": "Freemium + suscripción",
+      "Precio de referencia": "$29/mes Starter; $59 Pro",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Precio oficial",
+      "Ideas asociadas": "S05",
+      "Lectura comercial": "Gratis 15 testimonios; no copiar genérico",
+      "URL competidor": "https://support.senja.io/what-are-the-differences-between-the-free-and-paid-plans-sdcfs"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 8,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Marker.io",
+      "Categoría": "SaaS agencias / dev",
+      "Qué vende": "Feedback visual en webs",
+      "Modelo de negocio": "Suscripción",
+      "Precio de referencia": "Planes de pago; ver web",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Precio y producto oficial",
+      "Ideas asociadas": "S03,S05,D01",
+      "Lectura comercial": "Compite por experiencia de revisión",
+      "URL competidor": "https://marker.io/pricing"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 9,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Checkly",
+      "Categoría": "Developer SaaS",
+      "Qué vende": "Monitoreo de APIs y navegador",
+      "Modelo de negocio": "Freemium + uso",
+      "Precio de referencia": "Planes Hobby / Team; variable",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Producto y niveles oficiales",
+      "Ideas asociadas": "D01,D03,D06",
+      "Lectura comercial": "Más grande; no replicar todo",
+      "URL competidor": "https://www.checklyhq.com/pricing/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 10,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Cronitor",
+      "Categoría": "Developer SaaS",
+      "Qué vende": "Monitoreo de cron y uptime",
+      "Modelo de negocio": "Freemium + suscripción",
+      "Precio de referencia": "Planes de pago; variable",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Producto y niveles oficiales",
+      "Ideas asociadas": "D02",
+      "Lectura comercial": "Alternativa madura con notificaciones",
+      "URL competidor": "https://cronitor.io/pricing"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 11,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Better Stack",
+      "Categoría": "Developer SaaS",
+      "Qué vende": "Uptime y observabilidad",
+      "Modelo de negocio": "Freemium + suscripción",
+      "Precio de referencia": "Consultar plan actual",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Proveedor oficial",
+      "Ideas asociadas": "D02,D05",
+      "Lectura comercial": "Stack de observabilidad completo",
+      "URL competidor": "https://betterstack.com/pricing"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 12,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "APPMOCKUPGENERATOR",
+      "Categoría": "Developer herramientas",
+      "Qué vende": "App Store screenshot sets y mockups",
+      "Modelo de negocio": "Gratis + packs + suscripción",
+      "Precio de referencia": "Desde 9 $/25 capturas",
+      "Facturación publicada": "≈ 171 $/30d; 85 $ MRR, corte 17/11/26",
+      "Tipo de dato": "TrustMRR Dodo, ver ficha actualizada",
+      "Ideas asociadas": "D04,P03",
+      "Lectura comercial": "Ejemplo microproducto que cobra poco",
+      "URL competidor": "https://trustmrr.com/startup/appmockupgenerator"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 13,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Plausible",
+      "Categoría": "Developer SaaS",
+      "Qué vende": "Analítica sin cookies",
+      "Modelo de negocio": "Suscripción",
+      "Precio de referencia": "Planes de pago; ver web",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Precio/servicio público",
+      "Ideas asociadas": "D05",
+      "Lectura comercial": "Alternativas gratuitas disponibles",
+      "URL competidor": "https://plausible.io/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 14,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "RemNote",
+      "Categoría": "Apps educación",
+      "Qué vende": "Flashcards y repaso con IA",
+      "Modelo de negocio": "Freemium + suscripción + créditos",
+      "Precio de referencia": "$10/mes Pro; $20 con IA",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Comparativa oficial 2026",
+      "Ideas asociadas": "A03",
+      "Lectura comercial": "Competidor avanzado y bien distribuido",
+      "URL competidor": "https://www.remnote.com/blog/remnote-vs-quizlet"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 15,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "AnyList",
+      "Categoría": "Apps hogar",
+      "Qué vende": "Listas compra y recetas",
+      "Modelo de negocio": "Freemium + anual",
+      "Precio de referencia": "$9,99/año persona; $14,99 familia",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Precio oficial",
+      "Ideas asociadas": "A01,A04",
+      "Lectura comercial": "Disposición al pago anual MUY baja",
+      "URL competidor": "https://help.anylist.com/articles/getting-started/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 16,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Paprika 4",
+      "Categoría": "Apps hogar / PC",
+      "Qué vende": "Recetas, planificación y compras",
+      "Modelo de negocio": "Freemium + anual",
+      "Precio de referencia": "$14,99/año introducción",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Anuncio oficial 2026",
+      "Ideas asociadas": "A01,A06",
+      "Lectura comercial": "Cambio de modelo en 2026; no citar versión anterior",
+      "URL competidor": "https://paprikaapp.com/news/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 17,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Refined Listings",
+      "Categoría": "SaaS visual",
+      "Qué vende": "Home staging IA inmobiliario",
+      "Modelo de negocio": "Créditos / pago por uso",
+      "Precio de referencia": "Consultar web",
+      "Facturación publicada": "24.525 $/30d (corte 23/10/26)",
+      "Tipo de dato": "TrustMRR Stripe, ingreso NO beneficio",
+      "Ideas asociadas": "A05",
+      "Lectura comercial": "Hay nichos visuales que facturan",
+      "URL competidor": "https://trustmrr.com/startup/refined-listings?offer=1"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 18,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Eagle",
+      "Categoría": "PC ejecutable",
+      "Qué vende": "Biblioteca multimedia creativa",
+      "Modelo de negocio": "Pago único",
+      "Precio de referencia": "Licencia compra única",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Licencia oficial",
+      "Ideas asociadas": "P02,P05",
+      "Lectura comercial": "Alto listón de producto/retención",
+      "URL competidor": "https://en.eagle.cool/store"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 19,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "CleanShot X",
+      "Categoría": "PC capturas",
+      "Qué vende": "Captura, anotación, nube",
+      "Modelo de negocio": "Pago único + suscripción cloud",
+      "Precio de referencia": "Renovar actualizaciones $19/año",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Condiciones licencia oficiales",
+      "Ideas asociadas": "P03,P06",
+      "Lectura comercial": "Mac-only, deja Windows como posible nicho",
+      "URL competidor": "https://cleanshot.com/why-updates-expire"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 20,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Screen Studio",
+      "Categoría": "PC grabación",
+      "Qué vende": "Demos y vídeos de producto",
+      "Modelo de negocio": "Suscripción",
+      "Precio de referencia": "Desde $9/mes anual",
+      "Facturación publicada": "No publicada comprobada aquí",
+      "Tipo de dato": "Precio oficial",
+      "Ideas asociadas": "S04,P03,P04",
+      "Lectura comercial": "Grabación profesional más compleja de lo que parece",
+      "URL competidor": "https://screen.studio/create/mac-screen-recorder"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 21,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "File Juggler",
+      "Categoría": "PC Windows",
+      "Qué vende": "Clasificación y movimiento de archivos",
+      "Modelo de negocio": "Pago único",
+      "Precio de referencia": "Licencia pago único; web de compra",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Web oficial",
+      "Ideas asociadas": "P01",
+      "Lectura comercial": "Compite directamente con organizador Windows",
+      "URL competidor": "https://www.filejuggler.com/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 22,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Dropover",
+      "Categoría": "PC macOS",
+      "Qué vende": "Gestión de arrastrar y soltar",
+      "Modelo de negocio": "Freemium + unlock",
+      "Precio de referencia": "Desbloqueo Pro; ver web",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Web y FAQ oficial",
+      "Ideas asociadas": "P02",
+      "Lectura comercial": "MacOS no Windows",
+      "URL competidor": "https://dropoverapp.com/faq"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 23,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Picmal",
+      "Categoría": "PC Mac",
+      "Qué vende": "Conversión local vídeo/audio/PDF/fotos",
+      "Modelo de negocio": "Pago único",
+      "Precio de referencia": "$ — ver ficha",
+      "Facturación publicada": "245 $/30d; 0 MRR (corte nov 2026)",
+      "Tipo de dato": "TrustMRR; ejemplo modesto",
+      "Ideas asociadas": "P01,P04",
+      "Lectura comercial": "Pagar licencia no garantiza alto volumen",
+      "URL competidor": "https://trustmrr.com/startup/picmal?offer=1"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 24,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Balatro",
+      "Categoría": "Juegos Android",
+      "Qué vende": "Roguelike de cartas",
+      "Modelo de negocio": "Pago único",
+      "Precio de referencia": "$9,99 Google Play",
+      "Facturación publicada": "No publicada en esta investigación",
+      "Tipo de dato": "Ficha Play oficial",
+      "Ideas asociadas": "G01,G02",
+      "Lectura comercial": "Ejemplo premium sin IAP",
+      "URL competidor": "https://play.google.com/store/apps/details?id=com.playstack.balatro.android"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 25,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Vampire Survivors",
+      "Categoría": "Juegos Android",
+      "Qué vende": "Acción roguelite supervivencia",
+      "Modelo de negocio": "Gratis + Ads + IAP",
+      "Precio de referencia": "Gratis, anuncios/IAP",
+      "Facturación publicada": "No publicada en esta investigación",
+      "Tipo de dato": "Ficha Play oficial",
+      "Ideas asociadas": "G01,G05",
+      "Lectura comercial": "Buen ejemplo de híbrido y retención",
+      "URL competidor": "https://play.google.com/store/apps/details?id=com.poncle.vampiresurvivors"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 26,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Card Thief",
+      "Categoría": "Juegos Android",
+      "Qué vende": "Puzle táctico de cartas",
+      "Modelo de negocio": "Gratis + Ads + IAP",
+      "Precio de referencia": "Ver tienda por país",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Ficha Play oficial",
+      "Ideas asociadas": "G01,G03",
+      "Lectura comercial": "Enfoque en partidas cortas",
+      "URL competidor": "https://play.google.com/store/apps/details?id=com.tinytouchtales.cardthief"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 27,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Dicey Dungeons",
+      "Categoría": "Juegos Android",
+      "Qué vende": "Roguelike por turnos",
+      "Modelo de negocio": "Pago único",
+      "Precio de referencia": "$4,99 según ficha de editor",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Tienda Google Play",
+      "Ideas asociadas": "G02,G06",
+      "Lectura comercial": "Juego premiun consolidado",
+      "URL competidor": "https://play.google.com/store/apps/developer?id=Terry+Cavanagh"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 28,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Decodex Mobile App",
+      "Categoría": "Juegos móvil",
+      "Qué vende": "Criptogramas diarios",
+      "Modelo de negocio": "Freemium + IAP",
+      "Precio de referencia": "Gratis + compras",
+      "Facturación publicada": "9 $/30d (corte 10/8/26)",
+      "Tipo de dato": "TrustMRR RevenueCat, bajo ingreso",
+      "Ideas asociadas": "G02",
+      "Lectura comercial": "Contraejemplo: publicarlo ≠ ganar dinero",
+      "URL competidor": "https://trustmrr.com/startup/decodex-mobile-app"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 29,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "BasinCheck",
+      "Categoría": "SaaS vertical",
+      "Qué vende": "Auditorías de campo",
+      "Modelo de negocio": "Suscripción",
+      "Precio de referencia": "No consta precio aquí",
+      "Facturación publicada": "895 $ MRR con 5 suscripciones",
+      "Tipo de dato": "Stripe vía TrustMRR, oct 2026",
+      "Ideas asociadas": "S01,D05",
+      "Lectura comercial": "Demuestra producto pequeño de ticket alto",
+      "URL competidor": "https://shippedandpaid.com/cases/basincheck-oilfield-safety-audit-saas-5-6k-total-vibe-coded/"
+    }
+  },
+  {
+    "record_type": "company_reference",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "13_TECH_COMPETIDORES",
+    "source_row": 30,
+    "legacy_score": null,
+    "original_fields": {
+      "Empresa": "Ablestar",
+      "Categoría": "App Shopify",
+      "Qué vende": "Edición masiva catálogo",
+      "Modelo de negocio": "Freemium + suscripción",
+      "Precio de referencia": "Gratis y planes de pago",
+      "Facturación publicada": "No publicada",
+      "Tipo de dato": "Shopify App Store",
+      "Ideas asociadas": "S02,D04",
+      "Lectura comercial": "Integración marketplace compleja, evitar clonar",
+      "URL competidor": "https://apps.shopify.com/bulk-product-editor"
+    }
+  }
+]

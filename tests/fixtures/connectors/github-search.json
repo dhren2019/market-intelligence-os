@@ -1,0 +1,12 @@
+{
+  "total_count": 1327,
+  "incomplete_results": false,
+  "items": [
+    {
+      "id": 123,
+      "full_name": "example/saas",
+      "html_url": "https://github.com/example/saas",
+      "updated_at": "2026-11-17T12:00:00Z"
+    }
+  ]
+}
