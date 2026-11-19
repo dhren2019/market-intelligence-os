@@ -38,6 +38,8 @@ jobs:
           node-version: 22
       - name: Install pinned React/Vite dependencies
         run: npm install --prefix web --no-audit --no-fund
+      - name: Share dependencies with original Next.js source
+        run: ln -s web/node_modules node_modules
       - name: Build public React projection of original Next.js design
         run: npm run build --prefix web
       - name: Setup GitHub Pages
