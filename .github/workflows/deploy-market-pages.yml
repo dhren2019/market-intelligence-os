@@ -3,7 +3,7 @@ name: Deploy visual Market Intelligence OS
 on:
   push:
     branches:
-      - feat/nextjs-original-visual-radar
+      - gh-pages
     paths:
       - 'web/**'
       - 'src/domain/market/**'
