@@ -99,6 +99,30 @@
       "url": "https://www.ycombinator.com/rfs",
       "confidence": "Alta para tesis publicadas; fecha exacta de publicación individual no confirmada",
       "dateNote": "El periodo corresponde al dato analizado; fecha exacta de publicación no confirmada"
+    },
+    {
+      "id": "fitness-2025-sensortower",
+      "title": "Fitness y bienestar: el gasto móvil crece más deprisa que las instalaciones",
+      "type": "IAP estimado · tendencias fitness",
+      "publishedAt": "2026-02-01",
+      "observedAt": "2026-11-19",
+      "period": "2025",
+      "geography": "Mundo",
+      "metric": {
+        "value": 4.5,
+        "unit": "miles de millones USD de IAP",
+        "changeYoYPercent": 13
+      },
+      "finding": "Sensor Tower informa de aproximadamente 4.500 M$ en IAP de Health & Fitness en 2025 (+13 %), con casi 4.000 millones de descargas. Es gasto sectorial, no ingresos de una app concreta.",
+      "opportunity": "Investigar herramientas para entrenadores profesionales y seguimiento de adherencia, con validación de preventa antes del desarrollo.",
+      "url": "https://sensortower.com/blog/health-and-fitness-apps-ai",
+      "confidence": "Alta para cifras estimadas publicadas por Sensor Tower; adquisición y oportunidad de nicho por validar",
+      "sector": "fitness",
+      "subsector": "entrenadores y nutrición",
+      "buyer": "Profesionales fitness",
+      "mvpDays": 21,
+      "validation": "12 entrevistas y 3 compromisos de pilotos pagados",
+      "stopRule": "No desarrollar si los entrenadores no tienen dolor recurrente ni se comprometen a pagar"
     }
   ]
 }
