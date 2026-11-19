@@ -1,0 +1,55 @@
+name: Market Intelligence daily
+
+on:
+  schedule:
+    - cron: "0 7 * * *"
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - "data/imports/inbox/**"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: market-intelligence-daily
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      MIO_DATA_DIR: data/mio-data-action
+      GITHUB_EVENT_NAME: ${{ github.event_name }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - name: Restore previous local database
+        uses: actions/cache@v4
+        with:
+          path: data/mio-data-action
+          key: mio-pglite-${{ github.run_id }}
+          restore-keys: |
+            mio-pglite-
+      - name: Import inbox files
+        if: github.event_name == 'push'
+        run: pnpm data:inbox
+      - name: Sync public sources
+        if: github.event_name != 'push'
+        run: pnpm data:daily
+      - name: Upload private database snapshot
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: market-intelligence-snapshot-${{ github.run_id }}
+          path: data/mio-data-action
+          retention-days: 14
+          include-hidden-files: true

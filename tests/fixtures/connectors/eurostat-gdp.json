@@ -1,0 +1,16 @@
+{
+  "version": "2.0",
+  "class": "dataset",
+  "label": "Gross domestic product at market prices",
+  "id": ["freq", "unit", "na_item", "geo", "time"],
+  "size": [1, 1, 1, 1, 3],
+  "dimension": {
+    "freq": {"category": {"index": {"A": 0}, "label": {"A": "Annual"}}},
+    "unit": {"category": {"index": {"CP_MEUR": 0}, "label": {"CP_MEUR": "Million euro"}}},
+    "na_item": {"category": {"index": {"B1GQ": 0}, "label": {"B1GQ": "Gross domestic product at market prices"}}},
+    "geo": {"category": {"index": {"ES": 0}, "label": {"ES": "Spain"}}},
+    "time": {"category": {"index": {"2023": 0, "2024": 1, "2025": 2}, "label": {"2023": "2023", "2024": "2024", "2025": "2025"}}}
+  },
+  "value": {"0": 1498432.0, "1": 1593250.0},
+  "status": {"1": "p"}
+}

@@ -1,0 +1,51 @@
+name: Deploy visual Market Intelligence OS
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - 'web/**'
+      - 'src/domain/market/**'
+      - 'src/components/market/**'
+      - 'src/app/globals.css'
+      - 'tokens.css'
+      - 'base.css'
+      - '.github/workflows/deploy-market-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: market-intelligence-pages-react
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout complete source
+        uses: actions/checkout@v4
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install pinned React/Vite dependencies
+        run: npm install --prefix web --no-audit --no-fund
+      - name: Build public React projection of original Next.js design
+        run: npm run build --prefix web
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload build artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: web/dist
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

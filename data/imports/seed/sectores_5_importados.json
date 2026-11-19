@@ -1,0 +1,107 @@
+[
+  {
+    "record_type": "sector_seed",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "01_5_SECTORES",
+    "source_row": 6,
+    "legacy_score": null,
+    "original_fields": {
+      "Nº": 1,
+      "Sector": "Comercio (mayorista + minorista + motor)",
+      "Magnitud (M€)": 1044477,
+      "Año": 2024,
+      "Qué mide": "Cifra de negocios de empresas",
+      "Comprador alcanzable": "Comercio mayorista B2B y cadenas locales multitienda",
+      "Nicho prioritario": "RepetiPedido",
+      "Pain point principal": "Pedido repetido se pierde en WhatsApp/email",
+      "Qué NO construir": "No entrar en TPV, ERP o Shopify completo",
+      "Fuente INE (URL)": "https://www.ine.es/dyngs/Prensa/EEESC2024.htm",
+      "Nota de comparabilidad": "Cifra de negocios; no mercado de software"
+    }
+  },
+  {
+    "record_type": "sector_seed",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "01_5_SECTORES",
+    "source_row": 7,
+    "legacy_score": null,
+    "original_fields": {
+      "Nº": 2,
+      "Sector": "Industria y manufactura",
+      "Magnitud (M€)": 857826,
+      "Año": 2024,
+      "Qué mide": "Cifra de negocios de empresas (incluye energía)",
+      "Comprador alcanzable": "Talleres de mecanizado, envases y fabricantes por encargo",
+      "Nicho prioritario": "RFQ Radar",
+      "Pain point principal": "Presupuestos de clientes lentos; se escapan pedidos",
+      "Qué NO construir": "Nada de software de seguridad ni control de maquinaria",
+      "Fuente INE (URL)": "https://www.ine.es/dyngs/Prensa/EEESI2024.htm",
+      "Nota de comparabilidad": "Cifra de negocios; no mercado de software"
+    }
+  },
+  {
+    "record_type": "sector_seed",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "01_5_SECTORES",
+    "source_row": 8,
+    "legacy_score": null,
+    "original_fields": {
+      "Nº": 3,
+      "Sector": "Construcción y reformas",
+      "Magnitud (M€)": 205204,
+      "Año": 2024,
+      "Qué mide": "Cifra de negocios de empresas",
+      "Comprador alcanzable": "Reformas, carpintería, pequeñas constructoras",
+      "Nicho prioritario": "CambioVisible",
+      "Pain point principal": "Extras y opciones que el cliente no valida a tiempo",
+      "Qué NO construir": "No ERP de obra ni tasación/legal automático",
+      "Fuente INE (URL)": "https://www.ine.es/dyngs/Prensa/EEESCONS2024.htm",
+      "Nota de comparabilidad": "Cifra de negocios; no mercado de software"
+    }
+  },
+  {
+    "record_type": "sector_seed",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "01_5_SECTORES",
+    "source_row": 9,
+    "legacy_score": null,
+    "original_fields": {
+      "Nº": 4,
+      "Sector": "Transporte y almacenamiento",
+      "Magnitud (M€)": 159389,
+      "Año": 2024,
+      "Qué mide": "Cifra de negocios, CNAE H",
+      "Comprador alcanzable": "Almacenes, fabricantes con muelles, mayoristas con envases",
+      "Nicho prioritario": "RetornoQR",
+      "Pain point principal": "Pérdidas de envases y disputas por entregas",
+      "Qué NO construir": "No telemática ni operador logístico completo",
+      "Fuente INE (URL)": "https://www.ine.es/dyngs/Prensa/EEESS2024.htm",
+      "Nota de comparabilidad": "Cifra de negocios; no mercado de software"
+    }
+  },
+  {
+    "record_type": "sector_seed",
+    "origin": "xlsx_import",
+    "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+    "source_sheet": "01_5_SECTORES",
+    "source_row": 10,
+    "legacy_score": null,
+    "original_fields": {
+      "Nº": 5,
+      "Sector": "Turismo y ocio",
+      "Magnitud (M€)": 134712,
+      "Año": 2025,
+      "Qué mide": "Gasto de turistas internacionales, no facturación",
+      "Comprador alcanzable": "Operadores de excursiones, parques, hoteles y agencias eventos",
+      "Nicho prioritario": "TourFoto Upsell",
+      "Pain point principal": "Ingresos extra de fotos y experiencias que no se capturan",
+      "Qué NO construir": "No marketplace de reservas ni app de tours genérica",
+      "Fuente INE (URL)": "https://www.ine.es/dyngs/Prensa/EGATUR1225.htm",
+      "Nota de comparabilidad": "Distinta métrica: no equiparar"
+    }
+  }
+]

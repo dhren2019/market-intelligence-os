@@ -1,0 +1,21 @@
+{
+  "COD": "IPC251856",
+  "Nombre": "Nacional. Índice general. Variación anual.",
+  "T3_Unidad": "Tasas",
+  "Data": [
+    {
+      "Fecha": "2026-09-01T00:00:00.000+02:00",
+      "T3_TipoDato": "Definitivo",
+      "T3_Periodo": "M09",
+      "Anyo": 2026,
+      "Valor": 2.4
+    },
+    {
+      "Fecha": "2026-10-01T00:00:00.000+02:00",
+      "T3_TipoDato": "Provisional",
+      "T3_Periodo": "M10",
+      "Anyo": 2026,
+      "Valor": 2.1
+    }
+  ]
+}

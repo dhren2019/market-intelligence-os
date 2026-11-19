@@ -1,0 +1,29 @@
+{
+  "record_type": "sector_seed",
+  "origin": "xlsx_import",
+  "source_workbook": "radar_espana_mas_tecnologia_2026.xlsx",
+  "source_sheet": "11_TECH_5_LINEAS",
+  "source_row": 5,
+  "sector_taxonomy": "technology_lines",
+  "methodology": "Technology is an audited product-building scope with five lines and 30 hypotheses; it is not comparable with the five economic sector magnitudes.",
+  "original_fields": {
+    "Sector": "Tecnología",
+    "Magnitud (M€)": null,
+    "Año": 2026,
+    "Qué mide": "5 líneas tecnológicas y 30 oportunidades de producto del Excel auditado",
+    "Comprador alcanzable": "Agencias, equipos de software, profesionales, usuarios de apps y jugadores",
+    "Nicho prioritario": "SaaS, herramientas developer, apps móviles, programas de PC y juegos móviles",
+    "Pain point principal": "Validar comprador, recurrencia, distribución y señal de pago antes de construir",
+    "Qué NO construir": "No interpretar score, precio objetivo o referencia competitiva como ingresos o demanda",
+    "Fuente INE (URL)": "",
+    "Nota de comparabilidad": "No es una magnitud económica ni un TAM; son cinco formas de crear software",
+    "Líneas": [
+      "SaaS para agencias",
+      "Herramientas developer",
+      "Apps móviles útiles",
+      "Programas de PC",
+      "Juegos móviles"
+    ],
+    "Oportunidades": 30
+  }
+}

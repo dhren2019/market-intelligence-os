@@ -1,0 +1,12 @@
+node_modules/
+.next/
+playwright-report/
+test-results/
+coverage/
+.env
+.env.local
+data/mio-data/
+data/mio-data-action/
+data/runtime/
+.hallmark/screens/
+
