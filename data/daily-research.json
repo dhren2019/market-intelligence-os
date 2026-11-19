@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-19",
+  "refreshPolicy": "Solo añadir o modificar entradas con fuente y fecha; nunca inventar métricas",
+  "items": [
+    {
+      "id": "sensor-2025-mobile-spend",
+      "title": "Las apps no-juego superan por primera vez a los juegos en gasto IAP",
+      "type": "Gasto observado (estimación)",
+      "publishedAt": "2026-01-21",
+      "observedAt": "2026-11-19",
+      "period": "2025",
+      "geography": "Mundo",
+      "metric": {
+        "value": 167,
+        "unit": "miles de millones USD IAP total apps+juegos",
+        "changeYoYPercent": 10
+      },
+      "finding": "Sensor Tower estima 167.000 M$ en IAP global en 2025; las apps no-juego crecieron un 21 % interanual y superaron al gaming.",
+      "opportunity": "Investigar productos de utilidad, IA y contenido de alta frecuencia. Requiere validación de retención y adquisición.",
+      "url": "https://sensortower.com/press/press-release-boosted-by-gen-ai-services-consumers-spent-more-money-in-apps-than-games-for-first-time",
+      "confidence": "Alta para la cifra publicada; estimación de proveedor, no auditoría"
+    },
+    {
+      "id": "appmagic-h1-puzzle",
+      "title": "Puzzle: 4.900 M$ en H1 2026, de los que ~2.400 M$ son match-3",
+      "type": "Gasto IAP estimado",
+      "publishedAt": "2026-07-23",
+      "observedAt": "2026-11-19",
+      "period": "2026-H1",
+      "geography": "Mundo",
+      "metric": {
+        "value": 4.9,
+        "unit": "miles de millones USD netos IAP puzzle H1"
+      },
+      "finding": "AppMagic sitúa Puzzle por encima del 44 % de ingresos casual y Match-3 en aproximadamente la mitad del género. Las cifras excluyen publicidad.",
+      "opportunity": "Probar un minijuego original con mecánica sort/merge, sin presupuestar éxito por pertenecer a la categoría.",
+      "url": "https://gameindustrylibrary.com/documents/casual-games-report-h1-2026-growth-beneath-the-still-surface",
+      "confidence": "Media-alta: resumen metodológico de AppMagic"
+    },
+    {
+      "id": "sensor-aug2026-games",
+      "title": "Honor of Kings, Gossip Harbor, Whiteout, Royal Match y Candy Crush lideran agosto",
+      "type": "Ranking publicado",
+      "publishedAt": "2026-09-01",
+      "observedAt": "2026-11-19",
+      "period": "2026-08",
+      "geography": "Mundo",
+      "finding": "Sensor Tower publica el top 5 mundial por facturación móvil en agosto de 2026, con mezcla de MOBA, merge, 4X y match-3.",
+      "opportunity": "Descomponer monetización por vidas/energía, progresión, eventos y paquetes, sin copiar assets o sistemas protegidos.",
+      "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+      "confidence": "Alta sobre el orden; no se reproducen ingresos por título sin cifra pública"
+    },
+    {
+      "id": "g2-agents-2026",
+      "title": "86 % de compradores B2B encuestados adquirió agentes IA en 12 meses",
+      "type": "Encuesta de compradores",
+      "publishedAt": "2026-10-14",
+      "observedAt": "2026-11-19",
+      "period": "2026",
+      "geography": "Internacional (muestra G2)",
+      "metric": {
+        "value": 86,
+        "unit": "% encuestados, no empresas del mundo"
+      },
+      "finding": "En el informe G2 Agentic Chasm, el 66 % declara agentes en producción limitada o ampliada y el 31 % dedica al menos seis horas semanales a supervisarlos.",
+      "opportunity": "Agentes supervisores, control de calidad, costes y cumplimiento del trabajo; no más asistentes genéricos.",
+      "url": "https://sell.g2.com/g2-2026-ai-agents-insight-report",
+      "confidence": "Alta para afirmación publicada; muestra no necesariamente representativa"
+    },
+    {
+      "id": "gartner-saas-2030",
+      "title": "Gartner proyecta 234.000 M$ de gasto SaaS expuesto a arbitraje agéntico",
+      "type": "Previsión / escenario, NO inversión",
+      "publishedAt": "2026-07-01",
+      "observedAt": "2026-11-19",
+      "period": "hasta 2030",
+      "geography": "Mundo",
+      "metric": {
+        "value": 234,
+        "unit": "miles de millones USD de gasto expuesto"
+      },
+      "finding": "Gartner estima una exposición equivalente a alrededor del 20 % del gasto SaaS de aplicaciones empresariales en 2030. No significa que se haya invertido ni ahorrado esta cantidad.",
+      "opportunity": "Evaluar agentes que entregan un resultado medible integrándose con software existente.",
+      "url": "https://www.gartner.com/en/newsroom/press-releases/2026-07-01-gartner-says-us-dollars-234-billion-in-enterprise-application-software-spend-is-at-risk-from-agentic-artificial-intelligence",
+      "confidence": "Previsión de consultora; no dato realizado"
+    },
+    {
+      "id": "yc-rfs-2027",
+      "title": "Y Combinator enfoca nuevas startups hacia infraestructura y economía física",
+      "type": "Tesis de incubadora, NO financiación",
+      "publishedAt": "2026-11-01",
+      "observedAt": "2026-11-19",
+      "period": "Winter 2027",
+      "geography": "Estados Unidos / global",
+      "finding": "La página oficial de Requests for Startups destaca infraestructura, software especializado y sistemas para llevar inteligencia a la economía física.",
+      "opportunity": "Examinar software de campo, infraestructura para pequeñas apps y automatización con comprador profesional identificable.",
+      "url": "https://www.ycombinator.com/rfs",
+      "confidence": "Alta para tesis publicadas; fecha exacta de publicación individual no confirmada"
+    }
+  ]
+}
