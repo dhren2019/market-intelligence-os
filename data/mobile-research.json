@@ -22,6 +22,16 @@
       "title": "Google AI Studio Carbon official showcase",
       "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase",
       "finding": "Publicación 10 noviembre 2026: demos reales de juegos 3D, isométricos y simulaciones generados con Carbon. No garantiza publicación Android/iOS."
+    },
+    {
+      "title": "Strava · modelo con ingresos declarados y IAP estimado",
+      "url": "https://press.strava.com/articles/strava-finalizes-leadership-team-for-next-stage-of-growth",
+      "finding": "En agosto 2025 Strava declaró acercarse a 500 MUSD de ARR a escala global (negocio completo, no facturación auditada). AppMagic atribuye >171 MUSD IAP estimado en 2026 hasta su análisis de octubre. No es demostración de venta para una app deportiva nueva.",
+      "additionalSource": "https://appmagic.rocks/blog/strava-growth-story",
+      "metricClasses": [
+        "ARR empresarial declarado",
+        "IAP estimado por proveedor"
+      ]
     }
   ],
   "items": [
