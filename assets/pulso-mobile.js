@@ -27,7 +27,7 @@ function getCase(id){return state.items.find(x=>x.id===id)}
 function tag(x){return x.status==="candidate"?'<span class="pm-tag pm-good">Validar primero</span>':'<span class="pm-tag pm-risk">Laboratorio · alto riesgo</span>'}
 function pic(x,dim="card"){
  const src=sourceImage(x.imageUrl);
- return `<div class="pm-photo pm-photo-${dim}">${src?`<img src="${esc(src)}" loading="lazy" alt="Imagen publicada por ${esc(x.compare?.[0]?.name||"Google AI Studio")}; referencia externa, no es el producto propuesto">`:'<div class="pm-photo-fallback">◈</div>'}<span>${x.kind==="carbon-game"?"DEMO GOOGLE CARBON":"CAPTURA DE PRODUCTO REAL"}</span></div>`;
+ return `<div class="pm-photo pm-photo-${dim}">${src?`<img src="${esc(src)}" loading="lazy" alt="${x.kind==="carbon-game"?"Captura oficial de una demo de Google AI Studio Carbon, distinta del juego propuesto":"Imagen de producto comparable "+esc(x.compare?.[0]?.name||"oficial")}, solo para análisis">`:'<div class="pm-photo-fallback">◈</div>'}<span>${x.kind==="carbon-game"?"DEMO GOOGLE CARBON":"CAPTURA DE PRODUCTO REAL"}</span></div>`;
 }
 function caseCard(x){
  return `<a href="#mobile-study/${esc(x.id)}" class="pm-item-card" data-pm-kind="${esc(x.kind)}">${pic(x)}<div class="pm-item-content"><div class="pm-item-overline"><span>${x.kind==="carbon-game"?"🎮 JUEGO CARBON":"📱 APP FREEMIUM"}</span><span>${esc(x.sector)}</span></div><h3>${esc(x.name)}</h3><p>${esc(x.tagline)}</p><div class="pm-item-compare"><img src="${esc(favicon(x.compare[0].url))}" alt="" loading="lazy"><span>Comparable: <strong>${esc(x.compare[0].name)}</strong></span></div><div class="pm-item-bottom">${tag(x)}<strong>Estudio completo →</strong></div></div></a>`;
@@ -79,7 +79,7 @@ function render(){
  nav();
  const mobile=isMobile();
  document.body.classList.toggle("pulso-mobile-mode",mobile);
- if(mobile&&state.items.length){const id=location.hash.startsWith("#mobile-study/")?decodeURIComponent(location.hash.slice("#mobile-study/".length)):null;const x=id?getCase(id):null;if(id&&x){renderStudy(x)}else{renderIndex()}if(state.last!==location.hash){state.last=location.hash;window.scrollTo(0,0)}}
+ if(mobile&&state.items.length){const id=location.hash.startsWith("#mobile-study/")?decodeURIComponent(location.hash.slice("#mobile-study/".length)):null;const x=id?getCase(id):null;if(state.renderedHash!==location.hash||state.renderedTab!==state.activeTab){if(id&&x){renderStudy(x)}else{renderIndex()}state.renderedHash=location.hash;state.renderedTab=state.activeTab;}if(state.last!==location.hash){state.last=location.hash;window.scrollTo(0,0)}}
  addHome();
  addOppsShortcut();
 }
