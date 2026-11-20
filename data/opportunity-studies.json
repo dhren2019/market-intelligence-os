@@ -91,7 +91,7 @@
         },
         {
           "name": "Disseqt AI",
-          "url": "https://www.eu-startups.com/",
+          "url": "https://www.disseqt.ai/",
           "model": "Seguridad y gobernanza de agentes",
           "price": null,
           "differentiation": "La ronda publicada no equivale a ventas ni demuestra hueco."
@@ -108,6 +108,12 @@
           "label": "Producto LangSmith",
           "url": "https://www.langchain.com/langsmith/observability",
           "claim": "Tracing, seguimiento y herramientas para agentes.",
+          "kind": "producto real"
+        },
+        {
+          "label": "Disseqt · plataforma oficial",
+          "url": "https://www.disseqt.ai/",
+          "claim": "Controles de gobernanza, pruebas y auditoría de agentes; las cifras promocionales de la web no se interpretan como ventas verificadas.",
           "kind": "producto real"
         }
       ]
