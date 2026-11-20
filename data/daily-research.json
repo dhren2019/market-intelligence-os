@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19",
+  "updatedAt": "2026-11-20",
   "refreshPolicy": "Solo añadir o modificar entradas con fuente y fecha; nunca inventar métricas",
   "items": [
     {
@@ -123,6 +123,191 @@
       "mvpDays": 21,
       "validation": "12 entrevistas y 3 compromisos de pilotos pagados",
       "stopRule": "No desarrollar si los entrenadores no tienen dolor recurrente ni se comprometen a pagar"
+    },
+    {
+      "id": "disseqt-2026-11-18",
+      "title": "Disseqt AI capta €7,3 M para asegurar agentes empresariales",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-18",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Financiación anunciada de €7,3 M; no es facturación.",
+      "opportunity": "Piloto de control de errores, permisos y trazabilidad de agentes para pymes.",
+      "url": "https://www.eu-startups.com/home/",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "Gobernanza de agentes",
+      "subsector": "auditoría de agentes",
+      "products": [
+        "Disseqt AI",
+        "Geordie AI"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Responsables de operaciones y agencias IA",
+      "mvpDays": 14,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "payhawk-2026-11-18",
+      "title": "Payhawk anuncia ronda de €255,14 M para automatización financiera",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-18",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Ronda anunciada de €255,14 M; valoración €1.820 M, no ingresos.",
+      "opportunity": "Control ligero de justificantes y excepciones para asesorías; evitar competir en tarjetas y pagos.",
+      "url": "https://www.eu-startups.com/?id=1392",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "Fintech B2B",
+      "subsector": "control de gastos",
+      "products": [
+        "Payhawk"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Asesorías y responsables financieros",
+      "mvpDays": 21,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "fermat-2026-11-17",
+      "title": "Fermat (Barcelona) capta €7,26 M para IA aplicada al diseño de moda",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-17",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Financiación Seed de €7,26 M; ventas no verificadas.",
+      "opportunity": "Checklist y validación de fichas técnicas para talleres pequeños.",
+      "url": "https://www.eu-startups.com/?id=22",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "SaaS vertical",
+      "subsector": "moda y producción",
+      "products": [
+        "Fermat"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Talleres y marcas de moda",
+      "mvpDays": 14,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "previsia-2026-11-17",
+      "title": "Previsia anuncia €3,8 M y crecimiento de ingresos 2,5x",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-17",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Ronda €3,8 M; empresa declara crecimiento 2,5x y rentabilidad desde 2025, sin importe de ingresos.",
+      "opportunity": "Microauditoría documental y seguimiento de acciones preventivas para mediadores.",
+      "url": "https://www.eu-startups.com/?ibsa=get_content&id=1415",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "Insurtech",
+      "subsector": "prevención de riesgos",
+      "products": [
+        "Previsia"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Corredurías de seguros",
+      "mvpDays": 21,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "mountain-2026-11-18",
+      "title": "MountAIn capta €7,3 M para ejecutar IA en chips económicos",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-18",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Financiación anunciada de €7,3 M; chip de menos de €9 citado, sin ventas verificadas.",
+      "opportunity": "Herramienta para comparar latencia y coste de inferencia local en dispositivos concretos.",
+      "url": "https://www.eu-startups.com/tag/gpus/",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "IA",
+      "subsector": "edge AI",
+      "products": [
+        "MountAIn"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Integradores IoT",
+      "mvpDays": 21,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "atomico-2026-11-18",
+      "title": "Atomico proyecta €73.000 M de inversión tech europea en 2026",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-18",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Proyección anual de €73.000 M (+62% frente a 2025); no cierre anual observado.",
+      "opportunity": "Buscar nichos B2B rentables sin interpretar financiación VC como demanda directa.",
+      "url": "https://www.eu-startups.com/?ibsa=share&id=830%2F1000",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "Capital riesgo",
+      "subsector": "inversión europea",
+      "products": [
+        "Atomico"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Fundadores B2B",
+      "mvpDays": 7,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "genesis-2026-11-17",
+      "title": "Genesis AI anuncia ronda de $500 M para robótica",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-17",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Financiación de $500 M y valoración reportada $3.500 M; ingresos no verificados.",
+      "opportunity": "Herramientas de documentación y control de pruebas para integradores pequeños.",
+      "url": "https://sifted.eu/themes/startups/truesearch.com",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "Robótica",
+      "subsector": "IA física",
+      "products": [
+        "Genesis AI"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Integradores de automatización",
+      "mvpDays": 21,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
+    },
+    {
+      "id": "modelml-2026-11-17",
+      "title": "Model ML capta €227 M para agentes financieros",
+      "type": "Noticia / señal de inversión (no ventas)",
+      "publishedAt": "2026-11-17",
+      "observedAt": "2026-11-20",
+      "period": "2026-11",
+      "geography": "Europa",
+      "finding": "Financiación anunciada de €227 M; ingresos no verificados.",
+      "opportunity": "Evaluación de outputs y evidencias para flujos financieros repetitivos.",
+      "url": "https://www.eu-startups.com/author/david-cendon-garcia/",
+      "confidence": "Media: noticia publicada; hipótesis comercial no validada",
+      "sector": "IA B2B",
+      "subsector": "agentes financieros",
+      "products": [
+        "Model ML"
+      ],
+      "monetization": "Hipótesis de suscripción B2B; precio y facturación no verificadas",
+      "buyer": "Consultoras y equipos financieros",
+      "mvpDays": 14,
+      "validation": "10 entrevistas con compradores y 3 compromisos de piloto pagado antes de desarrollar",
+      "stopRule": "Parar si no hay 3 compromisos pagados tras 15 conversaciones"
     }
   ]
 }
