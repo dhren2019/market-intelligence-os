@@ -448,6 +448,1169 @@
           "kind": "encuesta"
         }
       ]
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "candidate",
+      "ease": "Alta en PWA; offline fiable y firmas complejas quedan fuera del MVP.",
+      "frequency": "Revisiones semanales en obra activa y picos de cierre; medir por subcontrata.",
+      "value": "Tiempo de desplazamientos/repasos y posibles retenciones; ahorro a medir en cada piloto.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Piloto 49–99 €/obra o suscripción 39 €/mes, hipótesis de test y no ingresos.",
+      "buyer": "Jefes de obra y pequeñas constructoras con 5–30 subcontratas",
+      "positive": [
+        "Incidencias repetidas con costes de desplazamiento.",
+        "La entrega con evidencia es demostrable ante un cliente.",
+        "Se puede vender como acta digital manual el primer día."
+      ],
+      "negative": [
+        "Fieldwire y PlanRadar ya resuelven gran parte del flujo.",
+        "Uso por proyecto, no necesariamente cada semana del año.",
+        "Las subcontratas pueden rechazar utilizar otra app."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Semanal en obras con actividad; confirmar recurrencia anual"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Revisitas evitadas y tiempo de acta"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Jefe de obra"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Primer acta fotografiada de pago"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Crear actas manuales para 2 obras y medir minutos por incidencia."
+        },
+        {
+          "days": 14,
+          "text": "PWA de incidencias, foto antes/después, asignación y PDF con marca blanca."
+        },
+        {
+          "days": 21,
+          "text": "Avisos, firma de conformidad y 2 pilotos activos en obras diferentes."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "Fieldwire",
+          "url": "https://www.fieldwire.com/pricing/",
+          "model": "Gestión integral de obra, tareas e incidencias",
+          "differentiation": "Más completo. La hipótesis es un cierre de obra con PDF en menos de 2 minutos.",
+          "price": "Pro desde 39 USD/usuario/mes (según comparativa oficial)",
+          "priceSource": "https://www.fieldwire.com/blog/construction-jobsite-management-software/"
+        },
+        {
+          "name": "PlanRadar",
+          "url": "https://www.planradar.com/product/defect-management/",
+          "model": "Incidencias, planos, tickets y reportes",
+          "differentiation": "El nicho no es nuevo: habría que ganar en simplicidad extrema para micropromotoras.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "INE · construcción 2024",
+          "url": "https://www.ine.es/dyngs/Prensa/EEESCONS2024.htm",
+          "claim": "205.204 M€ de cifra de negocios: contexto macro, no mercado de apps.",
+          "kind": "estadística oficial"
+        },
+        {
+          "label": "Fieldwire · precios y producto",
+          "url": "https://www.fieldwire.com/blog/construction-jobsite-management-software/",
+          "claim": "Plan de 39 USD/usuario/mes publicado, además de punch lists y forms.",
+          "kind": "precios oficiales"
+        },
+        {
+          "label": "Fieldwire · caso cliente",
+          "url": "https://www.fieldwire.com/ie/",
+          "claim": "Ogilvie Fire Protection declara hasta 25.000 GBP anuales de ahorro. No son ventas de Fieldwire.",
+          "kind": "caso de éxito de proveedor"
+        }
+      ],
+      "id": "cierre-obra-evidencias",
+      "title": "CierreObra",
+      "subtitle": "Fotos, responsables y conformidad para cerrar incidencias de subcontratas",
+      "sector": "Construcción",
+      "subsector": "Control de repasos y entrega de obra",
+      "art": "construction",
+      "description": "Al terminar una obra quedan repasos: una puerta que roza, remates sin terminar o una instalación pendiente. Esta PWA crea la incidencia desde el móvil, asigna al oficio, exige foto de resolución y genera el acta PDF para el cliente.",
+      "caseStudy": "Fieldwire ya vende checklists, punch lists y planos; publica en su propia comparativa los planes Pro 39, Business 64 y Business Plus 89 USD/usuario/mes (consultar modalidades antes de contratar). Un caso de Fieldwire afirma ahorrar hasta 25.000 GBP al año a Ogilvie Fire Protection; es un ahorro declarado por un cliente, NO facturación de Fieldwire ni resultado extrapolable. Diferenciarse requiere centrarse en el acta de cierre sin implantar un sistema de obra completo.",
+      "whyNow": "El INE registra 205.204 M€ de facturación de la construcción española en 2024, cifra contextual y no TAM de este software. Un acta manual pagada permite validar el dolor sin código.",
+      "validation": "Entrevistar 12 jefes de obra, obtener 2 actas reales pagadas y medir 10 incidencias por obra.",
+      "stopRule": "Sin 2 pilotos pagados o si todos usan su software actual sin trabajo duplicado."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "candidate",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "En cada cambio de turno; frecuencia diaria en fábricas con varios equipos.",
+      "value": "Horas perdidas de diagnóstico y pequeñas paradas; ahorro no cuantificado.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Suscripción por planta, precio a testar 49–99 €/mes (hipótesis).",
+      "buyer": "Jefes de mantenimiento y encargados de plantas pequeñas con turnos",
+      "positive": [
+        "Uso diario en fábricas con turnos.",
+        "Comprador y coste operativo identificables.",
+        "Primera versión offline de datos complejos: formulario + foto + exportación."
+      ],
+      "negative": [
+        "UpKeep, MaintainX y herramientas internas compiten de forma indirecta.",
+        "Adopción operativa por personal no técnico.",
+        "Un registro mal usado puede generar falsa confianza sobre seguridad."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Turnos diarios en planta"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Diagnósticos duplicados y horas paradas"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Jefe de mantenimiento"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Servicio de resumen semanal manual"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Entrevistas a encargados y 10 relevos simulados con datos no sensibles."
+        },
+        {
+          "days": 14,
+          "text": "PWA con equipo/máquina, nota, foto, prioridad, acuse y exportación de turno."
+        },
+        {
+          "days": 21,
+          "text": "Pilotos reales en 2 plantas con métricas de pendientes no resueltos."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "UpKeep",
+          "url": "https://upkeep.com/pricing/",
+          "model": "CMMS mantenimiento por usuarios",
+          "differentiation": "Suite completa; evitar competir en mantenimiento predictivo.",
+          "price": "Precio de entrada anunciado: 24 USD/usuario/mes",
+          "priceSource": "https://upkeep.com/es/"
+        },
+        {
+          "name": "MaintainX",
+          "url": "https://www.getmaintainx.com/",
+          "model": "Órdenes, comunicación y operaciones",
+          "differentiation": "Competidor ya integrado en fábrica; solo enfocarse en relevo independiente.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "INE · industria 2024",
+          "url": "https://www.ine.es/dyngs/Prensa/EEESI2024.htm",
+          "claim": "857.826 M€ facturados por el sector (contexto).",
+          "kind": "estadística oficial"
+        },
+        {
+          "label": "UpKeep · producto y precio",
+          "url": "https://upkeep.com/es/",
+          "claim": "CMMS y precio de entrada publicado de 24 USD por usuario/mes.",
+          "kind": "web oficial"
+        }
+      ],
+      "id": "relevo-turno-industrial",
+      "title": "RelevoTurno",
+      "subtitle": "Que el turno de mañana sepa qué máquina falló y qué queda pendiente",
+      "sector": "Industria",
+      "subsector": "Mantenimiento y fábrica pequeña",
+      "art": "industry",
+      "description": "Cada turno deja tres datos: qué máquina ha dado problemas, qué se hizo y qué debe revisar el siguiente equipo. El relevo llega al móvil con fotos, prioridad y acuse de lectura. No sustituye al software de mantenimiento de la fábrica.",
+      "caseStudy": "UpKeep comercializa un CMMS con órdenes, inventario y mantenimiento preventivo; su web publica un precio inicial de 24 USD por usuario/mes para mantenimiento. Una solución de relevo más pequeña solo tiene sentido en plantas que aún usan cuaderno, Excel o chat sin integración.",
+      "whyNow": "Industria española: 857.826 M€ de facturación en 2024 según INE; no equivale a presupuesto de software. Un fallo mal comunicado es observable con una auditoría presencial.",
+      "validation": "10 entrevistas y 2 pilotos pagados antes de prometer reducción de paradas.",
+      "stopRule": "No mejora el relevo actual o las plantas ya tienen un CMMS que los operarios usan a diario."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "candidate",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Cada día de reparto con incidencias; algunos clientes tendrán baja tasa semanal.",
+      "value": "Abonos incorrectos y horas en incidencias; valor por reclamar cuantificable.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Cobro por repartidor / mes o 0,50 € por excepción como experimentos, no tarifas contrastadas.",
+      "buyer": "Distribuidores de hostelería, alimentación y ferretería con reparto propio",
+      "positive": [
+        "Las discrepancias se pueden medir en euros.",
+        "Se integra al proceso con un enlace sin montar gestión de rutas.",
+        "Repartidor y administrativo usan el mismo dato."
+      ],
+      "negative": [
+        "Competidores directos tienen prueba de entrega y rechazos.",
+        "Las incidencias pueden ser escasas en rutas fiables.",
+        "Fricción por introducir datos extra a conductores."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Frecuente solo en distribuidores con incidencias repetidas"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Abonos y horas de reclamación"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable de operaciones de reparto"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Piloto de 20 incidencias históricas"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Conseguir 20 albaranes y reclamaciones reales anonimizadas de 3 distribuidores."
+        },
+        {
+          "days": 14,
+          "text": "PWA de foto, cantidad entregada/rechazada, CSV y PDF de incidencia."
+        },
+        {
+          "days": 21,
+          "text": "Exportaciones por cliente y piloto con reparto real."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "Track-POD",
+          "url": "https://www.track-pod.com/features/item-level-proof-of-delivery/",
+          "model": "Prueba electrónica de entrega y optimización de rutas",
+          "differentiation": "Ya hace prueba parcial, foto y motivos de rechazo: competir solo en conciliación posterior.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "Onfleet",
+          "url": "https://onfleet.com/pricing",
+          "model": "Gestión integral de reparto",
+          "differentiation": "No construir ruteo; microherramienta de excepción en distribuidores pequeños.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Track-POD · prueba por artículo",
+          "url": "https://www.track-pod.com/features/item-level-proof-of-delivery/",
+          "claim": "Documenta cantidades parciales, rechazos, fotografías y el caso SCIENTIA; cifra de cliente auto-reportada.",
+          "kind": "producto y caso cliente"
+        },
+        {
+          "label": "INE · estructura empresarial",
+          "url": "https://www.ine.es/dyngs/Prensa/DAE2024.htm",
+          "claim": "El sector servicios concentra actividad empresarial; no inferir TAM de mensajería.",
+          "kind": "estadística oficial"
+        }
+      ],
+      "id": "prueba-excepciones-entrega",
+      "title": "EntregaExcepción",
+      "subtitle": "Convierte entregas parciales y rechazos en reclamaciones con pruebas",
+      "sector": "Transporte y logística",
+      "subsector": "Prueba de entrega B2B",
+      "art": "logistics",
+      "description": "Un chófer deja 8 de 10 cajas o el cliente rechaza un producto. La herramienta no busca rutas: recoge las cantidades finales y las fotos, genera aviso para administración y deja la reclamación preparada con prueba de entrega.",
+      "caseStudy": "Track-POD ya permite prueba de entrega por artículo, fotos, geolocalización y rechazo parcial. Publica el caso de SCIENTIA: afirma que las disputas bajaron un 99 %, cifra de un cliente según proveedor y no una media comprobada. La hipótesis de entrada es el flujo administrativo del distribuidor que NO necesita contratar software completo de rutas.",
+      "whyNow": "Track-POD demuestra que la captura con evidencia tiene compradores reales. No hay prueba de que el submódulo independiente sea suficiente; el piloto debe medir reclamaciones que hoy se dejan sin gestionar.",
+      "validation": "15 entrevistas, 3 conjuntos de incidencias y 2 pilotos pagados.",
+      "stopRule": "Ninguna reclamación recuperable o el cliente ya usa ePOD sin problemas."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "candidate",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Semanal en restaurantes con reposición recurrente.",
+      "value": "Variación de coste por receta y margen potencial; medir en el negocio.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Suscripción por grupo: 49 €/mes como hipótesis, no precio comparable.",
+      "buyer": "Grupos de 2–12 restaurantes con responsables de compras y carta estable",
+      "positive": [
+        "Proceso recurrente y valor expresable en euros.",
+        "Se puede construir solo con CSV inicialmente.",
+        "Preventa con informe manual antes de desarrollar."
+      ],
+      "negative": [
+        "MarketMan ya tiene alertas de variación de precios.",
+        "Datos de recetas incompletos impiden estimar margen.",
+        "El TPV/ERP puede incluir la función."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Facturas semanales de proveedores"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Incremento verificable del coste por ingrediente"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable de compras o propietario"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Auditoría de 3 recetas y 2 proveedores"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Comparar manualmente 2 semanas de facturas de 3 locales."
+        },
+        {
+          "days": 14,
+          "text": "Importación CSV y reglas de cambios, panel de productos con avisos."
+        },
+        {
+          "days": 21,
+          "text": "Recetas simples, notificaciones y prueba de ahorro documentada."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "MarketMan",
+          "url": "https://www.marketman.com/pricing-for-restaurant-inventory-management-system",
+          "model": "Inventario y compras de restaurantes",
+          "differentiation": "Tiene cambios de precio y recetas; la diferenciación sería solo CSV sin migración.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "Lightspeed Restaurant",
+          "url": "https://www.lightspeedhq.com/pos/restaurant/",
+          "model": "TPV e integración comercial",
+          "differentiation": "La idea NO exige reemplazar el TPV.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "MarketMan · producto y controles de coste",
+          "url": "https://www.marketman.com/platform/restaurant-inventory-management-software",
+          "claim": "Incluye inventario, recetas y variaciones de precios.",
+          "kind": "web oficial"
+        },
+        {
+          "label": "MarketMan · compras",
+          "url": "https://es.marketman.com/platform/restaurant-purchasing-software-and-order-management",
+          "claim": "Catálogos y comparaciones entre proveedores.",
+          "kind": "web oficial"
+        }
+      ],
+      "id": "alerta-coste-insumo",
+      "title": "CosteInsumo",
+      "subtitle": "Avisa al restaurante si la nueva factura de proveedor se come el margen",
+      "sector": "Hostelería y restauración",
+      "subsector": "Control de precios de proveedores",
+      "art": "hospitality",
+      "description": "Un local sube cada semana el Excel o CSV con las compras. El programa marca productos que suben, compara precios con el proveedor anterior y estima el impacto en las recetas guardadas. No hace pedidos ni conecta con el TPV en el MVP.",
+      "caseStudy": "MarketMan vende inventario, compras, recetas y control de coste, y su sitio confirma alertas de cambios de precio y cálculo de costes. Es un competidor funcional importante, no un nicho libre. La apuesta es un monitor CSV para grupos que no desean migrar TPV ni recetas.",
+      "whyNow": "Los precios cambiantes son comprobables en facturas reales; la entrada es una auditoría manual de 3 recetas antes de construir.",
+      "validation": "12 negocios con más de 1 local y 2 informes pagados.",
+      "stopRule": "Si el 80% de entrevistados tiene ya alertas equivalentes o no facilita datos históricos."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "ScreenshotOne: >25.000 USD MRR, reportados por entrevista al fundador el 5/03/2026, alcance geográfico no desglosado. No auditado; no son ingresos de ReleaseProof.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "ScreenshotOne declaró superar 25.000 USD de MRR en 2026 tras 4 años. No hay tendencia temporal auditada ni TAM para ReleaseProof.",
+      "status": "candidate",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Semanal en agencias activas con entregas y cambios.",
+      "value": "Horas de correcciones, reclamaciones y tickets de clientes; a cuantificar.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Suscripción por agencia y créditos por informe. Hipótesis 29–49 €/mes, distinta de tarifa de competidor.",
+      "buyer": "Agencias WordPress, ecommerce y desarrolladores que hacen despliegues semanales",
+      "positive": [
+        "Evidencia de facturación individual atribuida a ScreenshotOne en una entrevista.",
+        "Proceso de QA repetible con Playwright.",
+        "Canal directo a agencias y servicios de auditoría manual."
+      ],
+      "negative": [
+        "Herramientas de screenshot y QA visual ya compiten.",
+        "Capturas dinámicas generan falsos positivos.",
+        "La distribución y ventas pueden costar más que el software."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Cada publicación semanal de clientes"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Incidencias evitadas y horas QA"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Director técnico o responsable de agencia"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Auditoría de despliegue antes de automatizar"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Tres auditorías manuales pagadas en webs de agencias."
+        },
+        {
+          "days": 14,
+          "text": "Playwright: 2 breakpoints, capturas, diferencias básicas y PDF marca blanca."
+        },
+        {
+          "days": 21,
+          "text": "Checks opcionales para formularios públicos y 2 agencias piloto."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "ScreenshotOne",
+          "url": "https://screenshotone.com/pricing/",
+          "model": "API de capturas de pantalla web",
+          "differentiation": "Tiene API potente; construir informe final con flujos de QA.",
+          "price": "No transcrito: consultar planes vigentes",
+          "priceSource": "https://screenshotone.com/pricing/"
+        },
+        {
+          "name": "Checkly",
+          "url": "https://www.checklyhq.com/pricing/",
+          "model": "Tests sintéticos y disponibilidad web",
+          "differentiation": "Más técnico; enfoque en evidencia para el cliente de agencia.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "Better Stack",
+          "url": "https://betterstack.com/pricing",
+          "model": "Monitorización y estado de servicios",
+          "differentiation": "Monitoriza uptime, pero no el acta visual de aprobación al cliente.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Indie Hackers · caso ScreenshotOne",
+          "url": "https://www.indiehackers.com/post/tech/hitting-25k-mrr-by-making-his-goals-less-ambitious-jQRZDnzwm8DFAaS4Xrq0",
+          "claim": ">25.000 USD al mes de MRR declarados en entrevista del 5/03/2026: producto ScreenshotOne, geografía no especificada, NO auditado.",
+          "kind": "ingresos declarados"
+        },
+        {
+          "label": "ScreenshotOne · precios",
+          "url": "https://screenshotone.com/pricing/",
+          "claim": "API de screenshots con ofertas gratuitas y pagadas.",
+          "kind": "precio/producto"
+        },
+        {
+          "label": "Checkly · producto",
+          "url": "https://www.checklyhq.com/pricing/",
+          "claim": "Checkly vende pruebas sintéticas y observabilidad web.",
+          "kind": "producto real"
+        }
+      ],
+      "id": "release-proof-agency",
+      "title": "ReleaseProof",
+      "subtitle": "Prueba visual de que una web funciona antes y después de publicarla",
+      "sector": "Tecnología / Dev tools",
+      "subsector": "QA de lanzamientos web para agencias",
+      "art": "screens",
+      "description": "Antes de entregar una web, el equipo guarda capturas de sus páginas principales en móvil y escritorio, comprueba que formularios y CTA no han desaparecido y genera un informe para el cliente. El objetivo es evidencia de entrega, no competir como plataforma de tests enterprise.",
+      "caseStudy": "ScreenshotOne, API especializada en capturas web, aparece en una entrevista de Indie Hackers de marzo de 2026 con más de 25.000 USD/mes de MRR declarado por su fundador. Es facturación recurrente declarada de ScreenshotOne, sin auditoría ni desglose geográfico, NO ventas de nuestro microproducto. Checkly y Better Stack también ofrecen monitorización, pero con más amplitud técnica.",
+      "whyNow": "Existe dinero en el flujo de captura web (caso ScreenshotOne). La diferencia potencial es el PDF de conformidad para agencias, con coste pequeño de infraestructura al usar capturas puntuales.",
+      "validation": "20 agencias, 3 auditorías pagadas y tasa de alertas falsas inferior al 15% en ejemplos acordados.",
+      "stopRule": "No se venden 3 auditorías o falsos positivos invalidan el ahorro."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "candidate",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Varias veces por semana en carteras de apartamentos con reservas.",
+      "value": "Reclamaciones evitadas, revisitas, tiempo de supervisión; medir in situ.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Cuota 1–3 €/apartamento/mes como hipótesis de test, no tarifa confirmada.",
+      "buyer": "Gestores profesionales de 8–40 apartamentos turísticos con servicio de limpieza externo",
+      "positive": [
+        "El operador trabaja muchas veces por semana.",
+        "Fotografías generan evidencia y control.",
+        "MVP móvil sencillo con clientes B2B locales."
+      ],
+      "negative": [
+        "Breezeway y PMS completos ya incluyen checklists.",
+        "Integración con calendarios y privacidad.",
+        "Poca escala si una cartera es pequeña."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Entre huéspedes: 2–5 inspecciones/semana si hay ocupación"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Revisitas y reclamaciones con coste"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Gestor de apartamentos"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Piloto manual por 10 cambios de huésped"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Auditar 10 limpiezas reales y pedir un piloto pagado."
+        },
+        {
+          "days": 14,
+          "text": "PWA con checklist por inmueble, fotos, incidencias y acta."
+        },
+        {
+          "days": 21,
+          "text": "Roles de limpiadora/supervisor, alertas y 2 gestores piloto."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "Breezeway",
+          "url": "https://www.breezeway.io/",
+          "model": "Limpieza, inspecciones y mantenimiento",
+          "differentiation": "Competidor directo en workflow; solo encaja una versión más acotada para operadores pequeños.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "hotelkit",
+          "url": "https://hotelkit.net/",
+          "model": "Operaciones y comunicación hotelera",
+          "differentiation": "Cobertura mayor, difícil desplazarlo en hoteles medianos.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Breezeway · casos y producto",
+          "url": "https://www.breezeway.io/resources/library",
+          "claim": "Casos de operaciones de alquiler, con ahorros de clientes declarados por proveedor.",
+          "kind": "casos de estudio"
+        },
+        {
+          "label": "INE · turismo 2025",
+          "url": "https://www.ine.es/dyngs/Prensa/EGATUR1225.htm",
+          "claim": "134.712 M€ de gasto turístico internacional (no comparable con cifra de negocios).",
+          "kind": "estadística oficial"
+        }
+      ],
+      "id": "turnover-fotos-alojamiento",
+      "title": "Turnover Fotos",
+      "subtitle": "Checklist con evidencias para propietarios que gestionan varios apartamentos",
+      "sector": "Turismo y alojamiento",
+      "subsector": "Operaciones de limpieza y mantenimiento",
+      "art": "tourism",
+      "description": "La limpiadora termina, fotografía incidencias y marca reposición de consumibles. El responsable revisa en un único panel y puede demostrar al propietario qué se ha hecho antes de la siguiente entrada.",
+      "caseStudy": "Breezeway ofrece operaciones de limpieza, inspecciones y mantenimiento; publica numerosos casos de clientes y entre ellos afirmaciones de ahorros mensuales superiores a 1.200 USD (caso de DownSouth Holiday Homes), resultados aportados por el proveedor, no ganancias observadas en España. El hueco sería un flujo mínimo que no obligue a usar un PMS empresarial.",
+      "whyNow": "En España el INE publicó 134.712 M€ de gasto turístico internacional en 2025; NO es facturación de gestores de apartamentos ni de software. La recurrencia reside en el operador y sus limpiezas, no en el turista.",
+      "validation": "10 gestores, 2 pilotos pagados, medir tiempo y número de reclamaciones por apartamento.",
+      "stopRule": "Gestores ya tienen app equivalente o el equipo de limpieza no la usa voluntariamente."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "explore",
+      "ease": "Media para repositorio; alta complejidad si se vende como cumplimiento legal completo.",
+      "frequency": "Variable por cliente, quizá mensual en proveedores de múltiples OEM.",
+      "value": "Horas de búsqueda de documentación, multas no cuantificadas; sin atribuir ahorros.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Suscripción por catálogo o proyecto; precio por descubrir.",
+      "buyer": "Fabricantes de componentes y responsables de calidad de proveedores",
+      "positive": [
+        "Marco regulatorio europeo real.",
+        "Documentos y solicitudes a proveedores son procesos observables."
+      ],
+      "negative": [
+        "Calendarios y requisitos cambian según categoría de producto.",
+        "Competencia de PLM/ERP, consultoras y software de compliance.",
+        "No está demostrado que microempresas compren antes de necesitarlo."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Mensual o según fabricante; no demostrado"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Tiempo de documentación, pendiente de cuantificar"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable calidad"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Servicio manual de dossier por SKU"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Identificar 3 cadenas de suministro y una petición real de documentos."
+        },
+        {
+          "days": 14,
+          "text": "Portal simple: SKU, archivo, checklist, solicitud y caducidades."
+        },
+        {
+          "days": 21,
+          "text": "Piloto con 2 proveedores, sin prometer conformidad legal."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "AWS · DPP",
+          "url": "https://aws.amazon.com/blogs/industries/managing-sustainability-data-for-digital-product-passports-with-agentic-ai/",
+          "model": "Arquitecturas y servicios para datos DPP",
+          "differentiation": "Contexto de industria, no rival directo SaaS con precio comparado.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Comisión Europea · ESPR",
+          "url": "https://commission.europa.eu/news-and-media/news/new-law-make-products-eu-market-more-sustainable-2024-07-19_en",
+          "claim": "Reglamento de ecodiseño y marco de pasaportes digitales; plazos por categoría.",
+          "kind": "normativa oficial"
+        },
+        {
+          "label": "AWS · retos de datos de proveedores",
+          "url": "https://aws.amazon.com/blogs/industries/managing-sustainability-data-for-digital-product-passports-with-agentic-ai/",
+          "claim": "Integración de datos de sostenibilidad y trazabilidad en cadenas de suministro.",
+          "kind": "análisis tecnológico"
+        }
+      ],
+      "id": "pasaporte-componentes-b2b",
+      "title": "Pasaporte Componentes",
+      "subtitle": "Recopilar pruebas y datos de proveedores antes de emitir pasaportes de producto",
+      "sector": "Industria",
+      "subsector": "Sostenibilidad / cadena de suministro",
+      "art": "industry",
+      "description": "Un repositorio por referencia para solicitar, comprobar y organizar fichas de materiales, certificados y trazabilidad antes de que un fabricante central solicite los datos. No emitiría un pasaporte legal por sí solo.",
+      "caseStudy": "La Comisión Europea creó el marco de Pasaporte Digital de Producto mediante el ESPR, pero la aplicación por grupos de producto sigue una hoja de ruta. AWS documenta retos de datos y múltiples proveedores. Todavía no se ha identificado un comprador dispuesto a pagar por esta microherramienta concreta.",
+      "whyNow": "Es tendencia regulatoria, no obligación universal hoy. Hacer afirmaciones legales definitivas para todos los productos sería incorrecto.",
+      "validation": "8 entrevistas con calidad industrial y 1 dossier pagado por proveedor.",
+      "stopRule": "Si se necesita certificación o integración empresarial para entregar valor."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "explore",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Semanal por cada cartera de alumnos.",
+      "value": "Clientes retenidos y horas de seguimiento; todavía sin medición.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Piloto 19 €/mes por entrenador como hipótesis; modelo de precio a probar.",
+      "buyer": "Entrenadores independientes con 20–80 clientes a distancia",
+      "positive": [
+        "Trabajo semanal habitual en entrenadores online.",
+        "Comprador reconocible con suscripción propia a clientes."
+      ],
+      "negative": [
+        "Trainerize cubre parte de ese proceso.",
+        "Privacidad y consentimientos.",
+        "Dependencia de exportaciones y plataformas."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Control semanal de todos los clientes"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Bajas evitadas, aún no medidas"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Entrenador online"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Resumen manual de 20 clientes"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Solicitar 5 exportaciones anonimizadas y vender 2 reportes de retención."
+        },
+        {
+          "days": 14,
+          "text": "Dashboard de estado por alumno y resumen semanal."
+        },
+        {
+          "days": 21,
+          "text": "Alertas configurables y piloto con 2 entrenadores."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "ABC Trainerize",
+          "url": "https://www.trainerize.com/pricing/",
+          "model": "Plataforma de entrenamiento y seguimiento",
+          "differentiation": "Competidor muy directo; única salida es interoperabilidad o una población no atendida.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Trainerize · pricing 2026",
+          "url": "https://www.trainerize.com/pricing/",
+          "claim": "Planes, funciones de check-in y coaching automatizado.",
+          "kind": "precios oficiales"
+        },
+        {
+          "label": "Trainerize · cambios de precio",
+          "url": "https://resources.trainerize.com/pricing-changes-2026",
+          "claim": "Actualización de tarifas desde marzo de 2026.",
+          "kind": "aviso oficial"
+        }
+      ],
+      "id": "coach-reporte-adherencia",
+      "title": "Coach Adherence Pulse",
+      "subtitle": "Una sola señal semanal: clientes que dejan de entrenar sin avisar",
+      "sector": "Fitness no clínico",
+      "subsector": "Operaciones de entrenadores online",
+      "art": "fitness",
+      "description": "No es otra app de entrenamientos. Un entrenador recibe un resumen semanal de alumnos que dejaron de registrar sesiones, peso levantado o mensajes de seguimiento. Primero funcionaría con exportaciones CSV y mensajes autorizados, sin acceder a historias clínicas.",
+      "caseStudy": "ABC Trainerize ya ofrece check-ins, programas y automatizaciones de clientes, con planes pagados y cambios de precios en 2026. El reto es demostrar que un resumen independiente no duplica su servicio.",
+      "whyNow": "La retención importa más que acumular clientes, pero no hay evidencia de que entrenadores paguen por otro panel.",
+      "validation": "12 entrenadores y 2 pilotos pagados con un informe semanal útil.",
+      "stopRule": "No hay pago por un resumen que ya ofrece Trainerize."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "explore",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Semanal en agencias que entregan campañas con muchos recursos.",
+      "value": "Horas de auditoría y riesgo de reclamaciones, no monetizado.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Piloto por paquete de activos o suscripción agencia; precio no contrastado.",
+      "buyer": "Agencias que entregan lotes de campañas e imágenes generadas por IA",
+      "positive": [
+        "Cambio tecnológico documentado en 2026.",
+        "El problema puede mostrarse con un lote de assets reales."
+      ],
+      "negative": [
+        "Adobe ya incluye inspección de credenciales.",
+        "C2PA no prueba que una imagen sea verdadera ni que su uso esté licenciado.",
+        "No todas las imágenes tienen metadatos y los metadatos pueden perderse."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Por cada campaña si hay suficiente volumen"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Tiempo documental, no demostrado"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Director creativo o account"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Auditoría manual de 100 recursos"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Auditar manualmente un lote de 100 imágenes y medir incidencias reales."
+        },
+        {
+          "days": 14,
+          "text": "Carga local de archivos, checks de metadatos y dossier PDF."
+        },
+        {
+          "days": 21,
+          "text": "Pilotos con 2 agencias y exportación de cadena de aprobaciones."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "Adobe Content Authenticity",
+          "url": "https://contentauthenticity.adobe.com/",
+          "model": "Inspección de credenciales C2PA",
+          "differentiation": "Función central gratuita/empresarial que reduce el posible hueco.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Adobe · C2PA empresarial octubre 2026",
+          "url": "https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials",
+          "claim": "Integración y visualización de metadatos C2PA.",
+          "kind": "documentación oficial"
+        },
+        {
+          "label": "Adobe · Content Credentials",
+          "url": "https://helpx.adobe.com/creative-cloud/apps/adobe-content-authenticity/content-credentials/view-content-credentials.html",
+          "claim": "Inspección en aplicación y extensión.",
+          "kind": "producto real"
+        }
+      ],
+      "id": "c2pa-auditoria-assets",
+      "title": "Asset Origin Ledger",
+      "subtitle": "Inventario de procedencia de imágenes y vídeos generados para agencias",
+      "sector": "Marketing y contenidos IA",
+      "subsector": "Proveniencia y C2PA",
+      "art": "media",
+      "description": "Un panel revisa un lote de creatividades antes de entregarlas, guarda licencia declarada, creador, versión y presencia de metadatos C2PA cuando existan. No confirma derechos si la información no está disponible.",
+      "caseStudy": "Adobe Content Authenticity y la especificación C2PA ofrecen verificaciones de procedencia y metadatos. Adobe actualizó en 2026 la documentación de integración empresarial. Un producto nuevo tendría que ser una lista de control de entrega, no otro estándar de autenticidad.",
+      "whyNow": "Publicación reciente de nuevos flujos de credenciales; hay herramientas reales, pero no demanda autónoma comprobada.",
+      "validation": "10 agencias y 2 lotes auditados a precio acordado.",
+      "stopRule": "Si las herramientas gratuitas de Adobe resuelven el caso o nadie paga."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Facturación de los competidores: no verificada por producto y periodo.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "explore",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Potencial diario en jugadores retenidos; completamente por validar.",
+      "value": "Entretenimiento, no ahorro económico. El segundo criterio B2B no aplica; valorar willingness to pay por retención.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Rewarded opcional y IAP cosmético / pack; ningún ingreso predicho.",
+      "buyer": "Jugadores casuales; pagador aún no validado",
+      "positive": [
+        "Se puede probar jugabilidad en web y APK en 14 días.",
+        "Hipótesis de originalidad de mecánica testeable."
+      ],
+      "negative": [
+        "Categoría muy competida y adquisición potencialmente cara.",
+        "Ningún dato de facturación propia.",
+        "Retención y conversión pueden ser nulas."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "no demostrado",
+          "detail": "Medir D1 y D7, sesiones por jugador"
+        },
+        {
+          "name": "Valor económico",
+          "state": "no demostrado",
+          "detail": "Propensión de pago medible en pruebas, no ahorro"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "hipótesis",
+          "detail": "Jugadores casuales; segmento a identificar"
+        },
+        {
+          "name": "Preventa",
+          "state": "no viable",
+          "detail": "Gaming requiere pruebas de retención y pago en lugar de B2B preventa"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Un loop jugable y tests observados de 15 personas."
+        },
+        {
+          "days": 14,
+          "text": "20 niveles, eventos y telemetría anónima."
+        },
+        {
+          "days": 21,
+          "text": "Test con 60 usuarios, D1/D7, intención de pago y rewarded opcional."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "AppMagic",
+          "url": "https://appmagic.rocks/",
+          "model": "Analítica de juegos y mercado",
+          "differentiation": "Proveedor de métricas, no competidor directo de juego.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "Sensor Tower",
+          "url": "https://sensortower.com/blog/top-10-worldwide-mobile-games-by-revenue-and-downloads-in-august-2026",
+          "model": "Rankings de juegos móviles",
+          "differentiation": "Ranking no demuestra facilidad de replicar un modelo rentable.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "AppMagic · puzzle H1 2026",
+          "url": "https://gameindustrylibrary.com/documents/casual-games-report-h1-2026-growth-beneath-the-still-surface",
+          "claim": "Estimaciones de IAP de género, excluyendo anuncios; no ingresos de una idea nueva.",
+          "kind": "IAP estimado"
+        },
+        {
+          "label": "RevenueCat · suscripciones 2026",
+          "url": "https://www.revenuecat.com/state-of-subscription-apps",
+          "claim": "Concentración de ingresos y desigualdad en lanzamientos.",
+          "kind": "benchmark de industria"
+        }
+      ],
+      "id": "mini-juego-retencion-sort",
+      "title": "Sort Loop Lab",
+      "subtitle": "Probar una mecánica de puzzle con retención real antes de monetizar",
+      "sector": "Gaming mobile",
+      "subsector": "Sort / lógica / puzzle",
+      "art": "gaming",
+      "description": "Un juego pequeño donde cada movimiento cambia una red de conexiones que el jugador debe ordenar. Primero se mide si la gente vuelve al día siguiente; las compras y anuncios se prueban solo si hay retención suficiente.",
+      "caseStudy": "AppMagic publica volumen agregado de IAP en puzzle, pero eso NO demuestra que un nuevo juego gane dinero. RevenueCat muestra fuerte concentración de ingresos en apps antiguas. Es un experimento de producto, no una oportunidad comercial validada.",
+      "whyNow": "Los informes permiten elegir una mecánica atractiva, pero el éxito depende de CPI, D1/D7, sesiones y compras reales.",
+      "validation": "No gastar en adquisición hasta medir retención y tasa de interacción con monetización optativa.",
+      "stopRule": "Abandonar si D1 es demasiado bajo para continuar pruebas o el coste por usuario supera claramente el valor esperable sin evidencia."
+    },
+    {
+      "date": "2026-11-20",
+      "geography": "España / UE",
+      "revenue": "Buffer: 27,95 M USD ARR y 2,33 M USD MRR en su dashboard público (consulta 20/11/2026; alcance global sin desglose). Métricas declaradas por la empresa, NO atribuidas a gestión de reseñas.",
+      "downloads": "Descargas: no verificadas.",
+      "growth": "Evolución del nicho: no comprobada; empresas existentes no equivalen a crecimiento verificable.",
+      "status": "explore",
+      "ease": "Media: web + PWA + informes sin integraciones pesadas.",
+      "frequency": "Semanal en cadenas con cientos de reseñas, no en local aislado.",
+      "value": "Reclamaciones y reseñas sin respuesta, coste no estimado.",
+      "preSale": "Vender una auditoría manual antes de programar el producto.",
+      "monetization": "Suscripción por local, hipótesis de test.",
+      "buyer": "Redes pequeñas de comercios con 4–20 locales",
+      "positive": [
+        "Sedes múltiples y comprador claro.",
+        "Un KPI de tiempo de respuesta es comprensible."
+      ],
+      "negative": [
+        "Competencia saturada (Podium, Birdeye, plataformas locales).",
+        "Acceso API a reseñas y coste de integración.",
+        "El dato de ARR de Buffer no corresponde a esta función."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Semanal solo con volumen de reseñas"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Efecto comercial sin cuantificar"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable franquicia"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Piloto de respuesta monitorizada manual"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Auditar reseñas manualmente de 3 cadenas."
+        },
+        {
+          "days": 14,
+          "text": "Importación CSV, bandeja de incidencias, responsables y vencimientos."
+        },
+        {
+          "days": 21,
+          "text": "Piloto de seguimiento con 2 responsables de marca."
+        }
+      ],
+      "competitors": [
+        {
+          "name": "Buffer",
+          "url": "https://buffer.com/metrics",
+          "model": "Software social por suscripción",
+          "differentiation": "ARR público de Buffer en conjunto, no para reseñas.",
+          "price": null,
+          "priceSource": null
+        },
+        {
+          "name": "Birdeye",
+          "url": "https://birdeye.com/",
+          "model": "Reputación y experiencia de clientes",
+          "differentiation": "Competidor con gestión de reseñas establecida.",
+          "price": null,
+          "priceSource": null
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Buffer · panel público de métricas",
+          "url": "https://buffer.com/metrics",
+          "claim": "ARR 27,95 M USD y MRR 2,33 M USD visibles el 20/11/2026; cifras del producto/plataforma Buffer, sin auditoría independiente.",
+          "kind": "ingresos declarados"
+        },
+        {
+          "label": "Birdeye · producto",
+          "url": "https://birdeye.com/",
+          "claim": "Soluciones de reputación y reseñas para empresas.",
+          "kind": "competencia"
+        }
+      ],
+      "id": "social-ventas-alertas-franquicias",
+      "title": "Reseña SLA Local",
+      "subtitle": "Alertar a franquicias cuando una reseña menciona una incidencia comercial",
+      "sector": "Servicios y comercio",
+      "subsector": "Reputación multitienda",
+      "art": "media",
+      "description": "Monitorizar reseñas autorizadas y registrar quién respondió y resolvió una queja operativa, no redactar textos con IA de forma masiva. La novedad sería unir la reseña a una tarea con responsable y tiempo de respuesta.",
+      "caseStudy": "Buffer publica métricas propias: 27,95 M USD ARR y 2,33 M USD MRR visibles en su panel abierto consultado en noviembre de 2026. Son cifras del servicio Buffer en conjunto (social publishing), no de gestión de reseñas, ni ventas de Reseña SLA. La existencia de Buffer solo demuestra monetización del software social y un canal B2B.",
+      "whyNow": "Los perfiles de negocio acumulan reseñas; el acceso vía API y límites son lo que primero hay que verificar.",
+      "validation": "10 cadenas y 2 pilotos; medir tiempo de resolución, no generación de texto.",
+      "stopRule": "Si el software actual ya automatiza el proceso o no hay permisos API."
     }
-  ]
+  ],
+  "sectorMetrics": [
+    {
+      "name": "Comercio",
+      "value": "1.044.477 M€",
+      "period": "Facturación 2024",
+      "url": "https://www.ine.es/dyngs/Prensa/es/EEESC2024.htm"
+    },
+    {
+      "name": "Industria",
+      "value": "857.826 M€",
+      "period": "Facturación 2024",
+      "url": "https://www.ine.es/dyngs/Prensa/EEESI2024.htm"
+    },
+    {
+      "name": "Servicios",
+      "value": "842.050 M€",
+      "period": "Facturación 2024",
+      "url": "https://www.ine.es/dyngs/Prensa/EEESS2024.htm"
+    },
+    {
+      "name": "Construcción",
+      "value": "205.204 M€",
+      "period": "Facturación 2024",
+      "url": "https://www.ine.es/dyngs/Prensa/EEESCONS2024.htm"
+    },
+    {
+      "name": "TIC",
+      "value": "143.288 M€",
+      "period": "Facturación 2024 · solapa con otros ámbitos",
+      "url": "https://www.ine.es/dyngs/Prensa/ISTIC2024.htm"
+    },
+    {
+      "name": "Turismo",
+      "value": "134.712 M€",
+      "period": "Gasto turistas 2025 · no comparable con facturación",
+      "url": "https://www.ine.es/dyngs/Prensa/EGATUR1225.htm"
+    }
+  ],
+  "methodologyNote": "Las cifras INE contextualizan el tamaño sectorial, no el TAM de software. Las cifras de ARR/MRR son declaraciones de operadores cuando se indica; los casos cliente son métricas de cliente, no ventas del proveedor. Solo considerar negocios validados tras preventas documentadas."
 }
