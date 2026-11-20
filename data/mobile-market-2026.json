@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": 1,
+  "asOf": "2026-11-20",
+  "title": "Deep Research Apps & Google Play — November 2026",
+  "intro": "Estudio de mercado real, no galería de ideas generadas con IA. Separa volumen, conversión y competidores reales de hipótesis de MVP. Carbon es herramienta de prototipado, no señal de demanda.",
+  "geography": "Datos globales salvo indicación específica. La banda de descargas Google Play es acumulada, de Android y mostrada en consulta española de 20/11/2026; no representa ingresos ni instalaciones durante 2026.",
+  "marketData": {
+    "currency": "USD",
+    "year": 2025,
+    "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category",
+    "categories": [
+      {
+        "id": "work",
+        "name": "Software móvil profesional",
+        "revenueB": null,
+        "downloadsB": null,
+        "yoy": null,
+        "downloadsYoY": null,
+        "marketNote": "No hay agregado B2B específico comparable con AppTweak. La señal se observa en precios y clientes declarados por operadores de campo.",
+        "verdict": "Invertir en microflujos",
+        "why": "Compradores que pagan para ahorrar horas o documentar trabajos; adquisición directa por oficio.",
+        "against": "Jobber/CompanyCam/MaintainX ya abarcan flujos grandes; no replicar suites.",
+        "source": "https://www.prnewswire.com/news-releases/jobber-surpasses-100-000-customers-cementing-its-position-as-the-market-leading-platform-for-home-and-commercial-service-businesses-302768759.html"
+      },
+      {
+        "id": "productivity",
+        "name": "Productividad / IA aplicada",
+        "revenueB": 9.1,
+        "downloadsB": 6,
+        "yoy": 79.3,
+        "downloadsYoY": 19.2,
+        "marketNote": "AppTweak, mundo, App Store + Play, año 2025. Crecimiento incluye grandes plataformas de IA.",
+        "verdict": "Invertir solo en verticales",
+        "why": "Crecimiento de ingresos extraordinario y usos recurrentes en trabajo.",
+        "against": "Otra app de chatbot o resúmenes genéricos exige distribución/coste difícil.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      },
+      {
+        "id": "fitness",
+        "name": "Fitness / bienestar no clínico",
+        "revenueB": 4.9,
+        "downloadsB": 3.3,
+        "yoy": 11,
+        "downloadsYoY": 4,
+        "marketNote": "AppTweak 2025 global. No extrapolar a entrenador individual.",
+        "verdict": "Selectivo B2B",
+        "why": "Seguimiento semanal y monetización demostrada por servicios existentes.",
+        "against": "Tracking general saturado; privacidad y retención de suscripciones.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      },
+      {
+        "id": "photo",
+        "name": "Foto y vídeo",
+        "revenueB": 8.8,
+        "downloadsB": 3.5,
+        "yoy": 29.6,
+        "downloadsYoY": 5,
+        "marketNote": "AppTweak 2025 global; herramientas para creators y e-commerce incluidas.",
+        "verdict": "Nicho profesional, no editor IA",
+        "why": "El comprador profesional paga por automatización del trabajo.",
+        "against": "Photoroom y editores grandes compiten en generación de fotos.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      },
+      {
+        "id": "learning",
+        "name": "Educación y aprendizaje",
+        "revenueB": 3.8,
+        "downloadsB": null,
+        "yoy": 18,
+        "downloadsYoY": null,
+        "marketNote": "AppTweak 2025 global. Duolingo es caso compañía, no la mediana de la categoría.",
+        "verdict": "Microaprendizaje de oficio",
+        "why": "Uso repetible y cliente pagador si aplica a un puesto de trabajo.",
+        "against": "Duolingo y entrenadores de IA genéricos tienen distribución fuerte.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      },
+      {
+        "id": "travel",
+        "name": "Turismo y experiencias",
+        "revenueB": null,
+        "downloadsB": 2.9,
+        "yoy": null,
+        "downloadsYoY": 7,
+        "marketNote": "AppTweak 2025, descargas globales, ingresos Travel no publicados en su tabla principal.",
+        "verdict": "B2B para operadores",
+        "why": "Negocio con costes y reservas, pero uso del viajero ocasional.",
+        "against": "Descargas no equivalen a ingresos; distribución B2C cara.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      },
+      {
+        "id": "special",
+        "name": "Hobbies profesionales / nichos",
+        "revenueB": null,
+        "downloadsB": null,
+        "yoy": null,
+        "downloadsYoY": null,
+        "marketNote": "Segmentación propia para análisis; NO es categoría estadística agregada.",
+        "verdict": "Microproducto con preventa",
+        "why": "Pocos usuarios pero pagadores localizables por comunidad, hobbies y profesión.",
+        "against": "ARPU bajo y mercado limitado; medir disposición de compra real.",
+        "source": "https://www.bandhelper.com/main/pricing.html"
+      },
+      {
+        "id": "gaming",
+        "name": "Gaming / Play Store",
+        "revenueB": 73.5,
+        "downloadsB": 33,
+        "yoy": 3,
+        "downloadsYoY": -6,
+        "marketNote": "AppTweak año 2025 global. Subgéneros H1/Q3 2026 se miden por separado con AppMagic.",
+        "verdict": "Probar, no invertir fuerte aún",
+        "why": "IAP y anuncios mueven volumen, con hits nuevos en híbridos.",
+        "against": "El sector pierde instalaciones, alta concentración y costes de UA.",
+        "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+      }
+    ]
+  },
+  "apps": [
+    {
+      "id": "companycam",
+      "name": "CompanyCam",
+      "cat": "work",
+      "platform": "Google Play",
+      "package": "com.agilx.companycam",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.agilx.companycam",
+      "icon": "https://play-lh.googleusercontent.com/Y2WtUie8S6rxTliSOpBOVXmuhpexFj1vq_NNx_dNx5JEPnZqmWJ4dA2LzkM-NtRwY5M4HrWNVdbmR0Hr0hdvLFY=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción B2B",
+      "price": "Core 63 USD/mes por 1 usuario, facturación anual",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://companycam.com/pricing",
+      "notes": "Fotos fechadas, informes y prueba de trabajo; gran precio por equipo.",
+      "risk": "Muchos módulos ya existen, no construir plataforma completa."
+    },
+    {
+      "id": "jobber",
+      "name": "Jobber",
+      "cat": "work",
+      "platform": "Google Play",
+      "package": "com.getjobber.jobber",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.getjobber.jobber",
+      "icon": "https://play-lh.googleusercontent.com/Nz59QGxELjWQm5ZPBqNPE5wG-YFA9klUXxW4VGFzpPwfwlp2igmD7wCpAehjwe0seRNguWPE8rsI2m7zLTqRJw=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción B2B",
+      "price": "Planes a partir de 29 USD/mes según página de tarifas; configuración puede cambiar",
+      "metric": "100.000+ clientes y 400.000+ profesionales diarios declarados",
+      "metricType": "clientes/uso declarado",
+      "metricPeriod": "12/05/2026",
+      "metricSource": "https://www.prnewswire.com/news-releases/jobber-surpasses-100-000-customers-cementing-its-position-as-the-market-leading-platform-for-home-and-commercial-service-businesses-302768759.html",
+      "notes": "La empresa afirma adopción B2B, NO ingresos propios publicados aquí.",
+      "risk": "Producto suite madura con gran distribución."
+    },
+    {
+      "id": "maintainx",
+      "name": "MaintainX",
+      "cat": "work",
+      "platform": "Google Play",
+      "package": "com.commas.client",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.commas.client",
+      "icon": "https://play-lh.googleusercontent.com/JE_eG6LkAjaeErLCJrCp8NS11cWVnGY3kvo8zEfkgGinQeED4VDdeH5al6DK9wmXH5HKV3OuddSBBldWbzMv2g=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción por usuario",
+      "price": "Essential 20 USD/usuario/mes anual, 25 USD mensual",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://www.getmaintainx.com/pricing",
+      "notes": "Órdenes de trabajo, historial y mantenimiento preventivo.",
+      "risk": "Barrera de venta industrial; producto muy completo."
+    },
+    {
+      "id": "trainerize",
+      "name": "ABC Trainerize",
+      "cat": "fitness",
+      "platform": "Google Play",
+      "package": "com.trainerize.Trainerize",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.trainerize.Trainerize",
+      "icon": "https://play-lh.googleusercontent.com/QQPq6buHkYxEysmnswaNDEmtvy8Ws8LcwDWxXRzoRdhoVyQkWh46Gb-NvKTX-ZNVo5qUG7m5Ee8sAhfIDR7K=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción para profesionales",
+      "price": "Grow: 9 USD/mes, 2 clientes incluidos; Pro5 desde 23 USD/mes",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://www.trainerize.com/pricing/",
+      "notes": "Muestra oferta pagada para coaches y automatización de rutinas.",
+      "risk": "Competidor sólido; encontrar flujo puntual fuera de su oferta."
+    },
+    {
+      "id": "hevy",
+      "name": "Hevy",
+      "cat": "fitness",
+      "platform": "Google Play",
+      "package": "com.hevy",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.hevy",
+      "icon": "https://play-lh.googleusercontent.com/bLlRnwjt0tKva6ob0ZrtxkUs-z4MhQ4cPIOnXeh_knD8QVAXSLFiMGyKo2kLF7PV2uSK1Wly1L4q-6Sv1k13=s0-br30",
+      "androidInstalls": "5 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción Pro / compras app",
+      "price": "Importe no verificado",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": null,
+      "notes": "Diario de ejercicios con comunidad, planificación y tracking.",
+      "risk": "Logbook general muy competido."
+    },
+    {
+      "id": "strava",
+      "name": "Strava",
+      "cat": "fitness",
+      "platform": "Google Play",
+      "package": "com.strava",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.strava",
+      "icon": "https://play-lh.googleusercontent.com/J4LN2qH2PQkZ3sFQonz-HWYkd7M38BtEO4Grzh1Xn7L2J6NUILHPkhYvPjdhMZQzrdm4BarUj547wfthyMz_vWM=s0-br30",
+      "androidInstalls": "100 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Freemium / suscripción",
+      "price": "11,99 USD/mes o 79,99 USD/año para EEUU según página oficial (2025)",
+      "metric": ">171 MUSD IAP estimado",
+      "metricType": "IAP estimado, no facturación auditada",
+      "metricPeriod": "2026 hasta 15/10/2026",
+      "metricSource": "https://appmagic.rocks/blog/strava-growth-story",
+      "notes": "AppMagic informa >51 M instalaciones mundiales hasta ese corte; no confundir con banda Android acumulada.",
+      "risk": "Comunidad, red y marca barreras casi inabordables."
+    },
+    {
+      "id": "photopills",
+      "name": "PhotoPills",
+      "cat": "photo",
+      "platform": "Google Play",
+      "package": "com.photopills.android.photopills",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.photopills.android.photopills",
+      "icon": "https://play-lh.googleusercontent.com/grScZ_0EPa4RhFBT4IStbAmeuFTINgzPjND8amLstiv4xNYKEyAQErIEvuFHTTdAIm2Kvpgas_LYHzomXbtp=s0-br30",
+      "androidInstalls": "100 mil+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Pago único",
+      "price": "10,99 USD anunciado en web oficial; precio local puede variar",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://www.photopills.com/",
+      "notes": "Herramienta de nicho que vende sin depender de suscripción.",
+      "risk": "Usos ocasionales en amateurs; competidores maduros."
+    },
+    {
+      "id": "photoroom",
+      "name": "Photoroom",
+      "cat": "photo",
+      "platform": "Google Play",
+      "package": "com.photoroom.app",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.photoroom.app",
+      "icon": "https://play-lh.googleusercontent.com/oVnT6rDrRJKToWHtyjzoJcuR48XQjbA54QkGwNZQw995TrlY25GLkGJgnwBb9W_ve0cCMukIKnQZ3r84-omSPA=s0-br30",
+      "androidInstalls": "100 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Freemium / suscripción",
+      "price": "Tarifa exacta local no verificada",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": null,
+      "notes": "Foto comercial, edición de lote y fondo; muy grande en e-commerce.",
+      "risk": "Editor genérico IA no es oportunidad para MVP pequeño."
+    },
+    {
+      "id": "duolingo",
+      "name": "Duolingo",
+      "cat": "learning",
+      "platform": "Google Play",
+      "package": "com.duolingo",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.duolingo",
+      "icon": "https://play-lh.googleusercontent.com/Q-wEiKezZQEspFNNrWfKjcEgAqdWy_b98_tXTAZaXGgm9y1HZ1zi-JSZXA7Tmur9MjcM0xoIA0BdXEN0Bt54=s0-br30",
+      "androidInstalls": "500 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Freemium, suscripción, publicidad, IAP",
+      "price": "Precio local no verificado",
+      "metric": "309 MUSD ingresos de empresa (GAAP)",
+      "metricType": "Facturación reportada de compañía, NO IAP ni app-only",
+      "metricPeriod": "Q3 2026",
+      "metricSource": "https://investors.duolingo.com/news-releases/news-release-details/duolingo-reports-third-quarter-2026-results",
+      "notes": "La compañía comunicó +14 % ingresos interanuales; no inferir ventas de microeducación.",
+      "risk": "Marca, contenido, comunidad, monetización compleja."
+    },
+    {
+      "id": "sleepcycle",
+      "name": "Sleep Cycle",
+      "cat": "fitness",
+      "platform": "Google Play",
+      "package": "com.northcube.sleepcycle",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.northcube.sleepcycle",
+      "icon": "https://play-lh.googleusercontent.com/9S0oQiNt1RS-yh7K-7Wcta7yBpwEt0-IDyheyu76h0FaGEUf2jf3diyZXkqbxjGg93LtrQQ7JDkHyd2WJbDs=s0-br30",
+      "androidInstalls": "10 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción de bienestar",
+      "price": "Precio actual no verificado",
+      "metric": "50,9 M SEK ventas consolidadas, -17,3 % interanual; 631.000 abonados",
+      "metricType": "Facturación auditada/reportada de grupo con componente B2B, no exclusivamente app",
+      "metricPeriod": "Q3 2026",
+      "metricSource": "https://investors.sleepcycle.com/pressreleases/sleep-cycle-interim-report-july-september-2026-ready-for-the-next-chapter",
+      "notes": "Contraejemplo: una app grande puede perder ingresos y abonados.",
+      "risk": "No usar inferencias clínicas ni hacer seguimiento sanitario."
+    },
+    {
+      "id": "bandhelper",
+      "name": "BandHelper",
+      "cat": "special",
+      "platform": "Google Play",
+      "package": "com.arlomedia.bandhelper",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.arlomedia.bandhelper",
+      "icon": "https://play-lh.googleusercontent.com/SsmGsciITbzgPnBxM9kavagkIGvV3WsWXNyqIINnYNq2VcqxKYUO8PYv4ZZBZjE5v9JfIyZVlJfEkaat-Vdb2A=s0-br30",
+      "androidInstalls": "50 mil+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Suscripción por grupo",
+      "price": "Solo desde 2,25 USD/mes; bandas 2–5 desde 4 USD/mes",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://www.bandhelper.com/main/pricing.html",
+      "notes": "Cobra por coordinación musical profesional; nicho pequeño.",
+      "risk": "Nicho limitado; frecuencia depende de los ensayos."
+    },
+    {
+      "id": "snipd",
+      "name": "Snipd",
+      "cat": "productivity",
+      "platform": "Google Play",
+      "package": "ai.topicfinder.podcastdiscovery",
+      "storeUrl": "https://play.google.com/store/apps/details?id=ai.topicfinder.podcastdiscovery",
+      "icon": "https://play-lh.googleusercontent.com/6tmzsW5-wGY3HYZjs4FC6d5TCX5_phdTyZvBLw2Kdag33iaQ3OyOE6p4KINyDMzoH3XAtpMUVM8pzq_nNvYsgQ=s0-br30",
+      "androidInstalls": "100 mil+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Freemium / suscripción",
+      "price": "Premium 6,99 USD/mes mostrado en página web (puede variar por país)",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": "https://www.snipd.com/pricing",
+      "notes": "Podcast transcripción + highlights y conversaciones.",
+      "risk": "Saturación de IA para notas, coste de procesamiento."
+    },
+    {
+      "id": "alltrails",
+      "name": "AllTrails",
+      "cat": "travel",
+      "platform": "Google Play",
+      "package": "com.alltrails.alltrails",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails",
+      "icon": "https://play-lh.googleusercontent.com/VGEJRpXhcohBLp64CcZkufSHI97tfN1LQBJsvcNojlHZZTy6bQRFxr6xogqlEv-f5RwkLIcvVLiBAEfkZqrXqA=s0-br30",
+      "androidInstalls": "50 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "Freemium con suscripción Plus/Peak",
+      "price": "Importe no verificado",
+      "metric": null,
+      "metricType": null,
+      "metricPeriod": null,
+      "metricSource": null,
+      "notes": "Mapas outdoor y rutas descargables; útil por excursión.",
+      "risk": "Datos de mapas, licencias y red construida con años."
+    },
+    {
+      "id": "pixelflow",
+      "name": "Pixel Flow!",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "com.loomgames.pixelflow",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.loomgames.pixelflow",
+      "icon": "https://play-lh.googleusercontent.com/FvAiHRhj8Wo1vO_4ez1V8ChSJKAw46dos-FEIkbmNs_wtbDKg0Y9eyVJe1hJn2R-mwyr4_LmWkIGJCHHY74K=s0-br30",
+      "androidInstalls": "10 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "F2P, anuncios e IAP",
+      "price": "Tickets no verificados",
+      "metric": "31,3 MUSD IAP estimado",
+      "metricType": "IAP estimado por AppMagic, global, NO facturación contable",
+      "metricPeriod": "Q3 2026",
+      "metricSource": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026",
+      "notes": "6 de los 10 líderes hybridcasual Q3 son flow/conveyor según AppMagic.",
+      "risk": "Formato sobreexplotado; adquisición creativa costosa."
+    },
+    {
+      "id": "colonyflow",
+      "name": "Colony Flow!",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "com.abi.colony.flow",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.abi.colony.flow",
+      "icon": "https://play-lh.googleusercontent.com/K7-94t2sh19wsGm99A389QnBuVbTshv7_DRgnGOuGxBHJ-VHo0pcvrK1l_3rsbJcFHYjuxTt7AMPAihSWdnMy1I=s0-br30",
+      "androidInstalls": "5 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "F2P, anuncios e IAP",
+      "price": "Tickets no verificados",
+      "metric": "13,7 MUSD IAP estimado",
+      "metricType": "Cifra AppMagic reproducida por Mobidictum, global; fuente secundaria",
+      "metricPeriod": "Q3 2026",
+      "metricSource": "https://mobidictum.com/hybridcasual-puzzle-report-q3-2026-pixel-flow/",
+      "notes": "Puzle con hormigas, flow; creció 434 posiciones del ranking sectorial.",
+      "risk": "El movimiento flow ya acumula decenas de imitaciones."
+    },
+    {
+      "id": "jellybusters",
+      "name": "Jelly Busters",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "com.moonactive.jellybusters",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.moonactive.jellybusters",
+      "icon": "https://play-lh.googleusercontent.com/xvryizEMjZtxeFR2ec01RfxhlQQUOqrP94P38He8Y6xfq8eTODMYNDWVdsd-EfcWtp5sA9e4Rx5M34e3ptSv7A=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "F2P, anuncios e IAP",
+      "price": "Tickets no verificados",
+      "metric": "5,8 MUSD IAP estimado",
+      "metricType": "Estimado mundial últimos 30 días en corte del informe AppMagic",
+      "metricPeriod": "17/10/2026",
+      "metricSource": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+      "notes": "Moon Active escaló un nuevo juego del mismo estilo; no muestra facilidad para indie.",
+      "risk": "Publisher con presupuestos de adquisición enormes."
+    },
+    {
+      "id": "mysterytown",
+      "name": "Mystery Town: Merge Games",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "com.cedargames.mysterytown",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.cedargames.mysterytown",
+      "icon": "https://play-lh.googleusercontent.com/uVjVMEJrhT-xRoUtKIUj8tOVSbCWw4IsRHaTDYICRNjQycUj6SucVpeoAPiNZWeJ5JuzIt_ZZRo1X1pW6XJFAQE=s0-br30",
+      "androidInstalls": "5 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "IAP y eventos (no se observan anuncios en tienda)",
+      "price": "Ticket no verificado",
+      "metric": "40,6 MUSD IAP estimado",
+      "metricType": "IAP estimado global",
+      "metricPeriod": "H1 2026",
+      "metricSource": "https://appmagic.rocks/blog/casual-report-H12026?hl=en",
+      "notes": "Merge narrativo y eventos reiterados; gran content workload.",
+      "risk": "No crear story-merge con Carbon en 21 días."
+    },
+    {
+      "id": "bustraffic",
+      "name": "Bus Traffic Fever!",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "jp.co.goodroid.hyper.busflow",
+      "storeUrl": "https://play.google.com/store/apps/details?id=jp.co.goodroid.hyper.busflow",
+      "icon": "https://play-lh.googleusercontent.com/caBiKRTVr57KEWAwIEH8mIXsjwrC19mfST9tLXizP1nPI3WdT5bJwXVSSQDb6HWLMKPkhVwLKHmA9PGAcrTZ=s0-br30",
+      "androidInstalls": "10 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "F2P, anuncios e IAP",
+      "price": "Tickets no verificados",
+      "metric": ">10 MUSD IAP estimado acumulado",
+      "metricType": "Cifra umbral entre juegos estrenados 2026 en el informe AppMagic; global, estimado",
+      "metricPeriod": "Hasta 17/10/2026",
+      "metricSource": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+      "notes": "Puzzles de autobuses rentables para algunos operadores.",
+      "risk": "Categoría saturada, sin ventaja IP ni distribución."
+    },
+    {
+      "id": "cubeland",
+      "name": "Cube Land Puzzle Game",
+      "cat": "gaming",
+      "platform": "Google Play",
+      "package": "com.rotatelab.cubeblast",
+      "storeUrl": "https://play.google.com/store/apps/details?id=com.rotatelab.cubeblast",
+      "icon": "https://play-lh.googleusercontent.com/OxZ_l4qJpJOVmuCiGAXBXSMA5EyJZsjik90OkXbbXCQjDW7ho99Rr2f7YjWxjidw1VTdM22d3XtUbTqV6eegxuc=s0-br30",
+      "androidInstalls": "1 M+",
+      "installsMeaning": "Banda acumulada pública Google Play al 20/11/2026; no descargas de 2026 ni usuarios activos.",
+      "model": "IAP",
+      "price": "Tickets no verificados",
+      "metric": "9,9 MUSD IAP estimado",
+      "metricType": "Cifra AppMagic reproducida por Mobidictum; global, fuente secundaria",
+      "metricPeriod": "Q3 2026",
+      "metricSource": "https://mobidictum.com/hybridcasual-puzzle-report-q3-2026-pixel-flow/",
+      "notes": "Block puzzle que creció entre top juegos Q3.",
+      "risk": "Mecánica de color y bloques muy replicada."
+    }
+  ],
+  "gameGenres": [
+    {
+      "id": "match3",
+      "name": "Match-3",
+      "iap": 2.5,
+      "unit": "mil MUSD IAP",
+      "period": "H1 2026",
+      "growth": -0.4,
+      "downloadsM": 392,
+      "downloadsGrowth": 10,
+      "competition": "Muy alta",
+      "viable": "No",
+      "note": "Grandes IP y live ops; Royal Match/Candy Crush lideran.",
+      "source": "https://appmagic.rocks/blog/casual-report-H12026?hl=en"
+    },
+    {
+      "id": "merge",
+      "name": "Merge / narrativa",
+      "iap": 1.3,
+      "unit": "mil MUSD IAP",
+      "period": "H1 2026",
+      "growth": 74,
+      "downloadsM": 311,
+      "downloadsGrowth": 22,
+      "competition": "Muy alta",
+      "viable": "No en 21 días",
+      "note": "Contenidos, energía, eventos y retención costosos. Mystery Town 40,6 MUSD IAP H1.",
+      "source": "https://appmagic.rocks/blog/casual-report-H12026?hl=en"
+    },
+    {
+      "id": "hybrid",
+      "name": "Sort / Block / Screw híbrido",
+      "iap": 0.6,
+      "unit": "mil MUSD IAP (casi)",
+      "period": "H1 2026",
+      "growth": null,
+      "downloadsM": null,
+      "downloadsGrowth": null,
+      "competition": "Muy alta y creciente",
+      "viable": "Solo test de mecánica original",
+      "note": "Juntas casi 600 MUSD IAP, pero >2.000 nuevos Block Puzzles en H1 2026, +89 % YoY (AppMagic). No es nicho libre.",
+      "source": "https://appmagic.rocks/blog/casual-report-H12026?hl=en"
+    },
+    {
+      "id": "simulation",
+      "name": "Simulación",
+      "iap": 1.1,
+      "unit": "mil MUSD IAP",
+      "period": "H1 2026",
+      "growth": null,
+      "downloadsM": null,
+      "downloadsGrowth": null,
+      "competition": "Alta",
+      "viable": "Solo prototipo de core",
+      "note": "Farming 576 MUSD IAP (+15 % YoY); contenido y economía persistente aumentan coste.",
+      "source": "https://appmagic.rocks/blog/casual-report-H12026?hl=en"
+    },
+    {
+      "id": "physics",
+      "name": "Cannonball / física",
+      "iap": null,
+      "unit": "No publicado por subgénero en este corte",
+      "period": "H1/Q3 2026",
+      "growth": null,
+      "downloadsM": null,
+      "downloadsGrowth": null,
+      "competition": "Media–alta",
+      "viable": "Posible test técnico",
+      "note": "Tres Cannonball Puzzle del grupo de ganadores 2026 acumularon 10,3 MUSD IAP estimado; muestra sesgada.",
+      "source": "https://appmagic.rocks/research/mobile-games-first-million-2026"
+    },
+    {
+      "id": "strategy",
+      "name": "4X / estrategia",
+      "iap": null,
+      "unit": "No comprobado en este corte",
+      "period": "2026",
+      "growth": null,
+      "downloadsM": null,
+      "downloadsGrowth": null,
+      "competition": "Extrema",
+      "viable": "No",
+      "note": "Arte, servidores, economía, clanes y UA fuera de MVP 21d.",
+      "source": "https://appmagic.rocks/research/mobile-games-first-million-2026"
+    }
+  ],
+  "opportunities": [
+    {
+      "id": "field-proof",
+      "name": "Acta Móvil Express",
+      "type": "app",
+      "focus": "Operaciones móviles para instaladores",
+      "priority": 1,
+      "buyer": "Instaladores de climatización, protección contra incendios y mantenimiento con entregas semanales",
+      "reason": "No replicar Jobber: recoger antes/después, número de equipo, checklist y firma en PDF de cierre con trazabilidad. El valor puede comprobarse en un servicio real.",
+      "comparableIds": [
+        "companycam",
+        "jobber"
+      ],
+      "shorts": [
+        "Uso semanal plausible",
+        "Menos revisitas/reclamaciones, por medir",
+        "Dueño o coordinador de cuadrilla",
+        "Acta manual cobrable"
+      ],
+      "proof": "CompanyCam 63 USD/mes anual; Jobber 100.000+ clientes declarados. Ningún ingreso de esta idea verificado.",
+      "distribution": "Llamadas y visitas a 15 instaladores y gremios locales; ventas B2B directas.",
+      "priceHypothesis": "39–79 €/equipo/mes (HIPÓTESIS, no tarifa de mercado).",
+      "phase": "PREVENTA",
+      "days": [
+        {
+          "day": 7,
+          "task": "Entrevistas, demo Figma y 3 actas manuales pagadas."
+        },
+        {
+          "day": 14,
+          "task": "PWA fotos, firma simple, checklist y PDF, offline parcial."
+        },
+        {
+          "day": 21,
+          "task": "Pilotos de 2 cuadrillas, export y cobro recurrente solo si aporta valor."
+        }
+      ],
+      "stop": "Parar si no hay 3 pilotos pagados en 15 entrevistas o el software actual ya cubre el flujo.",
+      "confidence": "Media-alta en dolor; baja en demanda específica no entrevistada.",
+      "budget": "Supuesto 0–100 € de infra/pruebas, sin trabajo ni captación pagada.",
+      "contrary": [
+        "CompanyCam y Jobber ya incluyen documentación y tareas.",
+        "Cumplimiento de firma digital, RGPD y trabajo offline fiable complican producción."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Uso semanal plausible"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Menos revisitas/reclamaciones, por medir"
+        },
+        {
+          "title": "Comprador",
+          "state": "Dueño o coordinador de cuadrilla"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Acta manual cobrable"
+        }
+      ]
+    },
+    {
+      "id": "shift-log",
+      "name": "Cambio de Turno Industrial",
+      "type": "app",
+      "focus": "Fábricas y talleres con turnos",
+      "priority": 2,
+      "buyer": "Encargados de mantenimiento en pequeñas plantas industriales con dos o tres turnos",
+      "reason": "No competir con MaintainX: pasar incidencias, fotos y pendientes de máquina entre equipos en una lista confirmada por el turno entrante.",
+      "comparableIds": [
+        "maintainx"
+      ],
+      "shorts": [
+        "Uso diario si hay turnos",
+        "Horas de diagnósticos duplicados, medir",
+        "Supervisor de mantenimiento",
+        "Piloto manual de relevo"
+      ],
+      "proof": "MaintainX publica 20 USD/usuario/mes en Essential anual y registra 1 M+ instalaciones Android; su oferta incluye órdenes de trabajo.",
+      "distribution": "Contacto directo a 10 talleres/fábricas locales; acceso al encargado.",
+      "priceHypothesis": "49 €/planta/mes HIPÓTESIS.",
+      "phase": "PREVENTA",
+      "days": [
+        {
+          "day": 7,
+          "task": "Registrar 10 relevos reales con consentimiento y comprobar olvidos."
+        },
+        {
+          "day": 14,
+          "task": "PWA por equipo, foto, estado, prioridad, acuse de lectura."
+        },
+        {
+          "day": 21,
+          "task": "2 pilotos en centros distintos y medición de incidencias reabiertas."
+        }
+      ],
+      "stop": "Parar si no logra dos pilotos pagados o el CMMS ya resuelve el relevo sin fricción.",
+      "confidence": "Media en dolor, acceso más lento.",
+      "budget": "Supuesto 0–110 € sin horas ni dispositivos adicionales.",
+      "contrary": [
+        "Obtener clientes de fábrica es más difícil que agencias web.",
+        "Seguridad y protocolos de planta; no dar recomendaciones de operación industrial automáticas."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Uso diario si hay turnos"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Horas de diagnósticos duplicados, medir"
+        },
+        {
+          "title": "Comprador",
+          "state": "Supervisor de mantenimiento"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Piloto manual de relevo"
+        }
+      ]
+    },
+    {
+      "id": "coach-retention",
+      "name": "Coach Renovaciones",
+      "type": "app",
+      "focus": "Fitness B2B no clínico",
+      "priority": 3,
+      "buyer": "Entrenadores online con 20–80 alumnos, con datos exportables y contratos recurrentes",
+      "reason": "Tablero de alumnos que bajan su asistencia y cuya renovación se acerca. No dar diagnóstico ni planes clínicos; señalar la tarea que el entrenador debe revisar.",
+      "comparableIds": [
+        "trainerize",
+        "hevy",
+        "strava"
+      ],
+      "shorts": [
+        "Comprobable semanalmente",
+        "Una renovación salvada tiene valor, no cuantificado",
+        "Entrenador con cartera de clientes",
+        "Informe manual antes de SaaS"
+      ],
+      "proof": "Trainerize Grow 9 USD/mes; Hevy 5 M+ instalaciones Android; Strava >171 MUSD IAP estimado 2026 hasta mitad de octubre. Nada de eso son ventas de nuestra idea.",
+      "distribution": "Contactar 15 coaches con clientes activos, mostrar datos anónimos y ejemplo de informe.",
+      "priceHypothesis": "19–39 €/entrenador/mes (hipótesis de test).",
+      "phase": "PREVENTA",
+      "days": [
+        {
+          "day": 7,
+          "task": "Informes manuales de adherencia con 5 coaches; tres compromisos de pago."
+        },
+        {
+          "day": 14,
+          "task": "CSV import, alertas semanales, estado del alumno sin información clínica."
+        },
+        {
+          "day": 21,
+          "task": "Beta de 2 coaches y medir renovaciones/contactos semanales."
+        }
+      ],
+      "stop": "Parar si no hay 3 compromisos pagados o Trainerize ya cubre el mismo resultado.",
+      "confidence": "Media-baja: categoría pagadora pero rival fuerte.",
+      "budget": "Supuesto 0–90 € sin gastos de adquisición.",
+      "contrary": [
+        "Datos personales y consentimiento del cliente.",
+        "Entrenadores suelen pagar poco si no ahorra horas evidentes."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Comprobable semanalmente"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Una renovación salvada tiene valor, no cuantificado"
+        },
+        {
+          "title": "Comprador",
+          "state": "Entrenador con cartera de clientes"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Informe manual antes de SaaS"
+        }
+      ]
+    },
+    {
+      "id": "field-photo",
+      "name": "Brief de Fotografía Exterior",
+      "type": "app",
+      "focus": "Fotografía profesional",
+      "priority": 4,
+      "buyer": "Fotógrafos inmobiliarios que fotografían varias propiedades por semana",
+      "reason": "Planificar fachada por dirección solar, franja horaria, cliente y entrega; no ser otro editor ni duplicar todos los cálculos de PhotoPills.",
+      "comparableIds": [
+        "photopills",
+        "photoroom"
+      ],
+      "shorts": [
+        "Semanal solo si hay agenda activa",
+        "Evitar una segunda visita, medir",
+        "Fotógrafo inmobiliario",
+        "Plan manual de dos sesiones"
+      ],
+      "proof": "PhotoPills vende licencia anunciada de 10,99 USD; 100 mil+ instalaciones Android. Foto & vídeo tuvo 8,8 mil MUSD de ingresos estimados en 2025, categoría global no TAM.",
+      "distribution": "Búsqueda directa de 10 fotógrafos locales, mini auditoría de agenda.",
+      "priceHypothesis": "9,99 € compra única o 29 €/año como HIPÓTESIS; no fijar precio antes de entrevistas.",
+      "phase": "PRUEBA",
+      "days": [
+        {
+          "day": 7,
+          "task": "10 entrevistas, 2 propuestas de planificación pagadas."
+        },
+        {
+          "day": 14,
+          "task": "Calculadora solar offline + fichas por inmueble; sin mapas comerciales de pago."
+        },
+        {
+          "day": 21,
+          "task": "Exportar dossier para cliente y piloto en 3 sesiones."
+        }
+      ],
+      "stop": "Parar si PhotoPills cubre todo o los profesionales no ven ahorro.",
+      "confidence": "Media baja por competencia y ticket.",
+      "budget": "Supuesto 0–80 € de infraestructura y pruebas.",
+      "contrary": [
+        "Cliente ocasional, no todas las semanas en aficionados.",
+        "AR avanzada, mapas, nubes y horas de luz añaden complejidad."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Semanal solo si hay agenda activa"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Evitar una segunda visita, medir"
+        },
+        {
+          "title": "Comprador",
+          "state": "Fotógrafo inmobiliario"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Plan manual de dos sesiones"
+        }
+      ]
+    },
+    {
+      "id": "show-check",
+      "name": "Ensayo y Checklist de Bolo",
+      "type": "app",
+      "focus": "Música y eventos profesionales",
+      "priority": 5,
+      "buyer": "Bandas de versiones y orquestas que dan actuaciones frecuentes",
+      "reason": "Una sola agenda de ensayo: temas que salieron mal, tiempo de repaso, cambios de formación y preparación del próximo bolo, sin copiar repertorios protegidos.",
+      "comparableIds": [
+        "bandhelper"
+      ],
+      "shorts": [
+        "Semanal solo si banda toca a menudo",
+        "Coste de ensayo y fallos, valor no cuantificado",
+        "Director musical/manager",
+        "Demo en ensayo real"
+      ],
+      "proof": "BandHelper cobra desde 2,25 USD/mes solo y 4 USD/mes para grupos; 50 mil+ instalaciones Android. Producto especializado de pago ofertado, ingresos reales desconocidos.",
+      "distribution": "Escuelas y bandas locales, contacto directo y preventa en grupo.",
+      "priceHypothesis": "2,99 €/mes por músico o 19 €/año HIPÓTESIS.",
+      "phase": "PRUEBA",
+      "days": [
+        {
+          "day": 7,
+          "task": "15 conversaciones y 2 ensayos a mano."
+        },
+        {
+          "day": 14,
+          "task": "PWA checklist y prioridades, historial por evento."
+        },
+        {
+          "day": 21,
+          "task": "Tres grupos beta y factura real si aceptan pagar."
+        }
+      ],
+      "stop": "Parar si no hay 3 preventas o BandHelper ya resuelve el problema.",
+      "confidence": "Media en nicho, limitada escala.",
+      "budget": "Supuesto 0–60 € sin costes de audio ni licencias.",
+      "contrary": [
+        "Mercado pequeño; precio por usuario muy bajo.",
+        "BandHelper cubre ya repertorio y gestión de bolos."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Semanal solo si banda toca a menudo"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Coste de ensayo y fallos, valor no cuantificado"
+        },
+        {
+          "title": "Comprador",
+          "state": "Director musical/manager"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Demo en ensayo real"
+        }
+      ]
+    },
+    {
+      "id": "trade-english",
+      "name": "Inglés para Oficios",
+      "type": "app",
+      "focus": "Microeducación práctica",
+      "priority": 6,
+      "buyer": "Academias profesionales y equipos de turismo/hostelería",
+      "reason": "Entrenar conversaciones de 3 minutos: atender una avería, recibir un huésped, entregar presupuesto. Evaluación práctica, no enseñar inglés genérico.",
+      "comparableIds": [
+        "duolingo"
+      ],
+      "shorts": [
+        "4–5 prácticas semanales si la empresa exige uso",
+        "Servicio al cliente y capacidad laboral, valor por demostrar",
+        "Academia o empresa, no turista casual",
+        "Piloto manual en un aula"
+      ],
+      "proof": "Duolingo reportó 309 MUSD de ingresos de compañía en Q3 2026 (+14 % YoY), no ventas de esta idea ni del nicho.",
+      "distribution": "Academias de inglés profesional y responsables de hoteles; licenciar pilotos por grupos.",
+      "priceHypothesis": "Por cohortes 5–15 €/alumno/mes como hipótesis.",
+      "phase": "EXPLORAR",
+      "days": [
+        {
+          "day": 7,
+          "task": "10 responsables formativos y 10 roleplays manuales."
+        },
+        {
+          "day": 14,
+          "task": "Móvil/PWA de diálogos con speech-to-text cuando esté disponible y revisión."
+        },
+        {
+          "day": 21,
+          "task": "Piloto de aula, medir asistencia y simulación final, sin prometer fluidez."
+        }
+      ],
+      "stop": "Parar si no hay un centro que pague o usa su solución de IA ya.",
+      "confidence": "Media baja, mercado genérico muy saturado.",
+      "budget": "Supuesto 0–120 € con límites de inferencia.",
+      "contrary": [
+        "Compra organizacional lenta.",
+        "IA de voz y feedback pueden salir caros; derechos y datos de alumnos."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "4–5 prácticas semanales si la empresa exige uso"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Servicio al cliente y capacidad laboral, valor por demostrar"
+        },
+        {
+          "title": "Comprador",
+          "state": "Academia o empresa, no turista casual"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Piloto manual en un aula"
+        }
+      ]
+    },
+    {
+      "id": "physics-loop",
+      "name": "Puzzle de Física Satisfactorio",
+      "type": "game",
+      "focus": "Hybrid-casual original; NO clon flow/sort",
+      "priority": 7,
+      "buyer": "Jugadores Android de puzles táctiles, segmento de pago aún por medir",
+      "reason": "Crear una mecánica de física/causalidad distinta a flow, con replay en segundos y una pieza que altera el resultado. El juego se desarrolla con Carbon SOLO para probar D1/D7, no se invierte en ads antes.",
+      "comparableIds": [
+        "pixelflow",
+        "colonyflow",
+        "cubeland"
+      ],
+      "shorts": [
+        "Hipótesis de sesiones diarias",
+        "Solo mediante pruebas IAP/rewarded y LTV real",
+        "Jugadores casuales, sin comprador pagador confirmado",
+        "Prueba de retención, no preventa"
+      ],
+      "proof": "Pixel Flow 31,3 MUSD IAP estimado Q3 2026; Colony Flow 13,7 MUSD estimados secundarios; categoría casi 600 MUSD H1 híbridos. Ganadores, NO probabilidad de éxito.",
+      "distribution": "Vídeos verticales orgánicos, formulario de testers y APK cerrada.",
+      "priceHypothesis": "Free + packs opcionales 1,99–3,99 € a TESTEAR, no precio observado.",
+      "phase": "SOLO TEST",
+      "days": [
+        {
+          "day": 7,
+          "task": "Prototipo Carbon: loop 60–90s, 12 niveles y 15 tests observados."
+        },
+        {
+          "day": 14,
+          "task": "35 niveles, analytics victoria, retry, D1, D7 y 2 teléfonos Android."
+        },
+        {
+          "day": 21,
+          "task": "Test orgánico 50–100 jugadores; solo implementar rewarded voluntario si hay retención."
+        }
+      ],
+      "stop": "No escalar si D1 <25 % o D7 <6 % con muestra inicial; umbrales internos tentativos sujetos a tamaño de cohorte.",
+      "confidence": "Baja en inversión, alta en validación técnica.",
+      "budget": "Supuesto 0–120 € orgánicos, sin UA pagada.",
+      "contrary": [
+        "F2P exige centenares/miles de jugadores para estimar conversión, 50 solo orientan.",
+        "Carbon genera prototipo web, no distribución ni LiveOps por sí mismo."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Hipótesis de sesiones diarias"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Solo mediante pruebas IAP/rewarded y LTV real"
+        },
+        {
+          "title": "Comprador",
+          "state": "Jugadores casuales, sin comprador pagador confirmado"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "Prueba de retención, no preventa"
+        }
+      ]
+    },
+    {
+      "id": "merge-production",
+      "name": "Merge narrativo complejo",
+      "type": "game",
+      "focus": "Merge con narrativa y operaciones",
+      "priority": 8,
+      "buyer": "Jugadores globales de merge-2, comprador final no validado",
+      "reason": "Señal económica enorme, pero requiere narrativa, liveops, contenido y UA profesional; no proponer un clon para 21 días.",
+      "comparableIds": [
+        "mysterytown",
+        "jellybusters"
+      ],
+      "shorts": [
+        "Uso diario en títulos existentes",
+        "Gasto IAP estimado elevado solo en líderes",
+        "Millones de jugadores pero no compradores accesibles",
+        "No prevalidable fácilmente"
+      ],
+      "proof": "Merge 1,3 mil MUSD IAP estimado H1 2026 (+74 % YoY) y Mystery Town 40,6 MUSD estimado H1. No significa rentable indie.",
+      "distribution": "No adquirir usuarios; investigar mecánicas para un micro prototipo no comercial.",
+      "priceHypothesis": "No proponer precio sin estudio de cohortes.",
+      "phase": "DESCARTAR MVP COMERCIAL",
+      "days": [
+        {
+          "day": 7,
+          "task": "Analizar 10 bucles y estructura de temporadas."
+        },
+        {
+          "day": 14,
+          "task": "Si interesa, validar solo un encuentro sin historias costosas."
+        },
+        {
+          "day": 21,
+          "task": "No invertir en contenido hasta encontrar ventaja de distribución."
+        }
+      ],
+      "stop": "Descartar como inversión de 21 días por producción y adquisición exigidas.",
+      "confidence": "Alta evidencia de mercado; muy baja viabilidad indie.",
+      "budget": "Presupuesto de producción real fuera de alcance; no estimar.",
+      "contrary": [
+        "Jugadores esperan centenares de niveles y narrativa.",
+        "Híbrido de energía, liveops, analítica y UA requiere equipo."
+      ],
+      "criteria": [
+        {
+          "title": "Frecuencia",
+          "state": "Uso diario en títulos existentes"
+        },
+        {
+          "title": "Valor económico / pago",
+          "state": "Gasto IAP estimado elevado solo en líderes"
+        },
+        {
+          "title": "Comprador",
+          "state": "Millones de jugadores pero no compradores accesibles"
+        },
+        {
+          "title": "Prueba sin construir",
+          "state": "No prevalidable fácilmente"
+        }
+      ]
+    }
+  ],
+  "insights": [
+    {
+      "label": "La oferta no prueba ventas",
+      "finding": "Los precios confirman que una empresa intenta cobrar, pero no el número de suscriptores. Mejor prueba: ingresos reportados, pago de pilotos o cohortes reales.",
+      "source": "https://www.revenuecat.com/state-of-subscription-apps"
+    },
+    {
+      "label": "Saturación de suscripciones",
+      "finding": "RevenueCat: 14.700+ apps nuevas/mes en enero 2026 frente a ~2.000 en 2022; 69 % de ingresos aún de apps lanzadas antes de 2020.",
+      "source": "https://www.revenuecat.com/state-of-subscription-apps"
+    },
+    {
+      "label": "Freemium frente paywall",
+      "finding": "Mediana descarga→pago a día 35: freemium 2,1 %, hard paywall 10,7 %. Diferentes cohortes, no efecto causal.",
+      "source": "https://www.revenuecat.com/state-of-subscription-apps"
+    },
+    {
+      "label": "Ahorro y recurrencia",
+      "finding": "Un comprador profesional localizado por oficio suele permitir pruebas con 15 entrevistas y preventa; esto es una tesis, no estadística pública.",
+      "source": "https://www.prnewswire.com/news-releases/jobber-surpasses-100-000-customers-cementing-its-position-as-the-market-leading-platform-for-home-and-commercial-service-businesses-302768759.html"
+    },
+    {
+      "label": "Gaming winners ≠ probabilidades",
+      "finding": "Los 158 juegos de 2026 en el estudio AppMagic son solo los que ya cruzaron 1 MUSD IAP estimado: selección condicionada al éxito.",
+      "source": "https://appmagic.rocks/research/mobile-games-first-million-2026"
+    },
+    {
+      "label": "Imágenes originales de competidores",
+      "finding": "Los iconos se enlazan desde la ficha original Google Play y se usan como referencia informativa. Prohibido copiarlos al producto desarrollado.",
+      "source": "https://play.google.com/store/apps"
+    }
+  ],
+  "sources": [
+    {
+      "name": "AppTweak: categorías 2025",
+      "url": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
+    },
+    {
+      "name": "RevenueCat 2026",
+      "url": "https://www.revenuecat.com/state-of-subscription-apps"
+    },
+    {
+      "name": "AppMagic H1 2026",
+      "url": "https://appmagic.rocks/blog/casual-report-H12026?hl=en"
+    },
+    {
+      "name": "AppMagic Q3 hybrid",
+      "url": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026"
+    },
+    {
+      "name": "AppMagic first $1M",
+      "url": "https://appmagic.rocks/research/mobile-games-first-million-2026"
+    },
+    {
+      "name": "Sensor Tower Q3",
+      "url": "https://develop.sensortower.com/blog/q3-2026-digital-market-index"
+    },
+    {
+      "name": "Google AI Studio Carbon",
+      "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase"
+    }
+  ],
+  "legacyData": "data/mobile-research.json conservado como laboratorio de hipótesis de la versión anterior."
+}
