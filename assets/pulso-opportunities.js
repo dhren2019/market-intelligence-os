@@ -1,6 +1,6 @@
 (function PulsoOpportunities(){
 "use strict";
-const base="/market-intelligence-os/", themes={agents:["#0d5f70","#75dcd4"],invoices:["#6355a8","#c8b5ff"],returns:["#a45d42","#ffd3a3"],debate:["#a13560","#ff9fbe"]};
+const base="/market-intelligence-os/", themes={agents:["#0d5f70","#75dcd4"],invoices:["#6355a8","#c8b5ff"],returns:["#a45d42","#ffd3a3"],debate:["#a13560","#ff9fbe"],construction:["#315775","#a1d8ed"],industry:["#38665a","#a4e3ca"],logistics:["#345d8c","#a8cfff"],hospitality:["#976039","#ffd5a5"],screens:["#5e4c99","#c8bafa"],tourism:["#247f89","#b8f0ea"],fitness:["#58649e","#b4caff"],media:["#97547c","#efb6db"],gaming:["#6550aa","#ccaeff"]};
 const E=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const U=v=>{try{const u=new URL(v);return u.protocol==="https:"?u.href:"#"}catch{return "#"}};
 const logo=v=>{const u=U(v);return u==="#"?"":`https://www.google.com/s2/favicons?domain=${encodeURIComponent(new URL(u).hostname)}&sz=128`};
@@ -11,6 +11,15 @@ const rootUrl=(path)=>base+path;
 function illustration(kind){
  const [a,b]=themes[kind]||themes.agents;
  const symbols={
+ construction:`<path d="M52 83L180 29l130 54" stroke="#c1f0ff" stroke-width="7" fill="none"/><rect x="70" y="82" width="220" height="83" rx="12" fill="#fff" fill-opacity=".17"/><path d="M95 108h90M95 133h66" stroke="#f3fbff" stroke-width="6"/><circle cx="260" cy="123" r="31" fill="#b2f1e3"/><path d="m245 122 11 11 20-23" stroke="#235460" stroke-width="6" fill="none"/>`,
+ industry:`<rect x="54" y="72" width="252" height="98" rx="11" fill="#fff" fill-opacity=".18"/><path d="M70 128l43-35 44 35 41-35 43 35v40H70z" fill="#fff" fill-opacity=".2"/><path d="M94 65V29M121 65V42" stroke="#e4fff2" stroke-width="9"/><circle cx="261" cy="73" r="29" fill="#d6fff0"/><path d="M261 54v22l15 10" fill="none" stroke="#2c685e" stroke-width="6"/>`,
+ logistics:`<rect x="43" y="61" width="187" height="108" rx="12" fill="#fff" fill-opacity=".18"/><path d="M60 95h130M60 116h100M60 137h80" stroke="#fff" stroke-opacity=".7" stroke-width="7"/><path d="M229 112h48l22 22v35h-70z" fill="#d2e5ff" fill-opacity=".8"/><circle cx="243" cy="166" r="13" fill="#315586" stroke="#b6dbff" stroke-width="5"/><circle cx="281" cy="166" r="13" fill="#315586" stroke="#b6dbff" stroke-width="5"/>`,
+ hospitality:`<rect x="65" y="39" width="158" height="133" rx="13" fill="#fff" fill-opacity=".18"/><path d="M84 76h118M84 103h92M84 130h70" stroke="#ffe7c0" stroke-width="7"/><path d="M240 143l22-37 24 11 27-53" stroke="#ffedc6" stroke-width="9" fill="none" stroke-linecap="round"/>`,
+ screens:`<rect x="41" y="37" width="222" height="125" rx="14" stroke="#eee9ff" stroke-width="3" fill="#fff" fill-opacity=".18"/><path d="M55 75h194M66 96h100M66 116h150" stroke="#d5caff" stroke-width="6"/><rect x="207" y="97" width="99" height="77" rx="12" fill="#ddc9ff" fill-opacity=".75"/><path d="m230 138 13 11 30-32" stroke="#335b50" stroke-width="7" fill="none"/>`,
+ tourism:`<rect x="59" y="35" width="192" height="139" rx="14" fill="#fff" fill-opacity=".19"/><path d="M80 71h145M80 97h111M80 124h130" stroke="#dffff8" stroke-width="7"/><circle cx="273" cy="110" r="36" fill="#c7f5eb"/><path d="m255 109 14 13 23-27" stroke="#266b70" stroke-width="7" fill="none"/>`,
+ fitness:`<rect x="60" y="42" width="186" height="129" rx="16" fill="#fff" fill-opacity=".2"/><path d="M79 75h136M79 102h93M79 130h108" stroke="#e5ebff" stroke-width="8"/><path d="m222 148 27-52 22 20 35-68" stroke="#b5ffe1" stroke-width="7" fill="none"/>`,
+ media:`<rect x="49" y="52" width="225" height="115" rx="13" fill="#fff" fill-opacity=".17"/><circle cx="119" cy="100" r="25" fill="#ffdaec"/><path d="M69 148l43-27 28 20 24-31 82 38" stroke="#f9dcec" stroke-width="7" fill="none"/><rect x="205" y="35" width="110" height="62" rx="10" fill="#fff" fill-opacity=".25"/><path d="M220 59h79M220 76h51" stroke="#ffe0f2" stroke-width="6"/>`,
+ gaming:`<rect x="58" y="52" width="82" height="82" rx="16" fill="#fff" fill-opacity=".22"/><rect x="150" y="78" width="82" height="82" rx="16" fill="#fff" fill-opacity=".25"/><rect x="242" y="45" width="66" height="66" rx="16" fill="#ead7ff" fill-opacity=".5"/><path d="m85 81 28 28m0-28-28 28M177 118h27m-13-14v28" stroke="#fff0ff" stroke-width="8" fill="none"/>`,
  agents:`<path d="M36 90L95 54L154 91" fill="none" stroke="#92fff1" stroke-width="3"/><circle cx="36" cy="90" r="8"/><circle cx="95" cy="54" r="8"/><circle cx="154" cy="91" r="8"/><rect x="202" y="35" width="125" height="94" rx="14" fill="#ffffff" fill-opacity=".12"/><path d="M220 64h89M220 82h62M220 100h42" stroke="#d7fff9" stroke-opacity=".8" stroke-width="5" stroke-linecap="round"/><circle cx="312" cy="111" r="16" fill="#53e9d3"/><path d="m303 111 6 6 12-13" fill="none" stroke="#0b4544" stroke-width="4"/>`,
  invoices:`<rect x="53" y="32" width="115" height="122" rx="12" fill="#fff" fill-opacity=".16"/><rect x="82" y="51" width="115" height="122" rx="12" fill="#fff" fill-opacity=".22"/><path d="M105 81h68M105 98h68M105 116h38" stroke="#f4eaff" stroke-width="6" stroke-linecap="round"/><path d="m212 120 22 20 44-52" fill="none" stroke="#c7ffcf" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="253" cy="99" r="52" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/>`,
  returns:`<rect x="70" y="43" width="128" height="105" rx="12" fill="#fff" fill-opacity=".15"/><path d="M70 79h128M134 43v105" fill="none" stroke="#ffe7cb" stroke-width="4"/><path d="m226 89 26-25 26 25M252 64v65" fill="none" stroke="#ffefd3" stroke-width="6" stroke-linecap="round"/><circle cx="252" cy="94" r="54" fill="none" stroke="#ffffff" stroke-opacity=".3" stroke-width="2"/>`,
@@ -21,7 +30,7 @@ function miniLogo(x){const img=logo(x.url);return img?`<img loading="lazy" alt="
 function badge(s){return s==="explore"?'<span class="op-tag op-tag-warn">Exploración · sin validar</span>':'<span class="op-tag">Prioridad de preventa</span>';}
 function card(x,toDay){
  const href=toDay?`#day/${E(x.date)}`:`#study/${E(x.id)}`;
- return `<a class="op-card" href="${href}">${illustration(x.art)}<div class="op-card-body"><div class="op-card-metas"><span>${E(x.sector)}</span><small>${cleanDate(x.date)}</small></div><h3>${E(x.title)}</h3><p>${E(x.subtitle)}</p><div class="op-card-proof"><span>${E(x.buyer)}</span></div><div class="op-card-foot">${badge(x.status)}<span class="op-card-go">Ver ${toDay?"día":"estudio"} ↗</span></div></div></a>`;
+ return `<a class="op-card" data-op-sector="${E(x.sector)}" href="${href}">${illustration(x.art)}<div class="op-card-body"><div class="op-card-metas"><span>${E(x.sector)}</span><small>${cleanDate(x.date)}</small></div><h3>${E(x.title)}</h3><p>${E(x.subtitle)}</p><div class="op-card-proof"><span>${E(x.buyer)}</span></div><div class="op-card-foot">${badge(x.status)}<span class="op-card-go">Ver ${toDay?"día":"estudio"} ↗</span></div></div></a>`;
 }
 function move(id,dir){const el=document.getElementById(id);if(el)el.scrollBy({left:el.clientWidth*.79*dir,behavior:"smooth"})}
 function dailyHome(){
@@ -51,11 +60,14 @@ function header(kicker,title,sub,back="#opportunities"){
 function filters(){return `<div class="op-filter-pills"><span>01 · Uso frecuente</span><span>02 · Valor en €</span><span>03 · Comprador real</span><span>04 · Previo al desarrollo: preventa</span></div>`}
 function renderIndex(stage){
  const candidates=state.studies.filter(x=>x.status==="candidate"), explore=state.studies.filter(x=>x.status==="explore");
+ const sectors=[...new Set(state.studies.map(x=>x.sector))].sort((a,b)=>a.localeCompare(b,"es"));
+ const stats=(state.sectorMetrics||[]).map(m=>`<a href="${U(m.url)}" target="_blank" rel="noopener noreferrer" class="op-sector-metric"><span>${E(m.name)}</span><strong>${E(m.value)}</strong><small>${E(m.period)} · INE ↗</small></a>`).join("");
+ const sectorBtns=`<div class="op-sector-filter-heading"><div><span class="eyebrow">EXPLORADOR DE OPORTUNIDADES</span><h2>Filtrar por sector</h2></div><span id="op-sector-count">${state.studies.length} estudios</span></div><div class="op-sector-nav" role="group" aria-label="Filtros por sector"><button class="active" type="button" data-op-filter="all" aria-pressed="true">Todos (${state.studies.length})</button>${sectors.map(s=>`<button type="button" data-op-filter="${E(s)}" aria-pressed="false">${E(s)} (${state.studies.filter(x=>x.sector===s).length})</button>`).join("")}</div>`;
  stage.innerHTML=header("SELECCIÓN DOCUMENTADA · 20 NOV 2026","Oportunidades REALES","Productos comparables existentes, compradores identificados y pruebas comerciales ejecutables. No confundimos necesidad plausible con negocio validado.","#home")+filters()+
- `<div class="op-caution"><strong>El filtro es exigente:</strong> las 4 condiciones son hipótesis de viabilidad hasta que se cobren pilotos. El precio de la idea es una propuesta de test, no facturación ni precio confirmado de mercado.</div>`+
+ `<div class="op-caution"><strong>El filtro es exigente:</strong> las 4 condiciones son hipótesis de viabilidad hasta que se cobren pilotos. El precio de la idea es una propuesta de test, no facturación ni precio confirmado de mercado.</div><div class="op-section-head op-gap"><div><span class="eyebrow">SECTORES / DATOS REALES DEL INE</span><h2>Empezamos por la economía real</h2><p>Facturación sectorial publicada, no ventas de software ni TAM. TIC se solapa con otros sectores; turismo mide gasto turístico internacional y no es comparable con facturación.</p></div></div><div class="op-sector-metrics">${stats}</div>${sectorBtns}`+
  `<div class="op-section-head op-section-head-tight"><div><span class="eyebrow">01 / CANDIDATAS QUE MERECE LA PENA VENDER PRIMERO</span><h2>Menos ideas, más problemas concretos</h2><p>Sin chatbots genéricos ni juegos de moda: propuestas con un proceso específico que demostrar.</p></div><strong>${candidates.length} candidatas</strong></div><div class="op-card-grid">${candidates.map(x=>card(x,false)).join("")}</div>`+
- `<div class="op-section-head op-gap"><div><span class="eyebrow">02 / LABORATORIO DE IDEAS</span><h2>Buenas preguntas que aún no superan el filtro</h2><p>Investigadas aunque tengan problemas de recurrencia, acceso al comprador o competencia.</p></div></div><div class="op-card-grid">${explore.map(x=>card(x,false)).join("")}</div>`+
- `<details id="op-legacy" class="op-legacy"><summary><span><strong>Archivo histórico: 55 hipótesis originales</strong><small>Proceden del Excel inicial. No pasan automáticamente a «reales» por tener score.</small></span><b>Desplegar ↘</b></summary><div class="op-legacy-wrap"><label for="op-legacy-query">Buscar en el archivo</label><input type="search" id="op-legacy-query" placeholder="Sector, nombre, comprador..." autocomplete="off"><div id="op-legacy-results" class="op-legacy-grid"></div></div></details>`;
+ `<div class="op-section-head op-gap"><div><span class="eyebrow">02 / LABORATORIO DE IDEAS</span><h2>Laboratorio de ideas · nuevas tendencias</h2><p>Ideas nuevas que no superan todavía alguna de las cuatro pruebas: tendencias, competencia, acceso al comprador o retención.</p></div></div><div class="op-card-grid">${explore.map(x=>card(x,false)).join("")}</div>`+
+ `<details id="op-legacy" class="op-legacy"><summary><span class="op-archive-heading"><span class="op-legacy-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"><rect x="3" y="4" width="18" height="4" rx="1.5"/><path d="M5 8v11a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M10 12h4"/></svg></span><span><strong>Archivo histórico: 55 hipótesis originales</strong><small>Proceden del Excel inicial. No pasan automáticamente a «reales» por tener score.</small></span></span><b>Desplegar ↘</b></summary><div class="op-legacy-wrap"><label for="op-legacy-query">Buscar en el archivo</label><input type="search" id="op-legacy-query" placeholder="Sector, nombre, comprador..." autocomplete="off"><div id="op-legacy-results" class="op-legacy-grid"></div></div></details>`;
  const d=stage.querySelector("#op-legacy");d.addEventListener("toggle",()=>{if(d.open)renderArchive()});
 }
 function renderArchive(){
@@ -108,7 +120,7 @@ async function load(){
  const paths=["data/opportunity-studies.json","data/daily-opportunities.json","data/daily-research.json","data/imports/seed/oportunidades_55_importadas.json"];
  const res=await Promise.all(paths.map(p=>fetch(rootUrl(p),{cache:"no-store"}).then(r=>{if(!r.ok)throw Error(p+" "+r.status);return r.json()})));
  if(!Array.isArray(res[0].items)||!Array.isArray(res[1].days))throw Error("Esquema incorrecto");
- state.studies=res[0].items;state.days=res[1].days.slice().sort((a,b)=>b.date.localeCompare(a.date));state.news=Array.isArray(res[2].items)?res[2].items:[];state.archive=Array.isArray(res[3])?res[3]:[];
+ state.studies=res[0].items;state.sectorMetrics=Array.isArray(res[0].sectorMetrics)?res[0].sectorMetrics:[];state.days=res[1].days.slice().sort((a,b)=>b.date.localeCompare(a.date));state.news=Array.isArray(res[2].items)?res[2].items:[];state.archive=Array.isArray(res[3])?res[3]:[];
  }catch(err){
  console.warn("PULSO: no se pudo cargar el dossier",err);
  const host=getStage();if(host&&location.hash==="#opportunities"){document.body.classList.add("pulso-opps-mode");host.innerHTML=header("ERROR DE CARGA","Investigación no disponible","No se ha podido leer el JSON de oportunidades. Prueba a recargar; no se muestran datos sin verificar.")}
@@ -118,5 +130,12 @@ async function load(){
 }
 window.addEventListener("hashchange",()=>{setTimeout(renderRoute,70);});
 document.addEventListener("input",event=>{if(event.target&&event.target.id==="op-legacy-query")renderArchive()});
+document.addEventListener("click",event=>{
+ const btn=event.target.closest?.("[data-op-filter]");
+ if(!btn)return;const filter=btn.dataset.opFilter;
+ document.querySelectorAll("[data-op-filter]").forEach(b=>{const active=b===btn;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active))});
+ let visible=0;document.querySelectorAll(".op-page .op-card[data-op-sector]").forEach(c=>{c.hidden=filter!=="all"&&c.dataset.opSector!==filter;if(!c.hidden)visible++});
+ const count=document.getElementById("op-sector-count");if(count)count.textContent=visible+" estudios";
+});
 load();
 })();
