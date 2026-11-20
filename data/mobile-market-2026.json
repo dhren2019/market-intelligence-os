@@ -113,7 +113,8 @@
         "against": "El sector pierde instalaciones, alta concentración y costes de UA.",
         "source": "https://www.apptweak.com/en/reports/app-market-size-by-app-category"
       }
-    ]
+    ],
+    "categorySourceNote": "AppTweak 2025: ingresos de compra/consumo de apps estimados por proveedor, App Store + Google Play, mundo. No facturación auditada individual."
   },
   "apps": [
     {
@@ -131,9 +132,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://companycam.com/pricing",
+      "metricSource": null,
       "notes": "Fotos fechadas, informes y prueba de trabajo; gran precio por equipo.",
-      "risk": "Muchos módulos ya existen, no construir plataforma completa."
+      "risk": "Muchos módulos ya existen, no construir plataforma completa.",
+      "priceSource": "https://companycam.com/pricing",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "jobber",
@@ -152,7 +155,9 @@
       "metricPeriod": "12/05/2026",
       "metricSource": "https://www.prnewswire.com/news-releases/jobber-surpasses-100-000-customers-cementing-its-position-as-the-market-leading-platform-for-home-and-commercial-service-businesses-302768759.html",
       "notes": "La empresa afirma adopción B2B, NO ingresos propios publicados aquí.",
-      "risk": "Producto suite madura con gran distribución."
+      "risk": "Producto suite madura con gran distribución.",
+      "priceSource": "https://www.getjobber.com/pricing/",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "maintainx",
@@ -169,9 +174,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://www.getmaintainx.com/pricing",
+      "metricSource": null,
       "notes": "Órdenes de trabajo, historial y mantenimiento preventivo.",
-      "risk": "Barrera de venta industrial; producto muy completo."
+      "risk": "Barrera de venta industrial; producto muy completo.",
+      "priceSource": "https://www.getmaintainx.com/pricing",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "trainerize",
@@ -188,9 +195,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://www.trainerize.com/pricing/",
+      "metricSource": null,
       "notes": "Muestra oferta pagada para coaches y automatización de rutinas.",
-      "risk": "Competidor sólido; encontrar flujo puntual fuera de su oferta."
+      "risk": "Competidor sólido; encontrar flujo puntual fuera de su oferta.",
+      "priceSource": "https://www.trainerize.com/pricing/",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "hevy",
@@ -209,7 +218,9 @@
       "metricPeriod": null,
       "metricSource": null,
       "notes": "Diario de ejercicios con comunidad, planificación y tracking.",
-      "risk": "Logbook general muy competido."
+      "risk": "Logbook general muy competido.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "strava",
@@ -228,7 +239,9 @@
       "metricPeriod": "2026 hasta 15/10/2026",
       "metricSource": "https://appmagic.rocks/blog/strava-growth-story",
       "notes": "AppMagic informa >51 M instalaciones mundiales hasta ese corte; no confundir con banda Android acumulada.",
-      "risk": "Comunidad, red y marca barreras casi inabordables."
+      "risk": "Comunidad, red y marca barreras casi inabordables.",
+      "priceSource": "https://www.strava.com/pricing",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "photopills",
@@ -245,9 +258,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://www.photopills.com/",
+      "metricSource": null,
       "notes": "Herramienta de nicho que vende sin depender de suscripción.",
-      "risk": "Usos ocasionales en amateurs; competidores maduros."
+      "risk": "Usos ocasionales en amateurs; competidores maduros.",
+      "priceSource": "https://www.photopills.com/",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "photoroom",
@@ -266,7 +281,9 @@
       "metricPeriod": null,
       "metricSource": null,
       "notes": "Foto comercial, edición de lote y fondo; muy grande en e-commerce.",
-      "risk": "Editor genérico IA no es oportunidad para MVP pequeño."
+      "risk": "Editor genérico IA no es oportunidad para MVP pequeño.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "duolingo",
@@ -285,7 +302,9 @@
       "metricPeriod": "Q3 2026",
       "metricSource": "https://investors.duolingo.com/news-releases/news-release-details/duolingo-reports-third-quarter-2026-results",
       "notes": "La compañía comunicó +14 % ingresos interanuales; no inferir ventas de microeducación.",
-      "risk": "Marca, contenido, comunidad, monetización compleja."
+      "risk": "Marca, contenido, comunidad, monetización compleja.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "sleepcycle",
@@ -304,7 +323,9 @@
       "metricPeriod": "Q3 2026",
       "metricSource": "https://investors.sleepcycle.com/pressreleases/sleep-cycle-interim-report-july-september-2026-ready-for-the-next-chapter",
       "notes": "Contraejemplo: una app grande puede perder ingresos y abonados.",
-      "risk": "No usar inferencias clínicas ni hacer seguimiento sanitario."
+      "risk": "No usar inferencias clínicas ni hacer seguimiento sanitario.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "bandhelper",
@@ -321,9 +342,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://www.bandhelper.com/main/pricing.html",
+      "metricSource": null,
       "notes": "Cobra por coordinación musical profesional; nicho pequeño.",
-      "risk": "Nicho limitado; frecuencia depende de los ensayos."
+      "risk": "Nicho limitado; frecuencia depende de los ensayos.",
+      "priceSource": "https://www.bandhelper.com/main/pricing.html",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "snipd",
@@ -340,9 +363,11 @@
       "metric": null,
       "metricType": null,
       "metricPeriod": null,
-      "metricSource": "https://www.snipd.com/pricing",
+      "metricSource": null,
       "notes": "Podcast transcripción + highlights y conversaciones.",
-      "risk": "Saturación de IA para notas, coste de procesamiento."
+      "risk": "Saturación de IA para notas, coste de procesamiento.",
+      "priceSource": "https://www.snipd.com/pricing",
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "alltrails",
@@ -361,7 +386,9 @@
       "metricPeriod": null,
       "metricSource": null,
       "notes": "Mapas outdoor y rutas descargables; útil por excursión.",
-      "risk": "Datos de mapas, licencias y red construida con años."
+      "risk": "Datos de mapas, licencias y red construida con años.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "pixelflow",
@@ -380,7 +407,9 @@
       "metricPeriod": "Q3 2026",
       "metricSource": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026",
       "notes": "6 de los 10 líderes hybridcasual Q3 son flow/conveyor según AppMagic.",
-      "risk": "Formato sobreexplotado; adquisición creativa costosa."
+      "risk": "Formato sobreexplotado; adquisición creativa costosa.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "colonyflow",
@@ -399,7 +428,9 @@
       "metricPeriod": "Q3 2026",
       "metricSource": "https://mobidictum.com/hybridcasual-puzzle-report-q3-2026-pixel-flow/",
       "notes": "Puzle con hormigas, flow; creció 434 posiciones del ranking sectorial.",
-      "risk": "El movimiento flow ya acumula decenas de imitaciones."
+      "risk": "El movimiento flow ya acumula decenas de imitaciones.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "jellybusters",
@@ -418,7 +449,9 @@
       "metricPeriod": "17/10/2026",
       "metricSource": "https://appmagic.rocks/research/mobile-games-first-million-2026",
       "notes": "Moon Active escaló un nuevo juego del mismo estilo; no muestra facilidad para indie.",
-      "risk": "Publisher con presupuestos de adquisición enormes."
+      "risk": "Publisher con presupuestos de adquisición enormes.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "mysterytown",
@@ -437,7 +470,9 @@
       "metricPeriod": "H1 2026",
       "metricSource": "https://appmagic.rocks/blog/casual-report-H12026?hl=en",
       "notes": "Merge narrativo y eventos reiterados; gran content workload.",
-      "risk": "No crear story-merge con Carbon en 21 días."
+      "risk": "No crear story-merge con Carbon en 21 días.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "bustraffic",
@@ -456,7 +491,9 @@
       "metricPeriod": "Hasta 17/10/2026",
       "metricSource": "https://appmagic.rocks/research/mobile-games-first-million-2026",
       "notes": "Puzzles de autobuses rentables para algunos operadores.",
-      "risk": "Categoría saturada, sin ventaja IP ni distribución."
+      "risk": "Categoría saturada, sin ventaja IP ni distribución.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     },
     {
       "id": "cubeland",
@@ -475,7 +512,9 @@
       "metricPeriod": "Q3 2026",
       "metricSource": "https://mobidictum.com/hybridcasual-puzzle-report-q3-2026-pixel-flow/",
       "notes": "Block puzzle que creció entre top juegos Q3.",
-      "risk": "Mecánica de color y bloques muy replicada."
+      "risk": "Mecánica de color y bloques muy replicada.",
+      "priceSource": null,
+      "origin": "Google Play ficha oficial, inspeccionada el 20/11/2026"
     }
   ],
   "gameGenres": [
