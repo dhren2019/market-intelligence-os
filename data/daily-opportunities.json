@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-20",
+  "days": [
+    {
+      "date": "2026-11-20",
+      "title": "El valor está en comprobar el trabajo, no en generar más IA",
+      "subtitle": "Tres microproductos B2B evaluados y un análisis crítico del fact-checking televisivo.",
+      "summary": "Se revisaron productos profesionales existentes y se separó su evidencia de las hipótesis de venta. Todas las preventas siguen pendientes.",
+      "featuredIds": [
+        "client-agent-proof",
+        "factura-triple-check",
+        "return-evidence-desk",
+        "debate-evidence-live"
+      ],
+      "sourceResearchIds": [
+        "disseqt-2026-11-18",
+        "payhawk-2026-11-18",
+        "fermat-2026-11-17",
+        "previsia-2026-11-17",
+        "mountain-2026-11-18",
+        "atomico-2026-11-18",
+        "genesis-2026-11-17",
+        "modelml-2026-11-17"
+      ],
+      "note": "La existencia de competidores y rondas es evidencia sectorial, no facturación del microproducto."
+    }
+  ]
+}

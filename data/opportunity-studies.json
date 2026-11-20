@@ -1,0 +1,447 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-20",
+  "policy": "Candidatas priorizadas ≠ negocios validados. Los cuatro criterios evalúan plausibilidad; el pago real se verifica con pilotos. Ingresos/descargas sin cifra atribuible a producto, región y periodo: no verificadas.",
+  "items": [
+    {
+      "id": "client-agent-proof",
+      "title": "Client Agent Proof",
+      "subtitle": "Informes de calidad de agentes IA listos para entregar al cliente",
+      "sector": "SaaS y agentes",
+      "subsector": "Auditoría operativa para agencias",
+      "date": "2026-11-20",
+      "status": "candidate",
+      "art": "agents",
+      "buyer": "Agencias que venden y mantienen automatizaciones con IA a pymes",
+      "geography": "España / internacional",
+      "description": "Una agencia instala un agente que responde correos, clasifica leads o gestiona consultas. Cuando falla, demostrar qué ocurrió al cliente es tedioso. Esta herramienta recibe trazas, señala errores concretos y genera un informe con evidencias y pasos de corrección.",
+      "caseStudy": "El mercado ya tiene herramientas muy completas para observabilidad técnica. LangSmith ofrece seguimiento, evaluaciones y monitorización. La apuesta sería no competir en el motor de observabilidad: concentrarse en el informe de calidad entendible que una agencia entrega a su cliente. Es una hipótesis de diferenciación, no una brecha comercial demostrada.",
+      "whyNow": "LangSmith confirma la existencia de herramientas y cobro recurrente en observabilidad. La financiación anunciada para Disseqt AI señala inversión en seguridad de agentes, pero una ronda no prueba clientes para este microproducto.",
+      "frequency": "Cada entrega, cambio de prompt o incidente; frecuencia semanal probable en agencias activas, aún sin entrevistas.",
+      "value": "Evitar horas de diagnóstico, reclamaciones y pérdida de contratos; ahorro sin cuantificar.",
+      "preSale": "Ofrecer auditoría manual de 3 agentes y cobrar un informe antes de crear software.",
+      "monetization": "Suscripción por agencia + cuota por auditoría; 39–99 €/mes como hipótesis de test, no precio observado.",
+      "ease": "Media: webhooks, informes y reglas simples; no construir un stack de tracing completo.",
+      "positive": [
+        "Hay herramientas profesionales que ya cobran por seguimiento de agentes.",
+        "Una agencia puede comprar por cliente y repetir el proceso.",
+        "Puede venderse como servicio manual antes de automatizar."
+      ],
+      "negative": [
+        "LangSmith, Langfuse y similares cubren gran parte de la tecnología.",
+        "Privacidad de transcripciones y accesos a clientes.",
+        "El valor del informe no está validado con compradores."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Semanal o por despliegue; confirmar volumen real"
+        },
+        {
+          "name": "Valor económico",
+          "state": "hipótesis",
+          "detail": "Horas de QA e incidencias evitadas; cuantificar"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Propietario de agencia automatizadora"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Auditoría manual cobrable"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Landing + ejemplo de informe de un agente con errores ficticios claramente etiquetados; contactar con 15 agencias."
+        },
+        {
+          "days": 14,
+          "text": "Webhook de logs, detección por reglas, historial de incidentes y PDF exportable para el cliente."
+        },
+        {
+          "days": 21,
+          "text": "Pilotos reales, alertas, multicliente y medición de ahorro/hallazgos reales."
+        }
+      ],
+      "validation": "15 conversaciones cualificadas y 3 pilotos pagados; registrar valor del error detectado y voluntad de renovación.",
+      "stopRule": "Parar si no se consiguen 3 compromisos pagados tras 15 entrevistas o si la mayoría resuelve el problema con su observabilidad actual.",
+      "revenue": "No verificada para estos productos y periodo.",
+      "downloads": "No verificadas.",
+      "growth": "Inversión sectorial, no crecimiento comercial atribuible al microproducto.",
+      "competitors": [
+        {
+          "name": "LangSmith",
+          "url": "https://www.langchain.com/pricing",
+          "model": "Observabilidad, pruebas y evaluación de LLM",
+          "price": "Plus: 39 USD/asiento/mes, con uso adicional según tarifa",
+          "priceSource": "https://www.langchain.com/pricing",
+          "differentiation": "Más completo técnicamente; la apuesta es el reporte comercial para clientes."
+        },
+        {
+          "name": "Langfuse",
+          "url": "https://langfuse.com/",
+          "model": "Plataforma de observabilidad y evaluación",
+          "price": null,
+          "differentiation": "Alternativa especializada; no replicar infraestructura ni dashboards."
+        },
+        {
+          "name": "Disseqt AI",
+          "url": "https://www.eu-startups.com/",
+          "model": "Seguridad y gobernanza de agentes",
+          "price": null,
+          "differentiation": "La ronda publicada no equivale a ventas ni demuestra hueco."
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Precios oficiales LangSmith",
+          "url": "https://www.langchain.com/pricing",
+          "claim": "Existe oferta comercial de observabilidad; Plus anunciado a 39 USD/asiento/mes.",
+          "kind": "precio público"
+        },
+        {
+          "label": "Producto LangSmith",
+          "url": "https://www.langchain.com/langsmith/observability",
+          "claim": "Tracing, seguimiento y herramientas para agentes.",
+          "kind": "producto real"
+        }
+      ]
+    },
+    {
+      "id": "factura-triple-check",
+      "title": "Factura Triple Check",
+      "subtitle": "Detecta diferencias entre pedido, albarán y factura sin cambiar el ERP",
+      "sector": "Software B2B",
+      "subsector": "Distribución y compras recurrentes",
+      "date": "2026-11-20",
+      "status": "candidate",
+      "art": "invoices",
+      "buyer": "Distribuidores de suministros y pequeños mayoristas que concilian documentos a mano",
+      "geography": "España",
+      "description": "En muchos pedidos hay tres documentos: lo que se encargó, lo que llegó y lo que se factura. El programa cruza referencia, cantidad, precio y descuentos, y muestra en qué línea aparece una diferencia para reclamarla.",
+      "caseStudy": "Stockagile documenta funciones de compras, proveedores, tarifas e inventario; Orderlion digitaliza pedidos mayoristas. Estos productos confirman que el flujo existe y tiene soluciones, pero no validan que un conciliador independiente sea vendible. La propuesta apunta a distribuidores que aún dependen de CSV, PDF y correo y no quieren una implantación completa.",
+      "whyNow": "El dolor puede demostrarse con documentos propios del comprador y una auditoría manual; evita competir por toda la gestión del ERP.",
+      "frequency": "Semanal o diaria en negocios que comparan muchas compras; validar volumen documental.",
+      "value": "Errores de precio o cantidad con impacto monetario directo, pero sin tasa de error pública atribuible.",
+      "preSale": "Revisar 10 operaciones históricas de 3 distribuidores y cobrar por errores recuperables encontrados.",
+      "monetization": "Piloto por lote y suscripción de 49–99 €/mes como hipótesis, no precio verificado.",
+      "ease": "Media: normalización CSV primero; OCR de PDF como fase posterior.",
+      "positive": [
+        "El comprador puede aportar documentos reales.",
+        "La incidencia tiene posible impacto directo en margen.",
+        "Un flujo basado en CSV cabe en 14 días."
+      ],
+      "negative": [
+        "El software ERP ya hace conciliación para algunos compradores.",
+        "Variedad de formatos y excepciones contables.",
+        "Acceso a documentos financieros de clientes."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Con volumen de operaciones: semanal o diario"
+        },
+        {
+          "name": "Valor económico",
+          "state": "plausible",
+          "detail": "Descuadre en euros por línea"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable de compras o administración"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Auditoría manual de documentos históricos"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Auditoría manual sobre 10 pedidos; comparar errores detectados contra tiempo invertido."
+        },
+        {
+          "days": 14,
+          "text": "Subida de tres CSV, emparejamiento por referencia y fecha, tabla de diferencias y exportación."
+        },
+        {
+          "days": 21,
+          "text": "Plantillas por proveedor, alertas recurrentes y PDFs únicamente si los pilotos justifican OCR."
+        }
+      ],
+      "validation": "Contactar a 12 distribuidores; pedir 3 lotes de 10 operaciones y al menos 2 pilotos pagados.",
+      "stopRule": "No aparecen discrepancias materiales o dos compradores no pagarían por detectar esas anomalías.",
+      "revenue": "No verificada para los comparables (producto/región/periodo).",
+      "downloads": "No verificadas.",
+      "growth": "No comprobado a nivel de producto.",
+      "competitors": [
+        {
+          "name": "Stockagile",
+          "url": "https://stockagile.com/producto/compras/",
+          "model": "Operaciones de compras e inventario",
+          "price": null,
+          "differentiation": "Sistema amplio; propuesta independiente limitada al cruce de tres documentos."
+        },
+        {
+          "name": "Orderlion",
+          "url": "https://www.orderlion.com/en/pricing",
+          "model": "Pedidos mayoristas digitales y módulos conectados",
+          "price": null,
+          "differentiation": "Orderlion digitaliza pedidos; no asumir que carece de controles relacionados."
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Stockagile · compras",
+          "url": "https://stockagile.com/producto/compras/",
+          "claim": "Funciones de compras, proveedores y coste por unidad documentadas.",
+          "kind": "producto real"
+        },
+        {
+          "label": "Orderlion · producto",
+          "url": "https://www.orderlion.com/en/faq",
+          "claim": "Pedidos B2B, tarifas y operaciones mayoristas.",
+          "kind": "producto real"
+        }
+      ]
+    },
+    {
+      "id": "return-evidence-desk",
+      "title": "Return Evidence Desk",
+      "subtitle": "Fotografía, estado y resolución de devoluciones para tiendas pequeñas",
+      "sector": "Retail y apps",
+      "subsector": "Operativa de postventa",
+      "date": "2026-11-20",
+      "status": "candidate",
+      "art": "returns",
+      "buyer": "Cadenas locales de 2–10 tiendas y comercios con devoluciones frecuentes",
+      "geography": "España",
+      "description": "Cada devolución crea una ficha con fotografía, motivo, estado real del producto y decisión: reponer, reparar, devolver al proveedor o descartar. Evita que el producto termine en una caja sin seguimiento.",
+      "caseStudy": "Stockagile ofrece gestión de retail omnicanal y Shopify POS cubre venta y devoluciones. El posible hueco no es cobrar por una función que ya existe, sino un registro fotográfico y una cola de recuperación para operaciones de tiendas locales que hoy trabajan con papel o WhatsApp.",
+      "whyNow": "La validación puede hacerse presencialmente en un negocio concreto, con prototipo móvil muy sencillo.",
+      "frequency": "Diaria si hay volumen de devolución; para una sola tienda pequeña puede ser esporádico.",
+      "value": "Tiempo de reprocesado e inventario recuperado; no hay cifras verificadas por tienda.",
+      "preSale": "Recrear 15 devoluciones reales y ofrecer un piloto por tienda.",
+      "monetization": "Precio de prueba 19–39 €/tienda/mes, hipótesis de preventa.",
+      "ease": "Alta: formularios, cámara, estados y exportación; sin integraciones en MVP.",
+      "positive": [
+        "Caso de uso fácil de enseñar en un móvil.",
+        "Comprador local y posibilidad de pilotar presencialmente.",
+        "Primera versión no necesita IA."
+      ],
+      "negative": [
+        "Sistemas POS y ERP ya cubren parte del flujo.",
+        "El volumen necesario puede no existir en muchas tiendas.",
+        "Datos de compradores y fotos exigen política de privacidad."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "condicionado",
+          "detail": "Solo tiendas con al menos 15 devoluciones/semana"
+        },
+        {
+          "name": "Valor económico",
+          "state": "hipótesis",
+          "detail": "Horas ahorradas y producto recuperado"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "definido",
+          "detail": "Responsable de operaciones retail"
+        },
+        {
+          "name": "Preventa",
+          "state": "viable",
+          "detail": "Piloto por tienda con datos reales"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Prototipo móvil y entrevistas a encargados; probar 15 devoluciones históricas."
+        },
+        {
+          "days": 14,
+          "text": "PWA con foto, estado, responsable, cola y exportación."
+        },
+        {
+          "days": 21,
+          "text": "Reportes por tienda, métricas de recuperación y pilotos con 2 operadores."
+        }
+      ],
+      "validation": "Visitar 10 negocios con devoluciones recurrentes; cobrar 2 pilotos y medir el número real de fichas semanales.",
+      "stopRule": "No hay volumen suficiente (menos de 15 devoluciones semanales) o ninguna tienda acepta pagar.",
+      "revenue": "No verificada por producto/región/periodo.",
+      "downloads": "No verificadas.",
+      "growth": "No comprobado.",
+      "competitors": [
+        {
+          "name": "Stockagile",
+          "url": "https://stockagile.com/",
+          "model": "Gestión retail omnicanal",
+          "price": null,
+          "differentiation": "Más amplio; el enfoque sería trazabilidad fotográfica sin migrar el POS."
+        },
+        {
+          "name": "Shopify POS",
+          "url": "https://www.shopify.com/pos",
+          "model": "Venta y gestión de retail",
+          "price": null,
+          "differentiation": "Producto consolidado; exigir prueba del flujo no resuelto."
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Stockagile · retail",
+          "url": "https://stockagile.com/",
+          "claim": "Plataforma con inventario, gestión y venta omnicanal.",
+          "kind": "producto real"
+        },
+        {
+          "label": "Shopify · POS",
+          "url": "https://www.shopify.com/pos",
+          "claim": "Solución consolidada para tienda física.",
+          "kind": "producto real"
+        }
+      ]
+    },
+    {
+      "id": "debate-evidence-live",
+      "title": "Debate Evidence Live",
+      "subtitle": "Lo que dicen en un debate, contrastado con datos públicos y fuentes",
+      "sector": "Media / IA",
+      "subsector": "Fact-checking audiovisual",
+      "date": "2026-11-20",
+      "status": "explore",
+      "art": "debate",
+      "buyer": "Redacciones, productoras de programas de actualidad y equipos de verificación (comprador a entrevistar)",
+      "geography": "España / UE",
+      "description": "Una extensión de navegador o web de segunda pantalla escucha fragmentos autorizados de un debate, detecta afirmaciones comprobables y presenta las fuentes relevantes. No marca automáticamente a una persona como mentirosa: distingue datos corroborados, evidencia insuficiente, afirmaciones debatibles y contradicciones documentadas.",
+      "caseStudy": "Ya hay competidores directos. Factiverse Live promete transcripción y análisis en directo, con precio personalizado. Full Fact AI monitoriza canales, identifica afirmaciones y reutiliza verificaciones. Defacto anuncia una capa flotante y FactFlow presenta extensión y aplicación. El hueco para España (fuentes oficiales, BOE/INE, citas y cobertura lingüística) es hipótesis, no territorio libre.",
+      "whyNow": "La tecnología de transcripción y búsqueda permite un prototipo, pero la calidad periodística y los derechos audiovisuales son las barreras principales.",
+      "frequency": "En el espectador general, debates en directo son esporádicos. En una redacción que cubra información política, uso potencialmente semanal, por verificar.",
+      "value": "Ahorro de tiempo de documentación y aumento de cobertura; no demostrado en euros para un cliente.",
+      "preSale": "Entrevistar 10 periodistas/verificadores y ofrecer un piloto de debate grabado con citas revisadas por humanos.",
+      "monetization": "B2B por evento / asiento editorial; precio no verificado. Evitar prometer B2C recurrente sin evidencia.",
+      "ease": "Baja para veredictos confiables en tiempo real; media para prototipo asistido sobre clips cortos.",
+      "positive": [
+        "Factiverse y Full Fact acreditan producto/tecnología existente.",
+        "Diferenciación local posible si hay flujo editorial especializado.",
+        "Se puede testear con transcripciones autorizadas antes de Smart TV."
+      ],
+      "negative": [
+        "Competencia directa ya presente; no es nicho virgen.",
+        "Un LLM puede equivocarse, inventar referencias o confundir contexto.",
+        "El público masivo no necesariamente paga ni usa la función a diario.",
+        "Captura de audio de TV y publicación de material plantea derechos/licencias."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "no demostrado",
+          "detail": "Para B2C ocasional; B2B editorial por investigar"
+        },
+        {
+          "name": "Valor económico",
+          "state": "no demostrado",
+          "detail": "Ahorrar horas editoriales; medir con una redacción"
+        },
+        {
+          "name": "Comprador claro",
+          "state": "hipótesis",
+          "detail": "Periodistas, medios o verificadores; sin conversaciones"
+        },
+        {
+          "name": "Preventa",
+          "state": "posible",
+          "detail": "Piloto editorial con revisión humana"
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Demo sobre transcripción histórica autorizada; extracción de frases y enlaces a INE, BOE y Eurostat."
+        },
+        {
+          "days": 14,
+          "text": "Extensión opcional que analiza subtítulos de un vídeo permitido, consulta fuentes y muestra estado 'sin evidencia'."
+        },
+        {
+          "days": 21,
+          "text": "Piloto editorial en una redacción con revisión humana, tiempo por afirmación y tasa de falsos positivos."
+        }
+      ],
+      "validation": "Entrevistar 10 medios/agencias; conseguir 1 piloto editorial pagado y medir precisión por afirmación antes de construir Smart TV.",
+      "stopRule": "Abandonar enfoque directo al consumidor si no se demuestra uso frecuente; parar producto de veredictos instantáneos si hay falsos positivos sin revisión controlable.",
+      "revenue": "Factiverse, Full Fact, Defacto y FactFlow: facturación por producto no verificada.",
+      "downloads": "No verificadas.",
+      "growth": "No verificado. Existencia de productos no equivale a ventas.",
+      "competitors": [
+        {
+          "name": "Factiverse Live",
+          "url": "https://www.factiverse.ai/solutions/live",
+          "model": "Fact-checking en directo, precio bajo acuerdo comercial",
+          "price": "Precio personalizado (sin tarifa numérica publicada)",
+          "priceSource": "https://www.factiverse.ai/solutions/live",
+          "differentiation": "Competidor directo con producto ya implementado."
+        },
+        {
+          "name": "Full Fact AI",
+          "url": "https://fullfact.ai/product/",
+          "model": "Monitorización audiovisual, alertas y matching de afirmaciones",
+          "price": null,
+          "differentiation": "Experiencia periodística y herramientas avanzadas."
+        },
+        {
+          "name": "Defacto",
+          "url": "https://askdefacto.com/",
+          "model": "Verificación en una superposición en pantalla",
+          "price": null,
+          "differentiation": "El formato overlay ya existe."
+        },
+        {
+          "name": "FactFlow",
+          "url": "https://www.factflow.ai/",
+          "model": "Extensión y plataforma para verificaciones políticas",
+          "price": null,
+          "differentiation": "Competencia directa y foco en fuentes oficiales."
+        }
+      ],
+      "evidence": [
+        {
+          "label": "Factiverse Live · producto y precio",
+          "url": "https://www.factiverse.ai/solutions/live",
+          "claim": "Transcripción y análisis en vivo; contrato de precio personalizado.",
+          "kind": "producto y tarifa"
+        },
+        {
+          "label": "Full Fact AI · producto",
+          "url": "https://fullfact.ai/product/",
+          "claim": "Transcripción y monitorización de canales, reconocimiento de afirmaciones repetidas.",
+          "kind": "producto real"
+        },
+        {
+          "label": "Defacto · overlay",
+          "url": "https://askdefacto.com/",
+          "claim": "Promueve superposición de verificaciones durante debates.",
+          "kind": "producto real"
+        },
+        {
+          "label": "Full Fact · confianza ciudadana",
+          "url": "https://fullfact.org/policy/reports/full-fact-report-2026/",
+          "claim": "Solo el 5 % de encuestados británicos recurriría primero a una herramienta IA para verificar información política; población/país específicos, no España.",
+          "kind": "encuesta"
+        }
+      ]
+    }
+  ]
+}
