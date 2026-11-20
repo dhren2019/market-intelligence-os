@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-11-20",
+  "policy": "Las tarjetas muestran hipótesis originales; imágenes de comparables o demos de Carbon con atribución, no producto propio. No reproducir marcas ni assets. RevenueCat = agregado; AppMagic = IAP estimado (no ingresos auditados ni ads). Sin retención, preventas o pruebas de pago, ninguna idea está comercialmente validada.",
+  "benchmarks": [
+    {
+      "title": "RevenueCat Subscription Apps 2026",
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "finding": "115.000+ apps y >16.000 MUSD ingresos en datos agregados; 2025 principalmente. No inferir pagos individuales."
+    },
+    {
+      "title": "AppMagic Casual H1 2026",
+      "url": "https://appmagic.rocks/blog/casual-report-H12026?hl=en",
+      "finding": "Puzzle 4.900 MUSD IAP estimado; Merge 1.300 MUSD (+74% interanual), global H1 2026."
+    },
+    {
+      "title": "AppMagic 158 first million games 2026",
+      "url": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+      "finding": "158 juegos de cohorte seleccionada alcanzan >1MUSD de IAP estimado, corte 17 octubre 2026; selección sesgada, no tasa de éxito general."
+    },
+    {
+      "title": "Google AI Studio Carbon official showcase",
+      "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase",
+      "finding": "Publicación 10 noviembre 2026: demos reales de juegos 3D, isométricos y simulaciones generados con Carbon. No garantiza publicación Android/iOS."
+    }
+  ],
+  "items": [
+    {
+      "id": "setready",
+      "name": "SetReady",
+      "kind": "freemium",
+      "sector": "Música y directos",
+      "status": "candidate",
+      "tagline": "El ensayo de una banda se convierte en un plan concreto para el próximo concierto.",
+      "buyer": "Bandas activas de 3–8 músicos con bolos mensuales",
+      "concept": "Cada músico marca los temas que fallaron, tiempos ensayados y nivel de preparación. La app genera una lista priorizada para el próximo ensayo. Sin letras ni música protegidas.",
+      "compare": [
+        {
+          "name": "BandHelper",
+          "url": "https://www.bandhelper.com/",
+          "price": "Basic desde 2,25 USD/mes (solo) o 4 USD/mes (2–5 usuarios); tarifa web oficial",
+          "proof": "Vende gestión de repertorio, prácticas y bolos; facturación por producto NO verificada",
+          "imageUrl": "https://www.bandhelper.com/images/content/home_book.jpg"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Tarifas oficiales BandHelper",
+          "url": "https://www.bandhelper.com/main/pricing.html",
+          "finding": "Precio publicado 20/11/2026, denominación y alcance según número de músicos."
+        }
+      ],
+      "imageUrl": "https://www.bandhelper.com/images/content/home_book.jpg",
+      "imageSource": "https://www.bandhelper.com/",
+      "feasibility": "Alta: PWA/Capacitor sin integración de audio",
+      "monetization": "Gratis 1 banda y 3 ensayos; Pro: historial, equipo y acta de bolo. Precio a probar 2,99 €/mes (hipótesis).",
+      "positive": [
+        "Comprador localizable en grupos musicales",
+        "Referencia con pagos ofrecidos y prueba gratis",
+        "Uso semanal plausible"
+      ],
+      "negative": [
+        "BandHelper ya registra prácticas",
+        "Poca disposición al pago de bandas ocasionales"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Dos bandas prueban un ensayo con checklist manual."
+        },
+        {
+          "days": 14,
+          "text": "PWA con temas, incidencias, votos y planificación del siguiente ensayo."
+        },
+        {
+          "days": 21,
+          "text": "Beta móvil con exportación Pro y 3 preventas si hay interés."
+        }
+      ],
+      "validation": "15 bandas, al menos 3 preventas y 2 ensayos repetidos por cada una.",
+      "stopRule": "Descartar si nadie paga tras 15 conversaciones o si resuelven lo mismo con BandHelper.",
+      "marketEvidence": "Oferta comercial verificada, ingresos de BandHelper no publicados por periodo/país.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "shotslot",
+      "name": "ShotSlot",
+      "kind": "freemium",
+      "sector": "Fotografía profesional",
+      "status": "candidate",
+      "tagline": "Agenda sesiones inmobiliarias por la mejor luz, no por intuición.",
+      "buyer": "Fotógrafos inmobiliarios y creadores de exterior con encargos semanales",
+      "concept": "La app calcula luz solar y dirección de fachada para planificar una sesión, crear fichas por cliente y compartir hora recomendada. Sin AR avanzada en el MVP.",
+      "compare": [
+        {
+          "name": "PhotoPills",
+          "url": "https://www.photopills.com/",
+          "price": "10,99 USD, compra única anunciada en web oficial",
+          "proof": "Alternativa profesional de planificación fotográfica; ingresos/descargas NO verificados",
+          "imageUrl": "https://www.photopills.com/sites/all/themes/photopills/images/how-it-works-2.jpg"
+        }
+      ],
+      "sources": [
+        {
+          "label": "PhotoPills web oficial",
+          "url": "https://www.photopills.com/",
+          "finding": "Precio y producto publicitados por el proveedor, comprobados 20/11/2026."
+        }
+      ],
+      "imageUrl": "https://www.photopills.com/sites/all/themes/photopills/images/how-it-works-2.jpg",
+      "imageSource": "https://www.photopills.com/",
+      "feasibility": "Alta: cálculo solar local y PWA; evitar mapas de pago",
+      "monetization": "Gratis 3 planes; Pro: clientes ilimitados y PDF. 4,99 € pago único o 19 €/año como test, no precio observado.",
+      "positive": [
+        "Comprador factura por sesión",
+        "Precio publicado de un comparable especializado",
+        "Sin inferencia IA costosa"
+      ],
+      "negative": [
+        "PhotoPills ya hace planificación solar",
+        "Uso esporádico del fotógrafo aficionado"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "10 entrevistas y dos informes de luz vendidos manualmente."
+        },
+        {
+          "days": 14,
+          "text": "Motor solar, orientación y agenda por cliente."
+        },
+        {
+          "days": 21,
+          "text": "Exportación Pro y 3 pilotos pagados."
+        }
+      ],
+      "validation": "2 planes pagados y 3 sesiones reales de trabajo documentadas.",
+      "stopRule": "Parar si todos prefieren PhotoPills o nadie paga una ficha colaborativa.",
+      "marketEvidence": "PhotoPills ofrece precio verificable; facturación de producto NO verificada.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "roundcraft",
+      "name": "RoundCraft",
+      "kind": "freemium",
+      "sector": "Deportes de nicho",
+      "status": "explore",
+      "tagline": "Rutinas de precisión para disc golf sin mapas, GPS ni otra app de scorecards.",
+      "buyer": "Disc golfers con entrenamientos semanales en Estados Unidos y Europa norte",
+      "concept": "Series de 20 lanzamientos, progresión de putting y práctica adaptada. Enfocado solo en entrenamiento, no en cartografía ni campos.",
+      "compare": [
+        {
+          "name": "UDisc",
+          "url": "https://udisc.com/",
+          "price": "Plan gratuito y UDisc Pro; precio numérico no verificado sin sesión",
+          "proof": "UDisc declara más de 2 millones de jugadores, no 2 millones de pagadores",
+          "imageUrl": "https://udisc.com/assets/BA9w6oHRl565D.png"
+        }
+      ],
+      "sources": [
+        {
+          "label": "UDisc oferta Pro",
+          "url": "https://udisc.com/subscribe",
+          "finding": "Existe producto Premium y prueba temporal; sin cuota numérica pública comprobada."
+        }
+      ],
+      "imageUrl": "https://udisc.com/assets/BA9w6oHRl565D.png",
+      "imageSource": "https://udisc.com/",
+      "feasibility": "Alta: gráficas y formularios offline, sin mapas",
+      "monetization": "Gratis dos entrenamientos por semana; Pro por entrenamientos personalizados, precio sin validar.",
+      "positive": [
+        "Usuarios de nicho y producto Premium existente",
+        "Esfuerzo de MVP acotado"
+      ],
+      "negative": [
+        "Mercado reducido en España",
+        "Competencia fuerte y valor no económico"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "15 entrevistas a jugadores en comunidades."
+        },
+        {
+          "days": 14,
+          "text": "Prototipo de 3 drills y seguimiento."
+        },
+        {
+          "days": 21,
+          "text": "Cohorte de 30 jugadores y prueba de interés en Pro."
+        }
+      ],
+      "validation": "5 compromisos de compra con precio visible.",
+      "stopRule": "Parar si <3 de 15 entrevistas muestran intención de pago concreta.",
+      "marketEvidence": "2 M+ jugadores declarados por empresa, no ingresos ni descargas.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "earloop",
+      "name": "EarLoop",
+      "kind": "freemium",
+      "sector": "Aprendizaje en audio",
+      "status": "explore",
+      "tagline": "Convierte una idea oída en una tarea y recordatorio, sin crear otro reproductor.",
+      "buyer": "Oyentes intensivos que aprenden para su trabajo",
+      "concept": "Importar anotaciones/transcripciones permitidas y convertirlas en acciones con repaso espaciado. No descargar contenido de pago sin licencia.",
+      "compare": [
+        {
+          "name": "Snipd",
+          "url": "https://www.snipd.com/",
+          "price": "Premium 6,99 USD/mes mostrados en web, varía por país",
+          "proof": "Snipd ofrece transcripciones, highlights y repaso; ingresos no verificados",
+          "imageUrl": "https://www.snipd.com/opengraph-image.jpg?a59756aa05685f8c"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Snipd precios",
+          "url": "https://www.snipd.com/pricing",
+          "finding": "Premium 6,99 USD/mes, 900 minutos procesados/mes según página oficial."
+        }
+      ],
+      "imageUrl": "https://www.snipd.com/opengraph-image.jpg?a59756aa05685f8c",
+      "imageSource": "https://www.snipd.com/",
+      "feasibility": "Media: compartición, almacenamiento y notificaciones sin IA pesada",
+      "monetization": "Free 3 notas/semana; Pro ilimitado, por validar.",
+      "positive": [
+        "Se conoce al menos una oferta de pago publicada",
+        "Uso de podcast potencialmente habitual"
+      ],
+      "negative": [
+        "Competencia saturada en AI notes",
+        "Valor económico indirecto",
+        "Transcribir material tiene coste y derechos"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "15 entrevistas a usuarios de podcasts."
+        },
+        {
+          "days": 14,
+          "text": "Captura por share sheet y repasos."
+        },
+        {
+          "days": 21,
+          "text": "Beta de 20 usuarios con D7."
+        }
+      ],
+      "validation": "3 preventas antes de comprar servicios IA.",
+      "stopRule": "Parar si usuarios siguen prefiriendo Snipd o abandonan el repaso.",
+      "marketEvidence": "Precio Premium verificado; ingresos producto no publicados.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "signal-yard",
+      "name": "Signal Yard",
+      "kind": "carbon-game",
+      "sector": "Puzzle de rutas / 2,5D",
+      "status": "candidate",
+      "tagline": "Dirige trenes de carga en una red cambiante con partidas de 90 segundos.",
+      "buyer": "Jugadores casual de lógica espacial, sin comprador de pago confirmado",
+      "concept": "Girar módulos de vías en tiempo limitado antes de que llegue un convoy; cambia el destino según la carga, con una mecánica original y niveles procedurales.",
+      "compare": [
+        {
+          "name": "Bus Traffic Fever!",
+          "url": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+          "price": "Juego F2P; tickets IAP no verificados",
+          "proof": "AppMagic lo incluye entre cinco puzzles 2026 con más de 10 MUSD IAP estimado acumulado, global/corte octubre 2026; NO facturación contable",
+          "imageUrl": "https://www.gstatic.com/aistudio-static/applets/courier-field/image.png"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Estudio de 158 juegos (AppMagic)",
+          "url": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+          "finding": "Bus Traffic Fever! entre títulos >10 MUSD IAP estimado; muestra sesgada a ganadores."
+        },
+        {
+          "label": "Carbon Courier Field",
+          "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase",
+          "finding": "Imagen de demostración técnica de Carbon, no screenshot del concepto ni del comparable."
+        }
+      ],
+      "imageUrl": "https://www.gstatic.com/aistudio-static/applets/courier-field/image.png",
+      "imageSource": "https://appmagic.rocks/research/mobile-games-first-million-2026",
+      "feasibility": "Media: motor tile/grid + animación 2.5D, no mundo abierto",
+      "monetization": "Free capítulos básicos; IAP pack original de rutas y rewarded opcional tras perder (sin interstitial en medio).",
+      "positive": [
+        "Hook visual comprensible",
+        "Prototipo Carbon en una semana",
+        "Referencias con IAP estimado sustancial"
+      ],
+      "negative": [
+        "Nicho traffic/sort muy competido",
+        "Retención y CPI sin datos de nuestro juego"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "Un loop 90s, 15 circuitos y 15 testers."
+        },
+        {
+          "days": 14,
+          "text": "30 niveles y telemetría de reinicio, victoria y abandono."
+        },
+        {
+          "days": 21,
+          "text": "APK Capacitor y test orgánico de 50 personas, D1/D7 y precio de pack."
+        }
+      ],
+      "validation": "Objetivo experimental: ≥30% vuelven en D1 y ≥10% intentan pack voluntario; no benchmark garantizado.",
+      "stopRule": "Parar si D1 <20% tras 50 testers o controles fallan en más de 20% de sesiones.",
+      "marketEvidence": "Bus Traffic Fever!: IAP estimado >10 MUSD, global, hasta corte 17/10/2026; no ingresos propios.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "orbital-workshop",
+      "name": "Orbital Workshop",
+      "kind": "carbon-game",
+      "sector": "Puzle de física / reacción",
+      "status": "candidate",
+      "tagline": "Construye una máquina de tres piezas y observa si el orbe alcanza su objetivo.",
+      "buyer": "Jugadores de puzzles físicos móviles",
+      "concept": "Colocar rampas, imanes y compuertas; se suelta una bola y aparece una reacción distinta según la orientación. Reintentar en un toque. Física acotada para móviles.",
+      "compare": [
+        {
+          "name": "Pixel Flow!",
+          "url": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026",
+          "price": "F2P con IAP; ticket no verificado",
+          "proof": "AppMagic estimó 31,3 MUSD IAP global en Q3 2026 para Pixel Flow!; mecánica diferente, no un clon",
+          "imageUrl": "https://www.gstatic.com/aistudio-static/applets/clockwork-sanctum/image.png"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Informe oficial AppMagic Q3",
+          "url": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026",
+          "finding": "31,3 MUSD de IAP estimado para Pixel Flow!, no facturación del concepto."
+        },
+        {
+          "label": "Carbon Clockwork Sanctum",
+          "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase",
+          "finding": "Demo de puzle isométrico con luz y física (imagen técnica)."
+        }
+      ],
+      "imageUrl": "https://www.gstatic.com/aistudio-static/applets/clockwork-sanctum/image.png",
+      "imageSource": "https://appmagic.rocks/research/Hybridcasual-Puzzles-Q32026",
+      "feasibility": "Media: física limitada, no motor realista de 1.000 objetos",
+      "monetization": "Free primeros talleres; IAP de packs/temas y rewarded opcional de pista.",
+      "positive": [
+        "Gran claridad visual de causa y efecto",
+        "Carbon puede crear escenas isométricas",
+        "Cifras publicadas de IAP híbrido en títulos comparables"
+      ],
+      "negative": [
+        "Física móvil inestable si excesivamente compleja",
+        "No hay pruebas de retención ni pagadores propios"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "10 niveles con seis tipos de piezas."
+        },
+        {
+          "days": 14,
+          "text": "25 niveles y eventos de telemetría de reintentos."
+        },
+        {
+          "days": 21,
+          "text": "APK y prueba a 50 testers con oferta de packs."
+        }
+      ],
+      "validation": "Medir D1 y 10% de interés explícito en pack, no atribuir ventas.",
+      "stopRule": "Parar si la física falla o tras cinco niveles nadie quiere repetir.",
+      "marketEvidence": "Pixel Flow!: 31,3 MUSD IAP estimado Q3 2026, global, AppMagic.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    },
+    {
+      "id": "pocket-bazaar-draft",
+      "name": "Pocket Bazaar Draft",
+      "kind": "carbon-game",
+      "sector": "Roguelite de inventario",
+      "status": "explore",
+      "tagline": "Una vitrina de reliquias rotatorias cuyas combinaciones cambian el combate.",
+      "buyer": "Jugadores de estrategia corta y sinergias de objetos",
+      "concept": "Piezas hexagonales que activan a sus vecinas tras girarlas; resolución rápida contra NPC locales. Sin copiar sistema, personajes ni art de Backpack Brawl.",
+      "compare": [
+        {
+          "name": "Backpack Brawl",
+          "url": "https://play.google.com/store/apps/details?id=com.rapidfiregames.backpackbrawl",
+          "price": "Juego gratis con compras integradas",
+          "proof": "Ingresos/descargas de producto, región y periodo no verificados",
+          "imageUrl": "https://www.gstatic.com/aistudio-static/applets/alpine-peak/image.png"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Backpack Brawl Google Play",
+          "url": "https://play.google.com/store/apps/details?id=com.rapidfiregames.backpackbrawl",
+          "finding": "Juego comercial con compras integradas; no da facturación."
+        },
+        {
+          "label": "Carbon Alpine Peak",
+          "url": "https://aistudio.google.com/learn/gemini-4-carbon-showcase",
+          "finding": "Demo pixel art isométrico, solo referencia de capacidad técnica."
+        }
+      ],
+      "imageUrl": "https://www.gstatic.com/aistudio-static/applets/alpine-peak/image.png",
+      "imageSource": "https://play.google.com/store/apps/details?id=com.rapidfiregames.backpackbrawl",
+      "feasibility": "Media: sistema de sinergias y balance; evitar PvP backend",
+      "monetization": "Gratis retos base; DLC cosmético solo tras validación.",
+      "positive": [
+        "Partidas cortas y combinatorias",
+        "Posible prototipo 2D con Carbon"
+      ],
+      "negative": [
+        "Categoría de mochilas ya imitada ampliamente",
+        "Ingresos individuales del comparable no verificados",
+        "Balance muy costoso a escala"
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "10 objetos con sinergias y 5 rivales."
+        },
+        {
+          "days": 14,
+          "text": "25 reliquias, economía en una run, tutorial."
+        },
+        {
+          "days": 21,
+          "text": "50 testers, D1/D7 y test cosmético; no tienda real todavía."
+        }
+      ],
+      "validation": "≥10 de 50 piden jugar otra partida tras tres encuentros.",
+      "stopRule": "Parar si mecánica indistinguible de mochilas existentes o baja repetición.",
+      "marketEvidence": "Backpack Brawl muestra IAP pero ingresos no verificables; la referencia Google es técnica.",
+      "period": "20/11/2026",
+      "revenueOwn": "No verificada: producto propuesto, sin ventas.",
+      "downlOwn": "No verificadas",
+      "criteria": {
+        "frequent": "Por comprobar con usuarios/uso repetido",
+        "economic": "Medir tiempo o disposición real de pago",
+        "buyer": "Comprador objetivo definido, no confirmado por entrevista",
+        "presale": "Hipótesis de preventa o test de IAP; sin pagos propios confirmados"
+      }
+    }
+  ]
+}
