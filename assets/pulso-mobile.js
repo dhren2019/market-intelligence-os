@@ -68,7 +68,7 @@ function renderCategory(c){
 function renderApp(p){
  const st=stage();if(!st)return;
  const c=dcat(p.cat),ops=state.data.opportunities.filter(x=>x.comparableIds.includes(p.id));
- st.innerHTML=`${back()}<header class="mr-app-head">${img(p,"mr-app-main-icon")}<div><span class="eyebrow">CASO REAL / GOOGLE PLAY / ${e(c?.name||"")}</span><h1>${e(p.name)}</h1><p>Producto existente con ficha oficial y modelo de monetización documentado.</p><div class="mr-inline-links">${sourceLink(p.storeUrl,"Google Play")}${p.metricSource?sourceLink(p.metricSource,"Fuente de cifra"):''}</div></div></header>
+ st.innerHTML=`${back()}<header class="mr-app-head">${img(p,"mr-app-main-icon")}<div><span class="eyebrow">CASO REAL / GOOGLE PLAY / ${e(c?.name||"")}</span><h1>${e(p.name)}</h1><p>Producto existente con ficha oficial y modelo de monetización documentado.</p><div class="mr-inline-links">${sourceLink(p.storeUrl,"Google Play")}${p.priceSource?sourceLink(p.priceSource,"Precios oficiales"):''}${p.metric&&p.metricSource?sourceLink(p.metricSource,"Fuente económica"):''}</div></div></header>
  <div class="mr-hero-stats mr-app-stats"><article><span>Instalaciones Android</span><strong>${e(p.androidInstalls)}</strong><small>Banda acumulada Google Play</small></article><article><span>Monetización</span><strong class="mr-long">${e(p.model)}</strong><small>${e(p.price)}</small></article><article><span>Evidencia económica</span><strong class="mr-long">${p.metric?e(p.metric):"Sin cifra verificable"}</strong><small>${e(p.metricPeriod||"No se encontraron ingresos por producto")}</small></article></div>
  <div class="mr-two-cols"><article class="mr-analysis-panel"><span class="eyebrow">PRODUCTO Y MERCADO</span><h2>¿Qué demuestra?</h2><p>${e(p.notes)}</p>${p.metric?`<p><b>Tipo de cifra:</b> ${e(p.metricType)}. Periodo ${e(p.metricPeriod)}. ${e(p.metricSource?"Fuente atribuida, no ventas de nuestra propuesta.":"")}</p>`:"<p>La existencia de precio/descargas no permite inferir facturación real del producto.</p>"}<p class="mr-attr">${e(p.installsMeaning)}</p></article>
  <article class="mr-analysis-panel"><span class="eyebrow">LECTURA DE INVERSIÓN</span><h2>¿Por qué no replicarlo?</h2><p>${e(p.risk)}</p><p>La oportunidad no es copiar su marca, assets, código ni su conjunto de funciones. Hay que detectar un flujo desatendido y comprobar pago antes de construir.</p></article></div>
@@ -110,6 +110,7 @@ function show(){
  if(!state.data){return}
  if(active()){
  const hash=decodeURIComponent(location.hash.slice(1)),old=state.last;
+ if(hash===old&&stage()?.innerHTML.trim()){homePanel();opportunitiesPanel();return;}
  if(hash==="mobile")renderIndex();
  else if(hash.startsWith("mobile-category/")){const x=dcat(hash.slice(16));x?renderCategory(x):renderLegacy("")}
  else if(hash.startsWith("mobile-app/")){const x=product(hash.slice(11));x?renderApp(x):renderLegacy("")}
