@@ -1,97 +1,130 @@
-(function mobileModule(){
-'use strict';
-const BASE="/market-intelligence-os/";
-const state={items:[],benchmarks:[],activeTab:"all",last:null};
-const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const safe=x=>{try{const u=new URL(x);return u.protocol==="https:"?u.href:"#"}catch{return "#"}};
-const allowed=new Set(["www.bandhelper.com","www.photopills.com","udisc.com","www.snipd.com","www.gstatic.com"]);
-const sourceImage=x=>{try{const u=new URL(x);return u.protocol==="https:"&&allowed.has(u.hostname)?u.href:""}catch{return ""}};
-const favicon=x=>{const u=safe(x);if(u==="#")return"";return "https://www.google.com/s2/favicons?domain="+encodeURIComponent(new URL(u).hostname)+"&sz=128"};
-const isMobile=()=>location.hash==="#mobile"||location.hash.startsWith("#mobile-study/");
+(function mobileMarket(){
+"use strict";
+const B="/market-intelligence-os/", state={data:null,mode:"all",cat:"all",last:null};
+const e=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const url=v=>{try{const x=new URL(v);return x.protocol==="https:"?x.href:"#"}catch{return "#"}};
+const imageUrl=v=>{try{const u=new URL(v);return u.protocol==="https:"&&u.hostname==="play-lh.googleusercontent.com"?u.href:""}catch{return ""}};
+const $=s=>document.querySelector(s);
+const dcat=id=>state.data?.marketData.categories.find(c=>c.id===id);
+const product=id=>state.data?.apps.find(p=>p.id===id);
+const opportunity=id=>state.data?.opportunities.find(p=>p.id===id);
+const all=state.data?.apps||[];
+function img(p,cls="mr-icon"){const src=imageUrl(p.icon);return src?`<img class="${cls}" loading="lazy" src="${e(src)}" alt="Icono oficial de ${e(p.name)} en Google Play">`:`<span class="${cls} mr-img-fallback">▣</span>`}
+function back(text="Volver al informe"){return `<a href="#mobile" class="mr-back">← ${e(text)}</a>`}
+function stage(){let el=$("#pulso-mobile-stage"),w=$(".workspace");if(!w)return null;if(!el){el=document.createElement("section");el.id="pulso-mobile-stage";el.className="mr-page";const old=w.querySelector(":scope > .main-content");if(old)w.insertBefore(el,old);else w.append(el)}return el}
 function nav(){
- const nav=document.querySelector(".primary-nav");
- if(!nav)return;
- let link=nav.querySelector('a[href="#mobile"]');
- if(!link){link=document.createElement("a");link.href="#mobile";link.className="pulso-mobile-nav";link.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4M9 5h6"/></svg><span>Apps y juegos</span>';const opp=nav.querySelector('a[href="#opportunities"]');if(opp)opp.insertAdjacentElement("afterend",link);else nav.append(link);}
- link.classList.toggle("web-active",isMobile());
- const origin=nav.querySelector('a[href="#opportunities"]');if(origin&&isMobile())origin.classList.remove("web-active");
+ const n=$(".primary-nav");if(!n)return;
+ let a=n.querySelector('a[href="#mobile"]');
+ if(!a){a=document.createElement("a");a.href="#mobile";a.className="pulso-mobile-nav";a.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 18h4M9 5h6"/></svg><span>Mercado móvil</span>';const ref=n.querySelector('a[href="#opportunities"]');if(ref)ref.insertAdjacentElement("afterend",a);else n.appendChild(a);}
+ a.classList.toggle("web-active",active());const opp=n.querySelector('a[href="#opportunities"]');if(active()&&opp)opp.classList.remove("web-active");
 }
-function getStage(){
- const w=document.querySelector(".workspace");
- if(!w)return null;
- let el=document.getElementById("pulso-mobile-stage");
- if(!el){el=document.createElement("section");el.id="pulso-mobile-stage";el.className="pulso-mobile-page";const main=w.querySelector(":scope > .main-content");if(main)w.insertBefore(el,main);else w.appendChild(el)}
- return el;
+function active(){return /^#(mobile(?:$|[-/]))/.test(location.hash)}
+function sourceLink(href,label){return `<a href="${url(href)}" target="_blank" rel="noopener noreferrer">${e(label)} ↗</a>`}
+function tag(txt,variant="muted"){return `<span class="mr-pill mr-pill-${variant}">${e(txt)}</span>`}
+function opportunityCard(x){
+ const p=product(x.comparableIds[0])||null;
+ return `<a class="mr-op-card" href="#mobile-opportunity/${e(x.id)}"><div class="mr-op-head"><span class="mr-order">${String(x.priority).padStart(2,"0")}</span>${tag(x.phase,x.phase==="PREVENTA"?"good":x.phase==="DESCARTAR MVP COMERCIAL"?"bad":"warn")}</div><div class="mr-op-identity">${p?img(p,"mr-op-icon"):""}<span>${e(x.focus)}</span></div><h3>${e(x.name)}</h3><p>${e(x.reason)}</p><div class="mr-op-bottom"><span>${e(x.type==="game"?"🎮 Gaming / prueba de retención":"📱 App móvil / prueba de pago")}</span><strong>Ver tesis →</strong></div></a>`;
 }
-function getCase(id){return state.items.find(x=>x.id===id)}
-function tag(x){return x.status==="candidate"?'<span class="pm-tag pm-good">Validar primero</span>':'<span class="pm-tag pm-risk">Laboratorio · alto riesgo</span>'}
-function pic(x,dim="card"){
- const src=sourceImage(x.imageUrl);
- return `<div class="pm-photo pm-photo-${dim}">${src?`<img src="${esc(src)}" loading="lazy" alt="${x.kind==="carbon-game"?"Captura oficial de una demo de Google AI Studio Carbon, distinta del juego propuesto":"Imagen de producto comparable "+esc(x.compare?.[0]?.name||"oficial")}, solo para análisis">`:'<div class="pm-photo-fallback">◈</div>'}<span>${x.kind==="carbon-game"?"DEMO GOOGLE CARBON":"CAPTURA DE PRODUCTO REAL"}</span></div>`;
+function productCard(p){
+ return `<a class="mr-prod" href="#mobile-app/${e(p.id)}" data-mr-cat="${e(p.cat)}" data-mr-mode="${p.cat==="gaming"?"game":"app"}">
+ <div class="mr-prod-top">${img(p)}<span>${tag(p.cat==="gaming"?"Juego real":"App real","plain")}</span></div><strong>${e(p.name)}</strong><small>${e(dcat(p.cat)?.name||"")}</small><div class="mr-prod-count"><span>Google Play</span><b>${e(p.androidInstalls)}</b></div>
+ <p>${e(p.metric||p.price||"Modelo comercial documentado; ingresos por producto no verificados.")}</p>
+ <div class="mr-prod-link">Ficha + fuentes →</div></a>`;
 }
-function caseCard(x){
- return `<a href="#mobile-study/${esc(x.id)}" class="pm-item-card" data-pm-kind="${esc(x.kind)}">${pic(x)}<div class="pm-item-content"><div class="pm-item-overline"><span>${x.kind==="carbon-game"?"🎮 JUEGO CARBON":"📱 APP FREEMIUM"}</span><span>${esc(x.sector)}</span></div><h3>${esc(x.name)}</h3><p>${esc(x.tagline)}</p><div class="pm-item-compare"><img src="${esc(favicon(x.compare[0].url))}" alt="" loading="lazy"><span>Comparable: <strong>${esc(x.compare[0].name)}</strong></span></div><div class="pm-item-bottom">${tag(x)}<strong>Estudio completo →</strong></div></div></a>`;
+function marketStat(c){return `<a href="#mobile-category/${e(c.id)}" class="mr-sector-card"><div><span>${e(c.name)}</span>${tag(c.verdict,c.verdict.toLowerCase().includes("no")?"bad":"plain")}</div><strong>${c.revenueB!==null?`${String(c.revenueB).replace(".",",")} mil M$`:"Sin cifra agregada"}</strong><small>${c.revenueB!==null?"Ingresos de categoría 2025 · mundo":"Segmento sin agregado comparable"}</small><div class="mr-sector-pace"><span>${c.yoy!==null?`Ingresos: ${c.yoy>0?"+":""}${String(c.yoy).replace(".",",")}% interanual`:"Cambio anual no verificable"}</span><b>Investigar →</b></div></a>`}
+function graph(){
+ const cats=state.data.marketData.categories.filter(c=>c.revenueB!==null&&c.id!=="gaming").sort((a,b)=>b.revenueB-a.revenueB);
+ const max=cats[0]?.revenueB||1;
+ return `<div class="mr-chart"><div class="mr-chart-head"><div><span class="eyebrow">DATOS DE MERCADO, NO FACTURACIÓN DEL MVP</span><h3>¿Dónde se está pagando?</h3><p>Ingresos estimados por categoría, global, 2025. AppTweak, Google Play + App Store.</p></div><a href="${url(state.data.marketData.source)}" target="_blank" rel="noopener noreferrer">Informe ↗</a></div>${cats.map(c=>`<a class="mr-bar-row" href="#mobile-category/${e(c.id)}"><span>${e(c.name)}</span><div class="mr-bar-track"><div style="width:${(c.revenueB/max*100).toFixed(1)}%"></div></div><strong>${String(c.revenueB).replace(".",",")} mil M$</strong></a>`).join("")}<div class="mr-game-stat"><span>Gaming (comparación separada)</span><strong>73,5 mil M$</strong><small>2025 · +3 % ingresos, −6 % descargas</small></div></div>`;
+}
+function marketHead(){
+ return `<header class="mr-heading"><div class="mr-upper"><span class="eyebrow">PULSO / APP STORE INTELLIGENCE</span><span class="mr-updated">20 NOVIEMBRE 2026 · GLOBAL + ESPAÑA</span></div><h1>¿En qué apps y juegos <em>invertiría hoy?</em></h1><p>Investigación de mercado a partir de <b>productos que existen de verdad en Google Play</b>. Precios oficiales, instalaciones publicadas, ingresos empresariales, IAP estimado, competidores y una decisión de inversión para un MVP de 21 días.</p></header>`;
 }
 function renderIndex(){
- const stage=getStage();if(!stage)return;
- const tab=state.activeTab;const filtered=state.items.filter(x=>tab==="all"||x.kind===tab);
- stage.innerHTML=`<div class="pm-breadcrumb"><a href="#opportunities">← Oportunidades</a><span>RESEARCH MOBILE / 20 NOV 2026</span></div><header class="pm-head"><span class="eyebrow">NUEVA VÍA DE INGRESOS / PULSO</span><h1>Apps freemium y juegos <em>hechos con Carbon.</em></h1><p>No otro chatbot, contador de calorías o Bus Jam clonado. Ideas originales, compradores concretos y referencias comerciales con precios o IAP publicados. El prototipo se decide por datos, nunca por el número de descargas de un género.</p></header>
- <div class="pm-kpis"><article><small>Apps freemium</small><strong>${state.items.filter(x=>x.kind==="freemium").length}</strong><span>Profesionales y hobbies de nicho</span></article><article><small>Juegos Carbon</small><strong>${state.items.filter(x=>x.kind==="carbon-game").length}</strong><span>Loops en ≤21 días para validar</span></article><article><small>Presupuesto de prototipo</small><strong>0–120 €</strong><span>Rango supuesto, sin salarios ni UA</span></article></div>
- <div class="pm-important"><strong>Qué significa «la gente paga»:</strong> un comparable con suscripción o IAP a la venta demuestra oferta comercial, no clientes de nuestro producto. Solo llamaremos «ingresos» a importes atribuidos, etiquetados como reales declarados o estimados por proveedor. Retención y primeros pagos propios: pendientes.</div>
- <div class="pm-tabs" role="group" aria-label="Modo de producto"><button type="button" data-pm-tab="all" class="${tab==="all"?"active":""}" aria-pressed="${tab==="all"}">Todos (${state.items.length})</button><button type="button" data-pm-tab="freemium" class="${tab==="freemium"?"active":""}" aria-pressed="${tab==="freemium"}">📱 Apps freemium (${state.items.filter(x=>x.kind==="freemium").length})</button><button type="button" data-pm-tab="carbon-game" class="${tab==="carbon-game"?"active":""}" aria-pressed="${tab==="carbon-game"}">🎮 Juegos Carbon (${state.items.filter(x=>x.kind==="carbon-game").length})</button></div>
- <div class="pm-sect-intro"><div><span class="eyebrow">PROTOTIPOS Y PRUEBA DE PAGO</span><h2>${tab==="freemium"?"Apps para usuarios dispuestos a pagar":tab==="carbon-game"?"Juegos que hay que demostrar, no clonar":"Siete conceptos investigados"}</h2><p>Selecciona una tarjeta para ver productos de referencia, precios, competidores, plan 7/14/21 días y criterio de abandono.</p></div></div>
- <div class="pm-grid">${filtered.map(caseCard).join("")}</div>
- <section class="pm-market"><span class="eyebrow">INFORMES Y COMPROBACIÓN</span><h2>Por qué este mercado merece estudio</h2><div>${state.benchmarks.map(b=>`<a href="${safe(b.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(b.title)}</strong><p>${esc(b.finding)}</p><span>Informe original ↗</span></a>`).join("")}</div></section><div class="pm-footer-links"><a href="#opportunities">Volver a Oportunidades →</a><a href="#home">Panel principal →</a></div>`;
+ const st=stage();if(!st)return;
+ const D=state.data,opp=D.opportunities.slice().sort((a,b)=>a.priority-b.priority),appCount=D.apps.filter(p=>p.cat!=="gaming").length,gameCount=D.apps.filter(p=>p.cat==="gaming").length;
+ st.innerHTML=`${marketHead()}<div class="mr-hero-stats"><article><span>Apps reales auditadas</span><strong>${appCount}</strong><small>Google Play · no ideas de Carbon</small></article><article><span>Juegos reales auditados</span><strong>${gameCount}</strong><small>Modelos IAP / ads observados</small></article><article><span>Sectores comparados</span><strong>${D.marketData.categories.length}</strong><small>Datos globales 2025–2026</small></article><article><span>Tesis de inversión</span><strong>${opp.length}</strong><small>Ordenadas por viabilidad, no por hype</small></article></div>
+ <div class="mr-findings"><div><span class="eyebrow">RESULTADO DE LA INVESTIGACIÓN</span><h2>Hay dinero, pero no deberíamos perseguir a los líderes.</h2><p>La mayor ventaja de un equipo pequeño es vender primero una solución especializada a un comprador accesible. En gaming, solo arriesgar presupuesto después de medir retención y adquisición.</p></div><div><strong>#1 Móvil B2B</strong><span>Actas y pruebas para instaladores</span><strong>#1 Gaming</strong><span>Experimentar con física original, no otro Sort</span></div></div>
+ <div class="mr-section-head"><div><span class="eyebrow">01 / INVERTIBILIDAD</span><h2>Lo que priorizaría para construir</h2><p>Cada tesis incluye contraargumentos, los cuatro filtros, canal de captación y condición de abandono.</p></div><span>${opp.length} tesis · 21 días máximo para decidir</span></div>
+ <div class="mr-opp-grid">${opp.slice(0,3).map(opportunityCard).join("")}</div><details class="mr-more-ideas"><summary>Ver las otras ${Math.max(0,opp.length-3)} tesis y las que descartaría <span>↘</span></summary><div class="mr-opp-grid">${opp.slice(3).map(opportunityCard).join("")}</div></details>
+ <div class="mr-section-head"><div><span class="eyebrow">02 / MERCADOS REALES</span><h2>Volumen, crecimiento y concentración</h2><p>No confundir ingresos de una categoría con mercado accesible para nuestro producto.</p></div></div>
+ ${graph()}<div class="mr-sector-grid">${D.marketData.categories.map(marketStat).join("")}</div>
+ <div class="mr-section-head"><div><span class="eyebrow">03 / GOOGLE PLAY / COMPETENCIA REAL</span><h2>Apps y juegos que sí existen</h2><p>Iconos enlazados desde sus fichas oficiales. Bandas de descargas Android acumuladas, no instalaciones de este trimestre.</p></div></div>
+ <div class="mr-filters" role="group" aria-label="Filtrar productos"><button data-mr-filter="all" class="${state.mode==="all"?"active":""}">Todos (${D.apps.length})</button><button data-mr-filter="app" class="${state.mode==="app"?"active":""}">Apps (${appCount})</button><button data-mr-filter="game" class="${state.mode==="game"?"active":""}">Juegos (${gameCount})</button></div>
+ <div class="mr-products">${D.apps.filter(p=>state.mode==="all"||(state.mode==="game"&&p.cat==="gaming")||(state.mode==="app"&&p.cat!=="gaming")).map(productCard).join("")}</div>
+ <div class="mr-section-head"><div><span class="eyebrow">04 / RANKING DE MECÁNICAS</span><h2>Juegos por subgénero: ¿dónde NO entraría?</h2><p>Estas cifras pertenecen a AppMagic. IAP estimado global, no ingresos auditados ni anuncios.</p></div></div>
+ <div class="mr-genres">${D.gameGenres.map(g=>`<article><span>${e(g.name)}</span><strong>${g.iap!==null?`${String(g.iap).replace(".",",")} mil M$`:"Sin volumen individual verificado"}</strong><small>${e(g.period)} · ${e(g.unit)}</small><p>${e(g.note)}</p>${tag(g.viable,g.viable==="No"||g.viable==="No en 21 días"?"bad":"warn")}</article>`).join("")}</div>
+ <div class="mr-methodology"><span class="eyebrow">CONTROL DE EVIDENCIA</span><h2>Cómo leer estas cifras</h2><div>${D.insights.map(x=>`<article><strong>${e(x.label)}</strong><p>${e(x.finding)}</p>${sourceLink(x.source,"Fuente")}</article>`).join("")}</div><p>España: no se han encontrado series públicas comparables y actuales por cada producto y subgénero. Las cifras de mercado son globales; los compradores de las tesis se entrevistarían inicialmente en España.</p></div>
+ <div class="mr-exit"><a href="#opportunities">Volver a Oportunidades →</a><a href="#home">Panel principal →</a></div>`;
 }
-function list(items){return `<ul>${items.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`}
-function renderStudy(x){
- const stage=getStage();if(!stage)return;
- const details=x.compare.map(c=>`<article class="pm-comparable"><div class="pm-comp-title"><img src="${esc(favicon(c.url))}" loading="lazy" alt=""><div><h3>${esc(c.name)}</h3><a href="${safe(c.url)}" target="_blank" rel="noopener noreferrer">Abrir web oficial ↗</a></div></div><p><strong>Precio / monetización:</strong> ${esc(c.price)}</p><p><strong>Ingresos / prueba:</strong> ${esc(c.proof)}</p></article>`).join("");
- const criteria=[
- ["Uso frecuente",x.criteria?.frequent],["Dolor o pago",x.criteria?.economic],["Comprador",x.criteria?.buyer],["Preventa / test",x.criteria?.presale]
- ];
- stage.innerHTML=`<div class="pm-breadcrumb"><a href="#mobile">← Apps y juegos</a><span>${esc(x.sector)} / ${esc(x.period)}</span></div><div class="pm-study-title"><span class="eyebrow">${x.kind==="carbon-game"?"JUEGO PARA GOOGLE AI STUDIO CARBON":"APP MÓVIL FREEMIUM"} / ANÁLISIS DE MERCADO</span><h1>${esc(x.name)}</h1><p>${esc(x.tagline)}</p><div>${tag(x)} <span class="pm-device">${esc(x.feasibility)}</span></div></div><div class="pm-study-hero">${pic(x,"hero")}<div><h2>Qué app o juego construiríamos</h2><p>${esc(x.concept)}</p><dl><div><dt>Usuario que pagaría</dt><dd>${esc(x.buyer)}</dd></div><div><dt>Modelo de monetización</dt><dd>${esc(x.monetization)}</dd></div></dl></div></div>
- <div class="pm-note">La imagen representa <a href="${safe(x.imageSource)}" target="_blank" rel="noopener noreferrer">${esc(x.compare[0].name)}</a> o una demostración de Carbon: <b>no es una captura del concepto diseñado.</b> Se carga desde la fuente oficial sin almacenar ni redistribuir sus assets.</div>
- <div class="pm-sect-intro"><span class="eyebrow">01 / FILTRO DE VALIDACIÓN</span><h2>Nuestros cuatro criterios</h2></div><div class="pm-criteria">${criteria.map((c,i)=>`<article><small>0${i+1} · ${esc(c[0])}</small><p>${esc(c[1])}</p></article>`).join("")}</div>
- <div class="pm-two-col"><article class="pm-panel"><span class="eyebrow">02 / COMPETENCIA EXISTENTE</span><h2>La evidencia de pago</h2>${details}<p class="pm-evidence">Ventas de nuestro concepto: <strong>${esc(x.revenueOwn)}</strong> Descargas propias: <strong>${esc(x.downlOwn)}</strong></p></article><article class="pm-panel"><span class="eyebrow">03 / POR QUÉ SÍ O POR QUÉ NO</span><h2>Balance sin humo</h2><h3 class="pm-plus">A favor</h3>${list(x.positive)}<h3 class="pm-minus">En contra</h3>${list(x.negative)}<p class="pm-evidence"><strong>Comparación:</strong> ${esc(x.marketEvidence)}</p></article></div>
- <div class="pm-sect-intro"><span class="eyebrow">04 / ROADMAP MVP</span><h2>Del prototipo a una decisión en 21 días</h2></div><div class="pm-timeline">${x.mvp.map(m=>`<article><strong>Día ${esc(m.days)}</strong><p>${esc(m.text)}</p></article>`).join("")}</div>
- <div class="pm-two-col pm-validation"><article><span class="eyebrow">EXPERIMENTO COMERCIAL</span><h3>${esc(x.validation)}</h3></article><article><span class="eyebrow">PARAR CUANDO...</span><h3>${esc(x.stopRule)}</h3></article></div>
- <section class="pm-market"><span class="eyebrow">FUENTES Y LÍMITES DE EVIDENCIA</span><h2>Datos contrastables</h2><div>${x.sources.map(s=>`<a href="${safe(s.url)}" target="_blank" rel="noopener noreferrer"><strong>${esc(s.label)}</strong><p>${esc(s.finding)}</p><span>Fuente original ↗</span></a>`).join("")}</div></section><div class="pm-footer-links"><a href="#mobile">Volver a las siete fichas →</a></div>`;
+function renderCategory(c){
+ const st=stage();if(!st)return;
+ const peers=state.data.apps.filter(x=>x.cat===c.id),opps=state.data.opportunities.filter(x=>x.comparableIds.some(i=>peers.some(p=>p.id===i)));
+ st.innerHTML=`${back()}<div class="mr-detail-head"><span class="eyebrow">INFORME SECTORIAL / GOOGLE PLAY</span><h1>${e(c.name)}</h1><p>${e(c.marketNote)}</p></div><div class="mr-hero-stats mr-detail-stats"><article><span>Ingresos de categoría</span><strong>${c.revenueB===null?"No verificados":String(c.revenueB).replace(".",",")+" mil M$"}</strong><small>Estimación AppTweak, global 2025</small></article><article><span>Descargas de categoría</span><strong>${c.downloadsB===null?"No publicadas":String(c.downloadsB).replace(".",",")+" mil M"}</strong><small>App Store y Play, 2025</small></article><article><span>Crecimiento facturación</span><strong>${c.yoy===null?"N/D":(c.yoy>0?"+":"")+String(c.yoy).replace(".",",")+"%"}</strong><small>Interanual 2025</small></article></div>
+ <div class="mr-two-cols"><article class="mr-analysis-panel"><span class="eyebrow">¿DÓNDE ENTRAR?</span><h2>${e(c.verdict)}</h2><p>${e(c.why)}</p></article><article class="mr-analysis-panel"><span class="eyebrow">EN CONTRA</span><h2>Barreras reales</h2><p>${e(c.against)}</p></article></div>
+ <div class="mr-section-head"><div><span class="eyebrow">EVIDENCIA / TIENDA OFICIAL</span><h2>${peers.length} aplicaciones y juegos reales</h2></div></div><div class="mr-products">${peers.map(productCard).join("")}</div>
+ <div class="mr-section-head"><div><span class="eyebrow">APUESTAS PARA UN EQUIPO PEQUEÑO</span><h2>${opps.length?`${opps.length} experimentos relacionados`:"No se recomienda construir sin validar más"}</h2></div></div><div class="mr-opp-grid">${opps.map(opportunityCard).join("")}</div><div class="mr-source-line">${sourceLink(c.source,"Datos y metodología del sector")}</div>`;
 }
-function addHome(){
- if(!state.items.length)return;
- const home=document.getElementById("pulso-daily-carousel")||document.getElementById("pulse-intelligence");
- if(home&&!document.getElementById("pm-home-section")){
- const box=document.createElement("section");box.id="pm-home-section";box.className="pm-home-section";
- box.innerHTML=`<div class="pm-home-title"><div><span class="eyebrow">NUEVO / MOBILE BUSINESS LAB</span><h2>App freemium o juego con Carbon: ¿qué venderíamos?</h2><p>Proyectos originales, ingresos de referencia atribuidos y un MVP de 21 días.</p></div><a href="#mobile">Ver las 7 fichas ↗</a></div><div class="pm-home-strip">${[state.items[0],state.items[1],state.items[4],state.items[5]].filter(Boolean).map(caseCard).join("")}</div>`;
- home.insertAdjacentElement("afterend",box);
+function renderApp(p){
+ const st=stage();if(!st)return;
+ const c=dcat(p.cat),ops=state.data.opportunities.filter(x=>x.comparableIds.includes(p.id));
+ st.innerHTML=`${back()}<header class="mr-app-head">${img(p,"mr-app-main-icon")}<div><span class="eyebrow">CASO REAL / GOOGLE PLAY / ${e(c?.name||"")}</span><h1>${e(p.name)}</h1><p>Producto existente con ficha oficial y modelo de monetización documentado.</p><div class="mr-inline-links">${sourceLink(p.storeUrl,"Google Play")}${p.metricSource?sourceLink(p.metricSource,"Fuente de cifra"):''}</div></div></header>
+ <div class="mr-hero-stats mr-app-stats"><article><span>Instalaciones Android</span><strong>${e(p.androidInstalls)}</strong><small>Banda acumulada Google Play</small></article><article><span>Monetización</span><strong class="mr-long">${e(p.model)}</strong><small>${e(p.price)}</small></article><article><span>Evidencia económica</span><strong class="mr-long">${p.metric?e(p.metric):"Sin cifra verificable"}</strong><small>${e(p.metricPeriod||"No se encontraron ingresos por producto")}</small></article></div>
+ <div class="mr-two-cols"><article class="mr-analysis-panel"><span class="eyebrow">PRODUCTO Y MERCADO</span><h2>¿Qué demuestra?</h2><p>${e(p.notes)}</p>${p.metric?`<p><b>Tipo de cifra:</b> ${e(p.metricType)}. Periodo ${e(p.metricPeriod)}. ${e(p.metricSource?"Fuente atribuida, no ventas de nuestra propuesta.":"")}</p>`:"<p>La existencia de precio/descargas no permite inferir facturación real del producto.</p>"}<p class="mr-attr">${e(p.installsMeaning)}</p></article>
+ <article class="mr-analysis-panel"><span class="eyebrow">LECTURA DE INVERSIÓN</span><h2>¿Por qué no replicarlo?</h2><p>${e(p.risk)}</p><p>La oportunidad no es copiar su marca, assets, código ni su conjunto de funciones. Hay que detectar un flujo desatendido y comprobar pago antes de construir.</p></article></div>
+ <div class="mr-section-head"><div><span class="eyebrow">INVERSIÓN / ENTRADA DESDE ESPAÑA</span><h2>${ops.length?"Qué estudiaría en vez de clonarlo":"Aún no recomiendo un microproducto derivado"}</h2></div></div><div class="mr-opp-grid">${ops.map(opportunityCard).join("")}</div>
+ <div class="mr-methodology"><span class="eyebrow">FUENTES</span><div><article>${sourceLink(p.storeUrl,"Ficha de Google Play")}<p>Icono original ofrecido únicamente como referencia.</p></article>${p.metricSource?`<article>${sourceLink(p.metricSource,"Datos y periodo publicados")}</article>`:""}${c?`<article>${sourceLink(c.source,"Volumen del sector")}</article>`:""}</div></div>`;
+}
+function renderOpportunity(x){
+ const st=stage();if(!st)return;
+ const rel=x.comparableIds.map(product).filter(Boolean);
+ st.innerHTML=`${back()}<div class="mr-detail-head"><div class="mr-detail-kicker"><span class="eyebrow">TESIS DE INVERSIÓN / Nº ${e(x.priority)} / ${e(x.focus)}</span>${tag(x.phase,x.phase==="PREVENTA"?"good":x.phase==="DESCARTAR MVP COMERCIAL"?"bad":"warn")}</div><h1>${e(x.name)}</h1><p>${e(x.reason)}</p></div>
+ <div class="mr-op-summary"><article><span>COMPRADOR</span><strong>${e(x.buyer)}</strong></article><article><span>PRUEBA COMERCIAL</span><strong>${e(x.validation||x.phase)}</strong></article><article><span>PRECIO DE PRUEBA, NO OBSERVADO</span><strong>${e(x.priceHypothesis)}</strong></article></div>
+ <div class="mr-section-head"><div><span class="eyebrow">01 / LOS CUATRO CRITERIOS</span><h2>¿Dónde está la evidencia y qué falta?</h2></div></div><div class="mr-criteria">${x.criteria.map((v,i)=>`<article><small>0${i+1} · ${e(v.title)}</small><p>${e(v.state)}</p></article>`).join("")}</div>
+ <div class="mr-two-cols"><article class="mr-analysis-panel"><span class="eyebrow">02 / SEÑAL DE MERCADO</span><h2>Por qué merece atención</h2><p>${e(x.proof)}</p><p><b>Distribución:</b> ${e(x.distribution)}</p><p><b>Confianza de esta tesis:</b> ${e(x.confidence)}</p></article>
+ <article class="mr-analysis-panel"><span class="eyebrow">CONTRAARGUMENTOS</span><h2>Qué nos puede hacer perder dinero</h2><ul>${x.contrary.map(v=>`<li>${e(v)}</li>`).join("")}</ul></article></div>
+ <div class="mr-section-head"><div><span class="eyebrow">03 / COMPETIDORES REALES</span><h2>Qué hay ya publicado en Play Store</h2></div></div><div class="mr-products">${rel.map(productCard).join("")}</div>
+ <div class="mr-section-head"><div><span class="eyebrow">04 / TEST 7—14—21 DÍAS</span><h2>Gastar poco y tomar una decisión</h2></div></div><div class="mr-days">${x.days.map(v=>`<article><span>DÍA ${e(v.day)}</span><p>${e(v.task)}</p></article>`).join("")}</div>
+ <div class="mr-two-cols mr-last"><article class="mr-analysis-panel mr-stop"><span class="eyebrow">REGLA DE ABANDONO</span><h2>${e(x.stop)}</h2></article><article class="mr-analysis-panel mr-budget"><span class="eyebrow">PRESUPUESTO / SUPUESTO</span><h2>${e(x.budget)}</h2><p>No incluye mano de obra, adquisición pagada, tarifas de tiendas, impuestos ni licencias comerciales adicionales.</p></article></div><div class="mr-source-line">Ninguna cifra del comparable se atribuye a esta idea. ${sourceLink(state.data.sources.find(s=>s.name.includes("RevenueCat"))?.url,"Metodología de conversión")}</div>`;
+}
+function renderLegacy(id){
+ const el=stage();el.innerHTML=`${back()}<div class="mr-detail-head"><span class="eyebrow">ARCHIVO DE IDEAS ANTERIORES</span><h1>El mercado real tiene prioridad</h1><p>Las propuestas antiguas eran hipótesis creativas, no una clasificación de lo que vende en Google Play. Puedes consultar su JSON histórico en el repositorio, pero el ranking vigente está respaldado por fichas oficiales, precios y métricas publicadas.</p></div><a href="#mobile" class="mr-btn-return">Abrir Deep Research 2026 →</a>`;
+}
+function homePanel(){
+ const host=$("#pulso-daily-carousel")||$("#pulse-intelligence");
+ if(!host||$("#mr-home-section")||!state.data)return;
+ const el=document.createElement("section");el.id="mr-home-section";el.className="mr-home-panel";
+ const ids=["companycam","maintainx","pixelflow","mysterytown"],prods=ids.map(product).filter(Boolean);
+ el.innerHTML=`<div class="mr-home-head"><div><span class="eyebrow">DEEP RESEARCH / PLAY STORE</span><h2>¿Dónde invertiría en apps y juegos ahora?</h2><p>19 productos reales, cifras con origen y un ranking de 8 tesis, no otra lista de clones.</p></div><a href="#mobile">Ver informe completo →</a></div><div class="mr-home-track">${prods.map(productCard).join("")}</div>`;
+ host.insertAdjacentElement("afterend",el);
+}
+function opportunitiesPanel(){
+ const host=$("#pulso-opps-stage");if(!host||!location.hash.startsWith("#opportunities")||$("#mr-opportunity-shortcut"))return;
+ const target=host.querySelector(".op-page-header");if(!target)return;
+ const el=document.createElement("a");el.href="#mobile";el.id="mr-opportunity-shortcut";el.className="mr-shortcut";
+ el.innerHTML='<strong>📊 Deep Research Mobile & Google Play</strong><span>19 apps y juegos reales, demanda por subgénero, cifras verificadas y ranking de inversión · 20 noviembre 2026</span><b>Investigar →</b>';
+ target.insertAdjacentElement("afterend",el);
+}
+function show(){
+ nav();document.body.classList.toggle("pulso-mobile-mode",active());
+ if(!state.data){return}
+ if(active()){
+ const hash=decodeURIComponent(location.hash.slice(1)),old=state.last;
+ if(hash==="mobile")renderIndex();
+ else if(hash.startsWith("mobile-category/")){const x=dcat(hash.slice(16));x?renderCategory(x):renderLegacy("")}
+ else if(hash.startsWith("mobile-app/")){const x=product(hash.slice(11));x?renderApp(x):renderLegacy("")}
+ else if(hash.startsWith("mobile-opportunity/")){const x=opportunity(hash.slice(19));x?renderOpportunity(x):renderLegacy("")}
+ else if(hash.startsWith("mobile-study/"))renderLegacy(hash.slice(13));
+ if(old!==hash){state.last=hash;window.scrollTo(0,0)}
  }
+ homePanel();opportunitiesPanel();
 }
-function addOppsShortcut(){
- const host=document.getElementById("pulso-opps-stage");
- if(!host||!location.hash.startsWith("#opportunities")||document.getElementById("pm-opp-shortcut"))return;
- const anchor=host.querySelector(".op-page-header")||host.firstElementChild;if(!anchor)return;
- const box=document.createElement("a");box.href="#mobile";box.id="pm-opp-shortcut";box.className="pm-opps-shortcut";
- box.innerHTML='<span class="pm-shortcut-icon">📱</span><span><strong>Nueva sección · Apps freemium y juegos Carbon</strong><small>Productos que ofrecen suscripción/IAP, capturas oficiales, modelos de pago y tests de 21 días</small></span><b>Abrir estudios →</b>';
- anchor.insertAdjacentElement("afterend",box);
+async function load(){
+ try{const r=await fetch(B+"data/mobile-market-2026.json",{cache:"no-store"});if(!r.ok)throw Error(r.status);const j=await r.json();if(j.schemaVersion!==1||!j.apps||!j.opportunities)throw Error("Incompatible");state.data=j;}
+ catch(err){console.warn("Mobile Deep Research no disponible",err);if(active()){document.body.classList.add("pulso-mobile-mode");const el=stage();if(el)el.innerHTML='<p>El dataset de investigación no se pudo cargar. Revisa la publicación de GitHub Pages.</p>';}return}
+ show();let i=0;const timer=setInterval(()=>{show();if(++i>90)clearInterval(timer)},150);
 }
-function render(){
- nav();
- const mobile=isMobile();
- document.body.classList.toggle("pulso-mobile-mode",mobile);
- if(mobile&&state.items.length){const id=location.hash.startsWith("#mobile-study/")?decodeURIComponent(location.hash.slice("#mobile-study/".length)):null;const x=id?getCase(id):null;if(state.renderedHash!==location.hash||state.renderedTab!==state.activeTab){if(id&&x){renderStudy(x)}else{renderIndex()}state.renderedHash=location.hash;state.renderedTab=state.activeTab;}if(state.last!==location.hash){state.last=location.hash;window.scrollTo(0,0)}}
- addHome();
- addOppsShortcut();
-}
-async function main(){
- try{
- const res=await fetch(BASE+"data/mobile-research.json",{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);
- const json=await res.json();if(json.schemaVersion!==1||!Array.isArray(json.items))throw Error("Esquema JSON no válido");
- state.items=json.items;state.benchmarks=json.benchmarks||[];
- }catch(err){console.warn("PULSO Mobile Lab: error al cargar",err);if(isMobile()){const stage=getStage();if(stage){document.body.classList.add("pulso-mobile-mode");stage.textContent="No se pudo cargar la investigación móvil. Revisa la conexión o vuelve a intentar."}}return;}
- render();let count=0;const t=setInterval(()=>{render();if(++count>100)clearInterval(t)},160);
-}
-document.addEventListener("click",event=>{const b=event.target.closest?.("[data-pm-tab]");if(!b)return;state.activeTab=b.dataset.pmTab;renderIndex()});
-window.addEventListener("hashchange",()=>{setTimeout(render,130);});
-main();
+document.addEventListener("click",event=>{const b=event.target.closest?.("[data-mr-filter]");if(!b)return;state.mode=b.dataset.mrFilter;renderIndex()});
+window.addEventListener("hashchange",()=>setTimeout(show,110));
+load();
 })();
