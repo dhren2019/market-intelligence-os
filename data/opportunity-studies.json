@@ -1,8 +1,109 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "policy": "Candidatas priorizadas ≠ negocios validados. Los cuatro criterios evalúan plausibilidad; el pago real se verifica con pilotos. Ingresos/descargas sin cifra atribuible a producto, región y periodo: no verificadas.",
   "items": [
+    {
+      "id": "handover-evidence-industrial",
+      "title": "Relevo de Incidencias Verificado",
+      "subtitle": "Confirmación de pendientes entre turnos con prueba de recepción, sin reemplazar el CMMS",
+      "sector": "Industria",
+      "subsector": "Mantenimiento y operaciones de planta",
+      "date": "2026-11-21",
+      "status": "explore",
+      "art": "industry",
+      "buyer": "Responsable de mantenimiento de plantas pequeñas con 2–3 turnos",
+      "geography": "España",
+      "description": "Registrar averías pendientes, fotografías y responsable del siguiente turno. El relevo se confirma con lectura y aceptación, dejando historial de incidencias no cerradas. Es una hipótesis, no un flujo comercialmente validado.",
+      "caseStudy": "MaintainX comercializa gestión de mantenimiento y órdenes de trabajo. El hueco hipotético es un relevo mínimo, móvil y usable por personal no técnico, exportable al CMMS. Si el cliente ya tiene una función equivalente, no existe diferenciación.",
+      "whyNow": "Las inversiones en robótica y agentes industriales de noviembre 2026 muestran interés del capital por operaciones, pero no prueban ventas de este microproducto. Se necesita investigación directa en plantas.",
+      "frequency": "Cada cambio de turno, 1–3 veces al día en centros relevantes; hipótesis a comprobar.",
+      "value": "Tiempo de diagnóstico duplicado y pendientes perdidos, ahorro no cuantificado.",
+      "preSale": "Ofrecer un registro manual en PDF/WhatsApp para 10 relevos y cobrar por mantener trazabilidad durante una semana.",
+      "monetization": "Hipótesis: cuota por planta; precio a determinar por entrevistas. No se ha validado ningún importe.",
+      "ease": "Media: PWA, fotos, roles y registro de aceptación; permisos y conectividad offline requieren trabajo.",
+      "positive": [
+        "El problema potencial ocurre con frecuencia en plantas por turnos.",
+        "Comprador profesional identificable y costes de incidencias observables.",
+        "Es posible validar manualmente antes de programar."
+      ],
+      "negative": [
+        "MaintainX y otros CMMS pueden resolver el mismo flujo.",
+        "Acceso comercial a fábricas y seguridad de datos operativos.",
+        "No hay entrevistas ni preventas que prueben demanda para este producto."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Cada relevo de turno; validar en dos plantas."
+        },
+        {
+          "name": "Valor económico",
+          "state": "hipótesis",
+          "detail": "Medir tiempo perdido por incidencias sin traspaso."
+        },
+        {
+          "name": "Comprador",
+          "state": "definido",
+          "detail": "Responsable de mantenimiento o gerente de planta."
+        },
+        {
+          "name": "Preventa",
+          "state": "pendiente",
+          "detail": "Probar un servicio manual y solicitar dos pilotos pagados."
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "10 entrevistas con supervisores y 10 relevos documentados manualmente, comparando con CMMS actual."
+        },
+        {
+          "days": 14,
+          "text": "PWA con incidencias, fotos, prioridades y aceptación del turno siguiente; exportación PDF/CSV."
+        },
+        {
+          "days": 21,
+          "text": "Dos pilotos en planta y medición de tiempo ahorrado, incidencias duplicadas y pago real."
+        }
+      ],
+      "validation": "2 pilotos pagados de 10 entrevistas cualificadas y ahorro de tiempo observado en al menos una planta.",
+      "stopRule": "Descartar si el CMMS ya cubre el relevo o no se obtienen 2 pilotos pagados después de 15 entrevistas.",
+      "revenue": "No verificadas",
+      "downloads": "No verificadas",
+      "growth": "Inversión industrial anunciada; no crecimiento de ventas del producto.",
+      "competitors": [
+        {
+          "name": "MaintainX",
+          "url": "https://www.getmaintainx.com/pricing",
+          "model": "CMMS y órdenes de trabajo",
+          "price": "Essential 20 USD/usuario/mes con facturación anual (referencia contrastada 20/11/2026)",
+          "priceSource": "https://www.getmaintainx.com/pricing",
+          "differentiation": "No duplicar órdenes; centrarse en confirmación de relevo y export."
+        }
+      ],
+      "evidence": [
+        {
+          "label": "MaintainX precios",
+          "url": "https://www.getmaintainx.com/pricing",
+          "claim": "Oferta de pago para mantenimiento; no demuestra demanda del microproducto.",
+          "kind": "precio oficial"
+        },
+        {
+          "label": "Genesis AI, Reuters 17/11",
+          "url": "https://www.reuters.com/business/finance/french-robot-maker-genesis-raises-500-million-35-billion-valuation-2026-11-17/",
+          "claim": "Financiación industrial de 500 MUSD; no ventas de software de relevo.",
+          "kind": "financiación"
+        },
+        {
+          "label": "Modern Industrials, 20/11",
+          "url": "https://techstartups.com/2026/11/20/startup-funding-news-today-november-20-2026-archer-everful-metano-modern-industrials-satsure-more/",
+          "claim": "Financiación anunciada de 6 MUSD en software industrial; no TAM.",
+          "kind": "inversión"
+        }
+      ]
+    },
     {
       "id": "client-agent-proof",
       "title": "Client Agent Proof",
