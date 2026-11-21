@@ -1,7 +1,29 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "days": [
+    {
+      "date": "2026-11-21",
+      "title": "Radar: agentes, robótica industrial y caída del IAP en juegos móviles",
+      "subtitle": "9 noticias verificadas; prioridad a microflujos industriales y QA de agentes, no a clones de gaming",
+      "summary": "Reuters, Sifted y fuentes empresariales muestran capital hacia agentes y robótica. Sensor Tower estima caída interanual del gasto IAP de juegos Q3. Se añade un estudio exploratorio de relevo de incidencias: comprador definido pero pago todavía no validado.",
+      "featuredIds": [
+        "relevo-turno-industrial",
+        "client-agent-proof",
+        "handover-evidence-industrial"
+      ],
+      "sourceResearchIds": [
+        "cognition-valuation-talks-2026-11-20",
+        "mistral-telekom-2026-11-20",
+        "sifted-espoo-2026-11-20",
+        "paloalto-applied-compute-2026-11-20",
+        "genesis-robotics-2026-11-17",
+        "brightai-2026-11-18",
+        "mobile-gaming-q3-decline-2026-11-17",
+        "enterprise-ai-manufacturing-2026-11-20"
+      ],
+      "note": "Las rondas y valoraciones no son ventas. No hay descargas ni ingresos publicados del nuevo microproducto. Mantenerlo en explore hasta conseguir pilotos pagados."
+    },
     {
       "date": "2026-11-20",
       "title": "Oportunidades sectoriales: construcción, industria, logística, hostelería, turismo y dev tools",
