@@ -1,8 +1,95 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "policy": "Candidatas priorizadas ≠ negocios validados. Los cuatro criterios evalúan plausibilidad; el pago real se verifica con pilotos. Ingresos/descargas sin cifra atribuible a producto, región y periodo: no verificadas.",
   "items": [
+    {
+      "id": "supplier-change-proof",
+      "title": "Supplier Change Proof",
+      "subtitle": "Evidencias de discrepancias entre muestras, órdenes y entregas",
+      "sector": "Comercio",
+      "subsector": "Importación y compras",
+      "date": "2026-11-22",
+      "status": "explore",
+      "art": "logistics",
+      "buyer": "Responsables de compras de importadores españoles con pedidos recurrentes",
+      "geography": "España",
+      "description": "Documentar cambios de muestra, pedido y entrega con fotografías, aprobaciones y exportación PDF. Es una hipótesis, no un producto validado.",
+      "caseStudy": "Everful recaudó 48,5 MUSD en Serie A; inversión no equivale a ventas ni prueba demanda para este flujo.",
+      "whyNow": "La financiación muestra interés por sourcing, pero se necesitan entrevistas en España.",
+      "frequency": "Semanal si el importador hace pedidos recurrentes; por comprobar.",
+      "value": "Evitar reclamaciones y discrepancias, ahorro no medido.",
+      "preSale": "Ofrecer tres expedientes manuales a importadores y cobrar por el resultado.",
+      "monetization": "Hipótesis de pago por expediente; precio por validar.",
+      "ease": "Media: PWA, fotos, versiones y PDF.",
+      "positive": [
+        "Comprador B2B identificable.",
+        "Se puede probar manualmente antes de desarrollar."
+      ],
+      "negative": [
+        "ERP y servicios de inspección pueden resolverlo.",
+        "No hay pilotos ni ventas verificadas.",
+        "Uso esporádico en comerciantes pequeños."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Solo importadores con pedidos semanales."
+        },
+        {
+          "name": "Valor económico",
+          "state": "hipótesis",
+          "detail": "Medir costes de reclamaciones."
+        },
+        {
+          "name": "Comprador",
+          "state": "definido",
+          "detail": "Responsable de compras."
+        },
+        {
+          "name": "Preventa",
+          "state": "pendiente",
+          "detail": "Cobrar expedientes manuales."
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "12 entrevistas y 3 expedientes manuales."
+        },
+        {
+          "days": 14,
+          "text": "PWA de muestras, pedidos, fotos y aprobación."
+        },
+        {
+          "days": 21,
+          "text": "Dos pilotos pagados y medición de incidencias."
+        }
+      ],
+      "validation": "Dos pilotos pagados en 15 entrevistas y una discrepancia documentada.",
+      "stopRule": "Parar si ERP cubre el flujo o nadie paga tras 15 entrevistas.",
+      "revenue": "No verificadas",
+      "downloads": "No verificadas",
+      "growth": "No verificado para el producto",
+      "competitors": [
+        {
+          "name": "Everful",
+          "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+          "model": "Plataforma de sourcing",
+          "price": null,
+          "differentiation": "Control documental independiente, no marketplace"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "TechCrunch, Serie A Everful",
+          "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/",
+          "claim": "48,5 MUSD de financiación, no facturación",
+          "kind": "inversión"
+        }
+      ]
+    },
     {
       "id": "handover-evidence-industrial",
       "title": "Relevo de Incidencias Verificado",
