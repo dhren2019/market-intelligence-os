@@ -1,7 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-22",
   "days": [
+    {
+      "date": "2026-11-22",
+      "title": "Compras internacionales, licencias IA y juegos clásicos",
+      "subtitle": "7 noticias verificadas y una exploración B2B",
+      "summary": "Se investiga control de cambios en importación, seguridad de agentes y expansión de juegos casuales. No se atribuyen ventas a nuevos microproductos.",
+      "featuredIds": [
+        "supplier-change-proof",
+        "client-agent-proof",
+        "handover-evidence-industrial"
+      ],
+      "sourceResearchIds": [
+        "mailchimp-bending-spoons-2026-11-20",
+        "everful-sourcing-2026-11-19",
+        "ai-face-microdramas-2026-11-21",
+        "bank-agent-risk-2026-11-18",
+        "chess-classics-2026-11-21",
+        "harbinger-fleet-2026-11-21",
+        "apple-namedrop-lawsuit-2026-11-20"
+      ],
+      "note": "Estudio nuevo en explore sin ventas ni pilotos; no confundir financiación con ingresos."
+    },
     {
       "date": "2026-11-21",
       "title": "Radar: agentes, robótica industrial y caída del IAP en juegos móviles",
