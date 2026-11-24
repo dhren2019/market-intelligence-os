@@ -1,8 +1,96 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-24",
   "policy": "Candidatas priorizadas ≠ negocios validados. Los cuatro criterios evalúan plausibilidad; el pago real se verifica con pilotos. Ingresos/descargas sin cifra atribuible a producto, región y periodo: no verificadas.",
   "items": [
+    {
+      "id": "client-release-evidence",
+      "title": "Client Release Evidence",
+      "subtitle": "Acta de entrega verificable para agencias que publican software con agentes IA",
+      "sector": "Tecnología",
+      "subsector": "Dev tools y QA de entregas",
+      "date": "2026-11-24",
+      "status": "explore",
+      "art": "agents",
+      "buyer": "Dueños y responsables técnicos de agencias web españolas con entregas semanales a clientes",
+      "geography": "España",
+      "description": "Recopilar cambios de GitHub, checks de CI, capturas de pruebas y aprobación humana en una ficha de entrega para clientes. No es un agente que apruebe código automáticamente.",
+      "caseStudy": "Anthropic anunció Claude Ship el 23/11/2026; su lanzamiento prueba interés de un proveedor en automatizar revisiones, no demanda pagada por actas de agencia.",
+      "whyNow": "La revisión automática puede acelerar cambios, pero la agencia aún necesita demostrar al cliente qué se ha probado y aprobado.",
+      "frequency": "Semanal en agencias con varios proyectos; pendiente de entrevistas.",
+      "value": "Reducir discusiones de aceptación y retrabajo; ahorro no medido.",
+      "preSale": "Ofrecer un acta manual a cinco agencias y pedir pago por tres entregas documentadas.",
+      "monetization": "Hipótesis: pago por entrega aceptada o paquete mensual; precio no verificado.",
+      "ease": "Media-baja: GitHub API, plantilla, PDF y aprobación manual; sin ejecución autónoma.",
+      "positive": [
+        "Comprador localizable en agencias pequeñas.",
+        "Flujo concreto y posible prueba manual sin construir.",
+        "Integración técnica sencilla si la agencia ya usa GitHub."
+      ],
+      "negative": [
+        "GitHub Actions, Vercel, Linear y plataformas de QA cubren partes del flujo.",
+        "Claude Ship y otros agentes ya automatizan revisiones.",
+        "Sin entrevistas, ventas ni recurrencia verificadas."
+      ],
+      "criteria": [
+        {
+          "name": "Uso frecuente",
+          "state": "hipótesis",
+          "detail": "Agencias con varias entregas por semana; comprobar frecuencia."
+        },
+        {
+          "name": "Valor económico",
+          "state": "hipótesis",
+          "detail": "Medir retrabajo, disputas y tiempo de informes."
+        },
+        {
+          "name": "Comprador",
+          "state": "definido",
+          "detail": "Responsable técnico o propietario de agencia web."
+        },
+        {
+          "name": "Preventa",
+          "state": "pendiente",
+          "detail": "Cobrar tres actas manuales a una agencia."
+        }
+      ],
+      "mvp": [
+        {
+          "days": 7,
+          "text": "10 entrevistas, 3 actas manuales, una oferta de pago y revisión de competidores."
+        },
+        {
+          "days": 14,
+          "text": "GitHub PR/commit, checks CI, evidencia manual, PDF y firma de aceptación."
+        },
+        {
+          "days": 21,
+          "text": "Dos pilotos pagados, medir tiempo de entrega y errores; decidir continuidad."
+        }
+      ],
+      "validation": "Al menos dos agencias pagan por tres entregas y el informe ahorra tiempo o evita una disputa documentada.",
+      "stopRule": "Abandonar si ninguna de 15 agencias paga o su stack actual entrega el mismo valor sin fricción.",
+      "revenue": "No verificadas",
+      "downloads": "No verificadas",
+      "growth": "No verificado para este producto",
+      "competitors": [
+        {
+          "name": "Claude Ship",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+          "model": "Suite de revisión/aprobación de código con agentes",
+          "price": null,
+          "differentiation": "Evidencia de aceptación por cliente, no revisión autónoma"
+        }
+      ],
+      "evidence": [
+        {
+          "label": "TechCrunch, Claude Ship",
+          "url": "https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/",
+          "claim": "Lanzamiento de revisión y aprobación de código por agentes; no ingresos publicados",
+          "kind": "lanzamiento"
+        }
+      ]
+    },
     {
       "id": "supplier-change-proof",
       "title": "Supplier Change Proof",
