@@ -1,7 +1,28 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22",
+  "updatedAt": "2026-11-24",
   "days": [
+    {
+      "date": "2026-11-24",
+      "title": "Agentes de código, procedimientos auditables y capital europeo",
+      "subtitle": "La entrega verificable gana interés, pero aún faltan compradores y pilotos",
+      "summary": "Siete hallazgos contrastados. Claude Ship y Playbook señalan inversión en revisión y procedimientos; no son prueba de ventas para microproductos.",
+      "featuredIds": [
+        "client-release-evidence",
+        "client-agent-proof",
+        "handover-evidence-industrial"
+      ],
+      "sourceResearchIds": [
+        "claude-ship-code-review-2026-11-23",
+        "supertake-20m-2026-11-23",
+        "hoplite-5m5-2026-11-20",
+        "playbook-8m-2026-11-23",
+        "agon-70m-2026-11-23",
+        "uber-recorded-rides-2026-11-23",
+        "plural-european-vc-2026-11-23"
+      ],
+      "note": "Nuevo estudio Client Release Evidence en exploración. Gaming y móvil: no hay cifras nuevas suficientemente verificadas para modificar datasets."
+    },
     {
       "date": "2026-11-22",
       "title": "Compras internacionales, licencias IA y juegos clásicos",
